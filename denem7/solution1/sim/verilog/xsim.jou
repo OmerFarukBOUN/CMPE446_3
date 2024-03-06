@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Mar  6 18:26:59 2024
+# Process ID: 46499
+# Current directory: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog
+# Command line: xsim -source {xsim.dir/hart/xsim_script.tcl}
+# Log file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.log
+# Journal file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.jou
+# Running On: DarkChocolate, OS: Linux, CPU Frequency: 3201.150 MHz, CPU Physical cores: 4, Host memory: 16509 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/hart/xsim_script.tcl
+open_wave_config hart_dataflow_ana.wcfg
+source hart.tcl
+close_sim

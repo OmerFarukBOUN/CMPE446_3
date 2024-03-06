@@ -1,0 +1,7 @@
+digraph "CFG for '_GLOBAL__sub_I_test_hart.cpp' function" {
+	label="CFG for '_GLOBAL__sub_I_test_hart.cpp' function";
+
+	Node0x55777f0 [shape=record,filename="../../../../test_hart.cpp",linenumber="0",label="{entry.predFake}"];
+	Node0x55777f0 -> Node0x5a92780[ callList="__cxx_global_var_init.1:0" memoryops="" filename="../../../../test_hart.cpp" execusionnum="0"];
+	Node0x5a92780 [shape=record,filename="",linenumber="",label="{entry.succFake}"];
+}

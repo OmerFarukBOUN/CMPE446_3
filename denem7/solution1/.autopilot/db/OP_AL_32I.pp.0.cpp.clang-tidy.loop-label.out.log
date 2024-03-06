@@ -1,0 +1,25 @@
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:7824:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:7824:7: note: FIX-IT applied suggested code changes
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8798:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8798:5: note: FIX-IT applied suggested code changes
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8812:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8812:5: note: FIX-IT applied suggested code changes
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8826:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:8826:5: note: FIX-IT applied suggested code changes
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:10443:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp:10443:7: note: FIX-IT applied suggested code changes

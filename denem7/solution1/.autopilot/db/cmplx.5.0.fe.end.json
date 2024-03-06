@@ -1,0 +1,26 @@
+{
+    "1": {
+        "name": "OP_AL_32I",
+        "file": "OP_AL_32I.cpp",
+        "fileloc": "8",
+        "instructions": "89",
+        "total_instructions": "89",
+        "calls": "",
+        "basicblocks": "32"
+    },
+    "0": {
+        "name": "hart",
+        "file": "hart.cpp",
+        "fileloc": "7",
+        "instructions": "140",
+        "total_instructions": "318",
+        "calls": "1 1",
+        "basicblocks": "23",
+        "loads": {
+            "G": "6"
+        },
+        "stores": {
+            "G": "7"
+        }
+    }
+}

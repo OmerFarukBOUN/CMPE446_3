@@ -1,0 +1,26 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: hart.cpp, Line: 8, Column: 0 }
+Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 66, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hart(ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-interface-encoding-change
+Name:            InterfaceFieldStructByValue
+DebugLoc:        { File: hart.cpp, Line: 9, Column: 9 }
+Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+Args:            
+  - String:          'Unable to apply INTERFACE pragma options on a pass by value struct member field. Consider changing the signature of the struct to a pass by reference or as a pointer. '
+  - String:          'In function '''
+  - Function:        'hart(ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,3 @@
+hart_rf_RAM_AUTO_1R1W
+OP_AL_32I
+hart

@@ -1,0 +1,7 @@
+digraph "CFG for '__cxx_global_var_init.1' function" {
+	label="CFG for '__cxx_global_var_init.1' function";
+
+	Node0x55b7ef0 [shape=record,filename="../../../../test_hart.cpp",linenumber="5",label="{entry.predFake}"];
+	Node0x55b7ef0 -> Node0x54fa610[ callList="" memoryops="" filename="../../../../test_hart.cpp" execusionnum="0"];
+	Node0x54fa610 [shape=record,filename="../../../../test_hart.cpp",linenumber="5",label="{entry.succFake}"];
+}

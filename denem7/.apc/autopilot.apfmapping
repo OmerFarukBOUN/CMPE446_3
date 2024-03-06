@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="OP_AL_32I.cpp" path="/home/omerfaruk/Projects/okul/denem7/OP_AL_32I.cpp"/>
+    <originFiles name="hart.cpp" path="/home/omerfaruk/Projects/okul/denem7/hart.cpp"/>
+    <originFiles name="mem.cpp" path="/home/omerfaruk/Projects/okul/denem7/mem.cpp"/>
+    <originFiles name="parameters.hpp" path="/home/omerfaruk/Projects/okul/denem7/parameters.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_hart.cpp" path="/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

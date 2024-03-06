@@ -1,0 +1,7 @@
+sv work "glbl.v"
+sv xil_defaultlib "hart_rf_RAM_AUTO_1R1W.v"
+sv xil_defaultlib "hart.v"
+sv xil_defaultlib "hart_OP_AL_32I.v"
+sv xil_defaultlib "hart.autotb.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

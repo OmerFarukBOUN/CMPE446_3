@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_hart.cpp in release mode
+   Compiling ../../../../OP_AL_32I.cpp in release mode
+   Compiling ../../../../hart.cpp in release mode
+   Compiling ../../../../mem.cpp in release mode
+   Generating csim.exe
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
