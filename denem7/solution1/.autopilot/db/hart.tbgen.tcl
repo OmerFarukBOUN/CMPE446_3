@@ -55,7 +55,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "3",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -68,7 +68,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "pc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "rf", "Type" : "Memory", "Direction" : "IO"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rf_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_OP_AL_32I_fu_280", "Parent" : "0",
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_OP_AL_32I_fu_270", "Parent" : "0",
 		"CDFG" : "OP_AL_32I",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -105,8 +105,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "3"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "4"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "1"}
+	, {"Name" : "Interval", "Min" : "2", "Max" : "2"}
 ]}
 
 set PipelineEnableSignalInfo {[

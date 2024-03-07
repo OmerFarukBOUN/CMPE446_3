@@ -3,4 +3,4 @@ set depth_list {
   {inst 1}
   {pc 1}
 }
-set trans_num 27
+set trans_num 26

@@ -3,13 +3,13 @@
 # SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Wed Mar  6 18:26:59 2024
-# Process ID: 46499
+# Start of session at: Thu Mar  7 10:41:05 2024
+# Process ID: 64122
 # Current directory: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog
 # Command line: xsim -source {xsim.dir/hart/xsim_script.tcl}
 # Log file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.log
 # Journal file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.jou
-# Running On: DarkChocolate, OS: Linux, CPU Frequency: 3201.150 MHz, CPU Physical cores: 4, Host memory: 16509 MB
+# Running On: DarkChocolate, OS: Linux, CPU Frequency: 3228.190 MHz, CPU Physical cores: 4, Host memory: 16509 MB
 #-----------------------------------------------------------
 start_gui
 source xsim.dir/hart/xsim_script.tcl
@@ -76,7 +76,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 avail
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/omerfaruk/tools/Xilinx/Vivado/2023.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 10918.152 ; gain = 414.062 ; free physical = 636 ; free virtual = 11425
+current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 10853.145 ; gain = 414.062 ; free physical = 600 ; free virtual = 12822
 # xsim {hart} -view {{hart_dataflow_ana.wcfg}} -tclbatch {hart.tcl} -protoinst {hart.protoinst}
 INFO: [Wavedata 42-565] Reading protoinst file hart.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hart_top/AESL_inst_hart//AESL_inst_hart_activity
@@ -109,37 +109,36 @@ source hart.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 27 [0.00%] @ "125000"
-// RTL Simulation : 1 / 27 [100.00%] @ "175000"
-// RTL Simulation : 2 / 27 [100.00%] @ "215000"
-// RTL Simulation : 3 / 27 [100.00%] @ "255000"
-// RTL Simulation : 4 / 27 [100.00%] @ "295000"
-// RTL Simulation : 5 / 27 [100.00%] @ "335000"
-// RTL Simulation : 6 / 27 [100.00%] @ "375000"
-// RTL Simulation : 7 / 27 [100.00%] @ "415000"
-// RTL Simulation : 8 / 27 [100.00%] @ "455000"
-// RTL Simulation : 9 / 27 [100.00%] @ "495000"
-// RTL Simulation : 10 / 27 [100.00%] @ "535000"
-// RTL Simulation : 11 / 27 [100.00%] @ "575000"
-// RTL Simulation : 12 / 27 [100.00%] @ "615000"
-// RTL Simulation : 13 / 27 [100.00%] @ "655000"
-// RTL Simulation : 14 / 27 [100.00%] @ "695000"
-// RTL Simulation : 15 / 27 [100.00%] @ "735000"
-// RTL Simulation : 16 / 27 [100.00%] @ "775000"
-// RTL Simulation : 17 / 27 [100.00%] @ "815000"
-// RTL Simulation : 18 / 27 [100.00%] @ "855000"
-// RTL Simulation : 19 / 27 [100.00%] @ "895000"
-// RTL Simulation : 20 / 27 [100.00%] @ "935000"
-// RTL Simulation : 21 / 27 [100.00%] @ "975000"
-// RTL Simulation : 22 / 27 [100.00%] @ "1005000"
-// RTL Simulation : 23 / 27 [100.00%] @ "1045000"
-// RTL Simulation : 24 / 27 [100.00%] @ "1075000"
-// RTL Simulation : 25 / 27 [100.00%] @ "1115000"
-// RTL Simulation : 26 / 27 [100.00%] @ "1155000"
-// RTL Simulation : 27 / 27 [100.00%] @ "1195000"
+// RTL Simulation : 0 / 26 [0.00%] @ "125000"
+// RTL Simulation : 1 / 26 [100.00%] @ "155000"
+// RTL Simulation : 2 / 26 [100.00%] @ "175000"
+// RTL Simulation : 3 / 26 [100.00%] @ "195000"
+// RTL Simulation : 4 / 26 [100.00%] @ "215000"
+// RTL Simulation : 5 / 26 [100.00%] @ "235000"
+// RTL Simulation : 6 / 26 [100.00%] @ "255000"
+// RTL Simulation : 7 / 26 [100.00%] @ "275000"
+// RTL Simulation : 8 / 26 [100.00%] @ "295000"
+// RTL Simulation : 9 / 26 [100.00%] @ "315000"
+// RTL Simulation : 10 / 26 [100.00%] @ "335000"
+// RTL Simulation : 11 / 26 [100.00%] @ "355000"
+// RTL Simulation : 12 / 26 [100.00%] @ "375000"
+// RTL Simulation : 13 / 26 [100.00%] @ "395000"
+// RTL Simulation : 14 / 26 [100.00%] @ "415000"
+// RTL Simulation : 15 / 26 [100.00%] @ "435000"
+// RTL Simulation : 16 / 26 [100.00%] @ "455000"
+// RTL Simulation : 17 / 26 [100.00%] @ "475000"
+// RTL Simulation : 18 / 26 [100.00%] @ "495000"
+// RTL Simulation : 19 / 26 [100.00%] @ "515000"
+// RTL Simulation : 20 / 26 [100.00%] @ "535000"
+// RTL Simulation : 21 / 26 [100.00%] @ "555000"
+// RTL Simulation : 22 / 26 [100.00%] @ "575000"
+// RTL Simulation : 23 / 26 [100.00%] @ "595000"
+// RTL Simulation : 24 / 26 [100.00%] @ "615000"
+// RTL Simulation : 25 / 26 [100.00%] @ "635000"
+// RTL Simulation : 26 / 26 [100.00%] @ "655000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1255 ns : File "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart.autotb.v" Line 322
+$finish called at time : 715 ns : File "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart.autotb.v" Line 322
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting xsim at Wed Mar  6 18:28:03 2024...
+INFO: [Common 17-206] Exiting xsim at Thu Mar  7 10:43:01 2024...

@@ -12232,16 +12232,15 @@ typedef ap_uint<1> hart_id;
 # 80 "./parameters.hpp"
 pc_type hart(inst_type inst, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
-r_e_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
+imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);
 # 3 "OP_AL_32I.cpp" 2
 
 
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2)
 {
-
- r_type rd_val=0;
- bit_type error = 0;
+ r_type rd_val;
+ bit_type error=0;
  switch(opcode) {
  case 0b0110011:
   switch(func7){
@@ -12298,7 +12297,7 @@ r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type 
 
 
 
-r_e_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
+imm_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
  imm_type returnval;
  switch(func3) {
  case 0: (op1==op2) ? returnval = offset : returnval = 4; break;
@@ -12310,4 +12309,12 @@ r_e_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
  default: returnval = 1; break;
  }
  return returnval;
+}
+
+imm_type ALU_SUM(imm_type op1, imm_type op2) {
+ return op1 + op2;
+}
+
+imm_type ALU_DIF(imm_type op1, imm_type op2) {
+ return op1 + op2;
 }

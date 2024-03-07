@@ -1,48 +1,24 @@
 {
   "0": {
-    "basicblocks": 47,
-    "calls": "5 5 1",
+    "basicblocks": 25,
+    "calls": "9 4 9 4 5 4 4 9 4 9 4 9 4",
     "file": "hart.cpp",
-    "fileloc": 7,
-    "instructions": 844,
+    "fileloc": 10,
+    "instructions": 729,
     "loads": {
       "G": 5,
-      "L": 38
+      "L": 39
     },
     "name": "hart",
     "stores": {
-      "G": 7,
-      "L": 37
+      "G": 6,
+      "L": 39
     },
-    "total_instructions": 11480
+    "total_instructions": 19524
   },
   "1": {
-    "basicblocks": 39,
-    "calls": "",
-    "file": "OP_AL_32I.cpp",
-    "fileloc": 66,
-    "instructions": 161,
-    "loads": {
-      "L": 13
-    },
-    "name": "OP_AL_32B",
-    "stores": {
-      "L": 13
-    },
-    "total_instructions": 475
-  },
-  "2": {
     "basicblocks": 1,
-    "calls": "",
-    "file": "ios_base.h",
-    "fileloc": 87,
-    "instructions": 2,
-    "name": "operator|",
-    "total_instructions": 2
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "2",
+    "calls": "3",
     "file": "ios_base.h",
     "fileloc": 99,
     "instructions": 4,
@@ -55,9 +31,60 @@
     },
     "total_instructions": 6
   },
+  "10": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "ios_base.h",
+    "fileloc": 1026,
+    "instructions": 2,
+    "name": "hex",
+    "total_instructions": 27
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ios_base.h",
+    "fileloc": 83,
+    "instructions": 2,
+    "name": "operator&",
+    "total_instructions": 2
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ios_base.h",
+    "fileloc": 87,
+    "instructions": 2,
+    "name": "operator|",
+    "total_instructions": 2
+  },
   "4": {
     "basicblocks": 1,
-    "calls": "6 8 7 3",
+    "calls": "",
+    "file": "hart.cpp",
+    "fileloc": 89,
+    "instructions": 18,
+    "name": "next_pc_calc",
+    "total_instructions": 191
+  },
+  "5": {
+    "basicblocks": 39,
+    "calls": "",
+    "file": "OP_AL_32I.cpp",
+    "fileloc": 65,
+    "instructions": 155,
+    "loads": {
+      "L": 13
+    },
+    "name": "OP_AL_32B",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 430
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "7 8 2 1",
     "file": "ios_base.h",
     "fileloc": 665,
     "instructions": 9,
@@ -67,22 +94,7 @@
     "name": "setf",
     "total_instructions": 25
   },
-  "5": {
-    "basicblocks": 65,
-    "calls": "",
-    "file": "OP_AL_32I.cpp",
-    "fileloc": 5,
-    "instructions": 480,
-    "loads": {
-      "L": 29
-    },
-    "name": "OP_AL_32I",
-    "stores": {
-      "L": 29
-    },
-    "total_instructions": 2663
-  },
-  "6": {
+  "7": {
     "basicblocks": 1,
     "calls": "",
     "file": "ios_base.h",
@@ -91,18 +103,9 @@
     "name": "operator~",
     "total_instructions": 2
   },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "ios_base.h",
-    "fileloc": 83,
-    "instructions": 2,
-    "name": "operator&",
-    "total_instructions": 2
-  },
   "8": {
     "basicblocks": 1,
-    "calls": "7",
+    "calls": "2",
     "file": "ios_base.h",
     "fileloc": 103,
     "instructions": 4,
@@ -116,12 +119,18 @@
     "total_instructions": 6
   },
   "9": {
-    "basicblocks": 1,
-    "calls": "4",
-    "file": "ios_base.h",
-    "fileloc": 1026,
-    "instructions": 2,
-    "name": "hex",
-    "total_instructions": 27
+    "basicblocks": 65,
+    "calls": "",
+    "file": "OP_AL_32I.cpp",
+    "fileloc": 5,
+    "instructions": 479,
+    "loads": {
+      "L": 29
+    },
+    "name": "OP_AL_32I",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 2647
   }
 }

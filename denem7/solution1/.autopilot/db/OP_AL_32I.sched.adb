@@ -347,7 +347,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>64</coreId>
+						<coreId>544424224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -390,7 +390,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544424224</coreId>
+						<coreId>2120011197</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -499,10 +499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>_ln10</name>
+						<name>_ln9</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>10</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -518,7 +518,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>10</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -560,10 +560,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>_ln37</name>
+						<name>_ln36</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>37</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -579,7 +579,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>37</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -634,7 +634,7 @@
 						<name>rd_val_6</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -650,7 +650,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -688,10 +688,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>br_ln50</name>
+						<name>br_ln49</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -707,7 +707,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -720,7 +720,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4228300630</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -744,10 +744,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>_ln44</name>
+						<name>_ln43</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -763,7 +763,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>44</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -776,7 +776,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3458428970</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -805,287 +805,6 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>trunc_ln46</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>46</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>5</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>310</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_19">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>23</id>
-						<name>zext_ln46</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>46</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>311</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_20">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>24</id>
-						<name>rd_val_16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>46</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>rd_val</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>312</item>
-					<item>313</item>
-				</oprand_edges>
-				<opcode>ashr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.18</m_delay>
-				<m_topoIndex>15</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>25</id>
-						<name>trunc_ln8_2</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>314</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>26</id>
-						<name>br_ln46</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>46</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>46</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>315</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>17</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>28</id>
 						<name>trunc_ln45</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -1126,7 +845,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>304</item>
+					<item>310</item>
 				</oprand_edges>
 				<opcode>trunc</opcode>
 				<m_Display>0</m_Display>
@@ -1134,14 +853,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_24">
+			<item class_id_reference="9" object_id="_19">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>29</id>
+						<id>23</id>
 						<name>zext_ln45</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -1174,7 +893,288 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>70</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>311</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>14</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_20">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>24</id>
+						<name>rd_val_16</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>45</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>45</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807170304</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>312</item>
+					<item>313</item>
+				</oprand_edges>
+				<opcode>ashr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.18</m_delay>
+				<m_topoIndex>15</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_21">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>25</id>
+						<name>trunc_ln7_2</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>7</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>314</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>16</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>26</id>
+						<name>br_ln45</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>45</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>45</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807172576</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>315</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>17</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_23">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>28</id>
+						<name>trunc_ln44</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>44</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>44</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>5</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>304</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_24">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>29</id>
+						<name>zext_ln44</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>44</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>44</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807175648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1201,7 +1201,7 @@
 						<name>rd_val_15</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1217,7 +1217,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1255,10 +1255,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>trunc_ln8_1</name>
+						<name>trunc_ln7_1</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>7</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1274,7 +1274,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>8</second>
+										<second>7</second>
 									</item>
 								</second>
 							</item>
@@ -1287,7 +1287,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>427</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -1311,10 +1311,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>br_ln45</name>
+						<name>br_ln44</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1330,7 +1330,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1343,7 +1343,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807179392</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1368,119 +1368,6 @@
 						<type>0</type>
 						<id>34</id>
 						<name>rd_val_5</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>42</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>42</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>rd_val</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>295</item>
-					<item>296</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.28</m_delay>
-				<m_topoIndex>23</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>35</id>
-						<name>br_ln42</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>42</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>42</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>297</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_30">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>rd_val_4</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>41</lineNumber>
@@ -1512,87 +1399,31 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>291</item>
-					<item>292</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.95</m_delay>
-				<m_topoIndex>25</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_31">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
-						<name>zext_ln8_1</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>550</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>293</item>
+					<item>295</item>
+					<item>296</item>
 				</oprand_edges>
-				<opcode>zext</opcode>
+				<opcode>xor</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
+				<m_delay>0.28</m_delay>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_32">
+			<item class_id_reference="9" object_id="_29">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>39</id>
+						<id>35</id>
 						<name>br_ln41</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -1625,7 +1456,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1807182720</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1633,7 +1464,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>294</item>
+					<item>297</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1641,15 +1472,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.72</m_delay>
-				<m_topoIndex>27</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_33">
+			<item class_id_reference="9" object_id="_30">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>41</id>
-						<name>rd_val_3</name>
+						<id>37</id>
+						<name>rd_val_4</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>40</lineNumber>
@@ -1681,7 +1512,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2410883120</coreId>
+						<coreId>643</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1689,8 +1520,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>287</item>
-					<item>288</item>
+					<item>291</item>
+					<item>292</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
@@ -1698,18 +1529,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.95</m_delay>
-				<m_topoIndex>28</m_topoIndex>
+				<m_topoIndex>25</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_34">
+			<item class_id_reference="9" object_id="_31">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>42</id>
-						<name>zext_ln8</name>
+						<id>38</id>
+						<name>zext_ln7_1</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>7</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1725,7 +1556,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>8</second>
+										<second>7</second>
 									</item>
 								</second>
 							</item>
@@ -1738,7 +1569,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1807186048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -1746,7 +1577,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>289</item>
+					<item>293</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -1754,14 +1585,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
+				<m_topoIndex>26</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_35">
+			<item class_id_reference="9" object_id="_32">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>43</id>
+						<id>39</id>
 						<name>br_ln40</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -1794,7 +1625,176 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2410917248</coreId>
+						<coreId>1806751072</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>294</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>27</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>rd_val_3</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>39</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>39</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>287</item>
+					<item>288</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.95</m_delay>
+				<m_topoIndex>28</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_34">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>42</id>
+						<name>zext_ln7</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>7</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>289</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_35">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>43</id>
+						<name>br_ln39</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>39</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>39</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1806751072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1818,10 +1818,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>trunc_ln39</name>
+						<name>trunc_ln38</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1837,7 +1837,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>39</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1850,7 +1850,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>5</bitwidth>
@@ -1874,10 +1874,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>zext_ln39</name>
+						<name>zext_ln38</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1893,7 +1893,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>39</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1906,7 +1906,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2410878560</coreId>
+						<coreId>1806751072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1933,7 +1933,7 @@
 						<name>rd_val_2</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -1949,7 +1949,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>39</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -1987,10 +1987,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>trunc_ln8</name>
+						<name>trunc_ln7</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>7</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2006,7 +2006,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>8</second>
+										<second>7</second>
 									</item>
 								</second>
 							</item>
@@ -2019,7 +2019,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>13</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -2043,119 +2043,6 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>br_ln39</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>39</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>39</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2410861952</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>286</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>35</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>51</id>
-						<name>rd_val_1</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>38</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>38</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>rd_val</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>85</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>278</item>
-					<item>279</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.94</m_delay>
-				<m_topoIndex>36</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
 						<name>br_ln38</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -2188,7 +2075,120 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2410992784</coreId>
+						<coreId>1806751072</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>286</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>35</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>51</id>
+						<name>rd_val_1</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>37</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>37</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>278</item>
+					<item>279</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.94</m_delay>
+				<m_topoIndex>36</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>br_ln37</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>37</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>37</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1806751072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2215,7 +2215,7 @@
 						<name>rd_val</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2231,7 +2231,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -2244,7 +2244,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>154</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -2269,10 +2269,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>br_ln51</name>
+						<name>br_ln50</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2288,7 +2288,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>51</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -2301,7 +2301,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2410854048</coreId>
+						<coreId>1806751072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2325,10 +2325,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>_ln12</name>
+						<name>_ln11</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>12</lineNumber>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2344,7 +2344,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>12</second>
+										<second>11</second>
 									</item>
 								</second>
 							</item>
@@ -2357,7 +2357,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>210</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2386,10 +2386,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>_ln27</name>
+						<name>_ln26</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>27</lineNumber>
+						<lineNumber>26</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2405,7 +2405,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>27</second>
+										<second>26</second>
 									</item>
 								</second>
 							</item>
@@ -2418,7 +2418,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1806751072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2447,10 +2447,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_11</name>
+						<name>tmp_12</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>28</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2466,7 +2466,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>29</second>
+										<second>28</second>
 									</item>
 								</second>
 							</item>
@@ -2479,7 +2479,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2411140784</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2505,10 +2505,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>br_ln29</name>
+						<name>br_ln28</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>28</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2524,7 +2524,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>29</second>
+										<second>28</second>
 									</item>
 								</second>
 							</item>
@@ -2563,10 +2563,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>ashr_ln29</name>
+						<name>ashr_ln28</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>28</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2582,7 +2582,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>29</second>
+										<second>28</second>
 									</item>
 								</second>
 							</item>
@@ -2595,7 +2595,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2411282032</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2620,10 +2620,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>trunc_ln29_1</name>
+						<name>trunc_ln28_1</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
+						<lineNumber>28</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -2639,7 +2639,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>29</second>
+										<second>28</second>
 									</item>
 								</second>
 							</item>
@@ -2676,345 +2676,6 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>br_ln29</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>29</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>708</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>261</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>46</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_52">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>68</id>
-						<name>sub_ln29</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>29</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>252</item>
-					<item>253</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.95</m_delay>
-				<m_topoIndex>47</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_53">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>69</id>
-						<name>shl_ln29</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>29</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2410893024</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>254</item>
-					<item>255</item>
-				</oprand_edges>
-				<opcode>shl</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.18</m_delay>
-				<m_topoIndex>48</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_54">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>70</id>
-						<name>trunc_ln29</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>29</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>256</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>49</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_55">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>71</id>
-						<name>br_ln29</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>29</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>29</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2410893024</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>257</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>50</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_56">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>73</id>
-						<name>rd_val_14</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>28</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>28</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>rd_val</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>243</item>
-					<item>244</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.94</m_delay>
-				<m_topoIndex>51</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_57">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>74</id>
 						<name>br_ln28</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -3055,6 +2716,345 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
+					<item>261</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>46</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_52">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>68</id>
+						<name>sub_ln28</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>28</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>28</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>252</item>
+					<item>253</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.95</m_delay>
+				<m_topoIndex>47</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_53">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>69</id>
+						<name>shl_ln28</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>28</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>28</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>254</item>
+					<item>255</item>
+				</oprand_edges>
+				<opcode>shl</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.18</m_delay>
+				<m_topoIndex>48</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_54">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>70</id>
+						<name>trunc_ln28</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>28</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>28</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>142</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>256</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>49</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>71</id>
+						<name>br_ln28</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>28</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>28</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>257</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>50</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_56">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>73</id>
+						<name>rd_val_14</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>27</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>27</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>194</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>243</item>
+					<item>244</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.94</m_delay>
+				<m_topoIndex>51</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_57">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>74</id>
+						<name>br_ln27</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>27</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>27</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
 					<item>245</item>
 				</oprand_edges>
 				<opcode>br</opcode>
@@ -3071,10 +3071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>_ln14</name>
+						<name>_ln13</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>14</lineNumber>
+						<lineNumber>13</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3090,7 +3090,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>14</second>
+										<second>13</second>
 									</item>
 								</second>
 							</item>
@@ -3103,7 +3103,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>305</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3145,7 +3145,7 @@
 						<name>rd_val_13</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>21</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3161,7 +3161,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>21</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -3174,7 +3174,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>13</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -3199,63 +3199,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>br_ln21</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>21</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>21</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>233</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>55</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_61">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>81</id>
-						<name>tmp_10</name>
+						<name>br_ln20</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -3287,7 +3231,63 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>180</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>233</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>55</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_61">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>81</id>
+						<name>tmp_11</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>19</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>19</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>16</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3313,10 +3313,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln20</name>
+						<name>br_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3332,7 +3332,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3345,7 +3345,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3371,10 +3371,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>lshr_ln20</name>
+						<name>lshr_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3390,7 +3390,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3403,7 +3403,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>387</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3428,10 +3428,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>trunc_ln20_1</name>
+						<name>trunc_ln19_1</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3447,7 +3447,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3460,7 +3460,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>336</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -3484,10 +3484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>br_ln20</name>
+						<name>br_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3503,7 +3503,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3516,7 +3516,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3540,10 +3540,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>sub_ln20</name>
+						<name>sub_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3559,7 +3559,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3572,7 +3572,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3597,10 +3597,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>shl_ln20</name>
+						<name>shl_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3616,7 +3616,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3629,7 +3629,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3654,10 +3654,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>trunc_ln20</name>
+						<name>trunc_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3673,7 +3673,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3686,7 +3686,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>488</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -3710,10 +3710,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>br_ln20</name>
+						<name>br_ln19</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>20</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3729,7 +3729,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>20</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3742,7 +3742,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3769,7 +3769,7 @@
 						<name>rd_val_12</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>19</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -3785,7 +3785,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>19</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
@@ -3823,175 +3823,6 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>br_ln19</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>19</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>19</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>214</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>66</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_72">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>96</id>
-						<name>rd_val_11</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>18</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>18</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>rd_val</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>208</item>
-					<item>209</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.95</m_delay>
-				<m_topoIndex>67</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_73">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>97</id>
-						<name>zext_ln8_3</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>8</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>694</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>210</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>68</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_74">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>98</id>
 						<name>br_ln18</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -4024,7 +3855,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1806864096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4032,7 +3863,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>211</item>
+					<item>214</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -4040,15 +3871,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.72</m_delay>
-				<m_topoIndex>69</m_topoIndex>
+				<m_topoIndex>66</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_75">
+			<item class_id_reference="9" object_id="_72">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>100</id>
-						<name>rd_val_10</name>
+						<id>96</id>
+						<name>rd_val_11</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>17</lineNumber>
@@ -4080,7 +3911,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>147504</coreId>
+						<coreId>1806894480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4088,8 +3919,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>204</item>
-					<item>205</item>
+					<item>208</item>
+					<item>209</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
@@ -4097,18 +3928,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.95</m_delay>
-				<m_topoIndex>70</m_topoIndex>
+				<m_topoIndex>67</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_76">
+			<item class_id_reference="9" object_id="_73">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>101</id>
-						<name>zext_ln8_2</name>
+						<id>97</id>
+						<name>zext_ln7_3</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>7</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4124,7 +3955,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>8</second>
+										<second>7</second>
 									</item>
 								</second>
 							</item>
@@ -4137,7 +3968,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>10</coreId>
+						<coreId>1599098663</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -4145,7 +3976,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>206</item>
+					<item>210</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -4153,14 +3984,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>71</m_topoIndex>
+				<m_topoIndex>68</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_77">
+			<item class_id_reference="9" object_id="_74">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>102</id>
+						<id>98</id>
 						<name>br_ln17</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -4193,7 +4024,176 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1806894920</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>211</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>69</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_75">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>100</id>
+						<name>rd_val_10</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>16</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>16</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1330007625</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>204</item>
+					<item>205</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.95</m_delay>
+				<m_topoIndex>70</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_76">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>101</id>
+						<name>zext_ln7_2</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>7</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1785093456</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>206</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>71</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_77">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>102</id>
+						<name>br_ln16</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>16</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>16</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1806877872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4220,7 +4220,7 @@
 						<name>tmp</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>15</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4236,7 +4236,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>16</second>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -4249,7 +4249,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1806773456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4275,10 +4275,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>br_ln16</name>
+						<name>br_ln15</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>15</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4294,7 +4294,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>16</second>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -4307,7 +4307,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807056192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4333,10 +4333,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>shl_ln16</name>
+						<name>shl_ln15</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>15</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4352,7 +4352,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>16</second>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -4365,7 +4365,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807143568</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4390,345 +4390,7 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>trunc_ln16_1</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>202</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>76</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_82">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>109</id>
-						<name>br_ln16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>203</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>77</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_83">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>111</id>
-						<name>sub_ln16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>194</item>
-					<item>195</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.95</m_delay>
-				<m_topoIndex>78</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_84">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>112</id>
-						<name>ashr_ln16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>196</item>
-					<item>197</item>
-				</oprand_edges>
-				<opcode>ashr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.18</m_delay>
-				<m_topoIndex>79</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_85">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>113</id>
-						<name>trunc_ln16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>31</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>198</item>
-				</oprand_edges>
-				<opcode>trunc</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>80</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_86">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>114</id>
-						<name>br_ln16</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>16</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>16</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>230</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>199</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.72</m_delay>
-				<m_topoIndex>81</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_87">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>116</id>
-						<name>rd_val_8</name>
+						<name>trunc_ln15_1</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>15</lineNumber>
@@ -4752,7 +4414,7 @@
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>rd_val</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4760,31 +4422,30 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807105536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>182</item>
-					<item>183</item>
+					<item>202</item>
 				</oprand_edges>
-				<opcode>add</opcode>
+				<opcode>trunc</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.94</m_delay>
-				<m_topoIndex>82</m_topoIndex>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>76</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_88">
+			<item class_id_reference="9" object_id="_82">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>117</id>
+						<id>109</id>
 						<name>br_ln15</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
@@ -4825,6 +4486,345 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
+					<item>203</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>77</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_83">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>111</id>
+						<name>sub_ln15</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>15</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1629498427</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>194</item>
+					<item>195</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.95</m_delay>
+				<m_topoIndex>78</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_84">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>112</id>
+						<name>ashr_ln15</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>15</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1793452544</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>196</item>
+					<item>197</item>
+				</oprand_edges>
+				<opcode>ashr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.18</m_delay>
+				<m_topoIndex>79</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_85">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>113</id>
+						<name>trunc_ln15</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>15</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2523084917</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>198</item>
+				</oprand_edges>
+				<opcode>trunc</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>80</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_86">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>114</id>
+						<name>br_ln15</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>15</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807048832</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>199</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.72</m_delay>
+				<m_topoIndex>81</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_87">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>116</id>
+						<name>rd_val_8</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>14</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>14</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>rd_val</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807074096</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>31</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>182</item>
+					<item>183</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.94</m_delay>
+				<m_topoIndex>82</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_88">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>117</id>
+						<name>br_ln14</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>14</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>14</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2523113473</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
 					<item>184</item>
 				</oprand_edges>
 				<opcode>br</opcode>
@@ -4844,7 +4844,7 @@
 						<name>rd_val_7</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4860,7 +4860,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -4873,7 +4873,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807070224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -4898,10 +4898,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>br_ln22</name>
+						<name>br_ln21</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
 						<inlineStackInfo>
@@ -4917,7 +4917,7 @@
 											<first>OP_AL_32I.cpp</first>
 											<second>OP_AL_32I</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -4930,7 +4930,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807135424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4972,7 +4972,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807056848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
@@ -5143,6 +5143,64 @@
 						<name>or_ln</name>
 						<fileName>OP_AL_32I.cpp</fileName>
 						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
+						<lineNumber>56</lineNumber>
+						<contextFuncName>OP_AL_32I</contextFuncName>
+						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/omerfaruk/Projects/okul/denem7</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>OP_AL_32I.cpp</first>
+											<second>OP_AL_32I</second>
+										</first>
+										<second>56</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1807061200</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>430</item>
+					<item>431</item>
+					<item>432</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>88</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_94">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>125</id>
+						<name>_ln57</name>
+						<fileName>OP_AL_32I.cpp</fileName>
+						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>OP_AL_32I</contextFuncName>
 						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
@@ -5172,65 +5230,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>430</item>
-					<item>431</item>
-					<item>432</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>88</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_94">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>125</id>
-						<name>_ln58</name>
-						<fileName>OP_AL_32I.cpp</fileName>
-						<fileDirectory>/home/omerfaruk/Projects/okul/denem7</fileDirectory>
-						<lineNumber>58</lineNumber>
-						<contextFuncName>OP_AL_32I</contextFuncName>
-						<contextNormFuncName>OP_AL_32I</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/omerfaruk/Projects/okul/denem7</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>OP_AL_32I.cpp</first>
-											<second>OP_AL_32I</second>
-										</first>
-										<second>58</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807061200</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -5276,7 +5276,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2411288480</coreId>
+						<coreId>1807198656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -5338,7 +5338,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>2523128242</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -5431,7 +5431,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>190</coreId>
+						<coreId>1806773456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -5462,7 +5462,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -5524,7 +5524,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>539128944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -5555,7 +5555,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1806779232</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -5586,7 +5586,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1807078008</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -5617,7 +5617,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1936024608</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5648,7 +5648,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1806773456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5679,12 +5679,12 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2411339856</coreId>
+						<coreId>1807051472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>31</bitwidth>
 				</Value>
-				<const_type>0</const_type>
+				<const_type>5</const_type>
 				<content>0</content>
 			</item>
 			<item class_id_reference="16" object_id="_109">
@@ -5710,7 +5710,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>128</coreId>
+						<coreId>1807062848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5741,7 +5741,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2411153632</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5876,7 +5876,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4228300630</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5907,7 +5907,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1806895440</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5977,7 +5977,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>4294967295</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6009,7 +6009,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>4294967295</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6042,7 +6042,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2410796560</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6110,7 +6110,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6142,7 +6142,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6174,7 +6174,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6205,7 +6205,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2411137872</coreId>
+					<coreId>1806751072</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6236,7 +6236,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>526</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6268,7 +6268,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>583</coreId>
+					<coreId>4294967295</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6301,7 +6301,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>90</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6398,7 +6398,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>582</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6430,7 +6430,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>87</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6462,7 +6462,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>282</coreId>
+					<coreId>240</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6495,7 +6495,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>4294967294</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6529,7 +6529,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>4294967294</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6561,7 +6561,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>640</coreId>
+					<coreId>1806848176</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6594,7 +6594,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>64</coreId>
+					<coreId>926167391</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6659,7 +6659,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>128</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -6758,7 +6758,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1806893552</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

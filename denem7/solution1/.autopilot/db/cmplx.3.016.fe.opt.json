@@ -1,19 +1,19 @@
 {
   "0": {
     "basicblocks": 30,
-    "calls": "1 1",
+    "calls": "1 1 1 1 1",
     "file": "hart.cpp",
-    "fileloc": 7,
-    "instructions": 208,
+    "fileloc": 10,
+    "instructions": 204,
     "loads": {
-      "G": 6,
-      "L": 2
+      "G": 5,
+      "L": 5
     },
     "name": "hart",
     "stores": {
-      "G": 7
+      "G": 6
     },
-    "total_instructions": 410
+    "total_instructions": 709
   },
   "1": {
     "basicblocks": 32,

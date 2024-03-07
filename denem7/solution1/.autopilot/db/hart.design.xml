@@ -5,10 +5,10 @@
 <ModuleName>hart</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_OP_AL_32I_fu_280</InstName>
+<InstName>grp_OP_AL_32I_fu_270</InstName>
 <ModuleName>OP_AL_32I</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>280</ID>
+<ID>270</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -21,7 +21,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>2.862</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.858</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -36,7 +36,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>OP_AL_32I.cpp:10</SourceLocation>
+<SourceLocation>OP_AL_32I.cpp:9</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -44,7 +44,7 @@
 <FF>0</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>1200</LUT>
+<LUT>1193</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -144,22 +144,22 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>5.582</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.203</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>3</Average-caseLatency>
-<Worst-caseLatency>3</Worst-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
 <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>2 ~ 4</PipelineInitiationInterval>
+<Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>hart.cpp:7</SourceLocation>
+<SourceLocation>hart.cpp:10</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -167,10 +167,10 @@
 <BRAM_18K>2</BRAM_18K>
 <AVAIL_BRAM>624</AVAIL_BRAM>
 <UTIL_BRAM>~0</UTIL_BRAM>
-<FF>177</FF>
+<FF>101</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>2229</LUT>
+<LUT>2126</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>

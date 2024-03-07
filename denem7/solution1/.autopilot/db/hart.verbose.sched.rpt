@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hart'
 ================================================================
-* Date:           Wed Mar  6 18:26:26 2024
+* Date:           Thu Mar  7 10:40:31 2024
 
 * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
 * Project:        denem7
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  5.582 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  5.203 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
     |   min   |   max   |    min    |    max    | min | max |   Type  |
     +---------+---------+-----------+-----------+-----+-----+---------+
-    |        1|        3|  10.000 ns|  30.000 ns|    2|    4|       no|
+    |        1|        1|  10.000 ns|  10.000 ns|    2|    2|       no|
     +---------+---------+-----------+-----------+-----+-----+---------+
 
     + Detail: 
@@ -65,192 +65,166 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 11
+* Number of FSM states : 2
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 4 10 2 5 6 7 8 9 
-2 --> 3 
-3 --> 4 
-4 --> 
-5 --> 4 
-6 --> 7 
-7 --> 4 
-8 --> 9 
-9 --> 4 
-10 --> 11 
-11 --> 4 
+1 --> 2 
+2 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.09>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%spectopmodule_ln7 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [hart.cpp:7]   --->   Operation 13 'spectopmodule' 'spectopmodule_ln7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %inst"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %inst, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %pc"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pc, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%pc_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %pc" [hart.cpp:7]   --->   Operation 18 'read' 'pc_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%inst_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %inst" [hart.cpp:7]   --->   Operation 19 'read' 'inst_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (1.09ns)   --->   "%store_ln30 = store i32 0, i32 0" [hart.cpp:30]   --->   Operation 20 'store' 'store_ln30' <Predicate = true> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%opcode = trunc i32 %inst_read" [hart.cpp:31]   --->   Operation 21 'trunc' 'opcode' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%rd = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 7, i32 11" [hart.cpp:32]   --->   Operation 22 'partselect' 'rd' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%rs1 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 15, i32 19" [hart.cpp:33]   --->   Operation 23 'partselect' 'rs1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%rs2 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 20, i32 24" [hart.cpp:34]   --->   Operation 24 'partselect' 'rs2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%func3 = partselect i3 @_ssdm_op_PartSelect.i3.i32.i32.i32, i32 %inst_read, i32 12, i32 14" [hart.cpp:35]   --->   Operation 25 'partselect' 'func3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp5 = partselect i7 @_ssdm_op_PartSelect.i7.i32.i32.i32, i32 %inst_read, i32 25, i32 31" [hart.cpp:36]   --->   Operation 26 'partselect' 'tmp5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%imm_11_0 = partselect i12 @_ssdm_op_PartSelect.i12.i32.i32.i32, i32 %inst_read, i32 20, i32 31" [hart.cpp:37]   --->   Operation 27 'partselect' 'imm_11_0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln37 = sext i12 %imm_11_0" [hart.cpp:37]   --->   Operation 28 'sext' 'sext_ln37' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 7" [hart.cpp:38]   --->   Operation 29 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 31" [hart.cpp:38]   --->   Operation 30 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %inst_read, i32 8, i32 11" [hart.cpp:39]   --->   Operation 31 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_2 = partselect i6 @_ssdm_op_PartSelect.i6.i32.i32.i32, i32 %inst_read, i32 25, i32 30" [hart.cpp:38]   --->   Operation 32 'partselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%offset = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i1.i1.i6.i4.i1, i1 %tmp_1, i1 %tmp, i6 %tmp_2, i4 %tmp_4, i1 0" [hart.cpp:38]   --->   Operation 33 'bitconcatenate' 'offset' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i20 @_ssdm_op_PartSelect.i20.i32.i32.i32, i32 %inst_read, i32 12, i32 31" [hart.cpp:41]   --->   Operation 34 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%imm_20_U = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i20.i12, i20 %tmp_5, i12 0" [hart.cpp:41]   --->   Operation 35 'bitconcatenate' 'imm_20_U' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i10 @_ssdm_op_PartSelect.i10.i32.i32.i32, i32 %inst_read, i32 21, i32 30" [hart.cpp:42]   --->   Operation 36 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 20" [hart.cpp:42]   --->   Operation 37 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %inst_read, i32 12, i32 19" [hart.cpp:42]   --->   Operation 38 'partselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%imm_JAL = bitconcatenate i21 @_ssdm_op_BitConcatenate.i21.i1.i8.i1.i10.i1, i1 %tmp_1, i8 %tmp_8, i1 %tmp_3, i10 %tmp_6, i1 0" [hart.cpp:42]   --->   Operation 39 'bitconcatenate' 'imm_JAL' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%sext_ln42 = sext i21 %imm_JAL" [hart.cpp:42]   --->   Operation 40 'sext' 'sext_ln42' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.71ns)   --->   "%icmp_ln57 = icmp_eq  i5 %rd, i5 0" [hart.cpp:57]   --->   Operation 41 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 42 [1/1] (0.70ns)   --->   "%switch_ln54 = switch i7 %opcode, void %sw.epilog, i7 51, void %sw.bb, i7 19, void %sw.bb91, i7 99, void %sw.bb135_ifconv, i7 55, void %sw.bb147, i7 23, void %sw.bb156, i7 111, void %sw.bb166, i7 103, void %sw.bb176" [hart.cpp:54]   --->   Operation 42 'switch' 'switch_ln54' <Predicate = true> <Delay = 0.70>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln86 = br i1 %icmp_ln57, void %if.then178, void %if.end183" [hart.cpp:86]   --->   Operation 43 'br' 'br_ln86' <Predicate = (opcode == 103)> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln82 = br i1 %icmp_ln57, void %if.then168, void %if.end173" [hart.cpp:82]   --->   Operation 44 'br' 'br_ln82' <Predicate = (opcode == 111)> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln77 = br i1 %icmp_ln57, void %if.then158, void %if.end163" [hart.cpp:77]   --->   Operation 45 'br' 'br_ln77' <Predicate = (opcode == 23)> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln72 = br i1 %icmp_ln57, void %if.then149, void %if.end153" [hart.cpp:72]   --->   Operation 46 'br' 'br_ln72' <Predicate = (opcode == 55)> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 4.67>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 3 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [hart.cpp:10]   --->   Operation 4 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %inst"   --->   Operation 5 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %inst, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %pc"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pc, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%pc_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %pc" [hart.cpp:10]   --->   Operation 9 'read' 'pc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%inst_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %inst" [hart.cpp:10]   --->   Operation 10 'read' 'inst_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%opcode = trunc i32 %inst_read" [hart.cpp:30]   --->   Operation 11 'trunc' 'opcode' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%rd = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 7, i32 11" [hart.cpp:31]   --->   Operation 12 'partselect' 'rd' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%rs1 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 15, i32 19" [hart.cpp:32]   --->   Operation 13 'partselect' 'rs1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%rs2 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %inst_read, i32 20, i32 24" [hart.cpp:33]   --->   Operation 14 'partselect' 'rs2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%func3 = partselect i3 @_ssdm_op_PartSelect.i3.i32.i32.i32, i32 %inst_read, i32 12, i32 14" [hart.cpp:34]   --->   Operation 15 'partselect' 'func3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp5 = partselect i7 @_ssdm_op_PartSelect.i7.i32.i32.i32, i32 %inst_read, i32 25, i32 31" [hart.cpp:35]   --->   Operation 16 'partselect' 'tmp5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%offset_2 = partselect i12 @_ssdm_op_PartSelect.i12.i32.i32.i32, i32 %inst_read, i32 20, i32 31" [hart.cpp:36]   --->   Operation 17 'partselect' 'offset_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln36 = sext i12 %offset_2" [hart.cpp:36]   --->   Operation 18 'sext' 'sext_ln36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 7" [hart.cpp:37]   --->   Operation 19 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 31" [hart.cpp:37]   --->   Operation 20 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %inst_read, i32 8, i32 11" [hart.cpp:38]   --->   Operation 21 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i6 @_ssdm_op_PartSelect.i6.i32.i32.i32, i32 %inst_read, i32 25, i32 30" [hart.cpp:37]   --->   Operation 22 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%offset_3 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i1.i1.i6.i4.i1, i1 %tmp_1, i1 %tmp, i6 %tmp_6, i4 %tmp_3, i1 0" [hart.cpp:37]   --->   Operation 23 'bitconcatenate' 'offset_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i20 @_ssdm_op_PartSelect.i20.i32.i32.i32, i32 %inst_read, i32 12, i32 31" [hart.cpp:40]   --->   Operation 24 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%imm_20_U = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i20.i12, i20 %tmp_4, i12 0" [hart.cpp:40]   --->   Operation 25 'bitconcatenate' 'imm_20_U' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i10 @_ssdm_op_PartSelect.i10.i32.i32.i32, i32 %inst_read, i32 21, i32 30" [hart.cpp:41]   --->   Operation 26 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %inst_read, i32 20" [hart.cpp:41]   --->   Operation 27 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_9 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %inst_read, i32 12, i32 19" [hart.cpp:41]   --->   Operation 28 'partselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%offset_1 = bitconcatenate i21 @_ssdm_op_BitConcatenate.i21.i1.i8.i1.i10.i1, i1 %tmp_1, i8 %tmp_9, i1 %tmp_2, i10 %tmp_5, i1 0" [hart.cpp:41]   --->   Operation 29 'bitconcatenate' 'offset_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln41 = sext i21 %offset_1" [hart.cpp:41]   --->   Operation 30 'sext' 'sext_ln41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.71ns)   --->   "%icmp_ln48 = icmp_eq  i5 %rd, i5 0" [hart.cpp:48]   --->   Operation 31 'icmp' 'icmp_ln48' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.70ns)   --->   "%switch_ln45 = switch i7 %opcode, void %sw.epilog, i7 51, void %sw.bb, i7 19, void %sw.bb73, i7 99, void %sw.bb94_ifconv, i7 55, void %sw.bb108, i7 23, void %sw.bb119, i7 111, void %sw.bb136, i7 103, void %sw.bb153" [hart.cpp:45]   --->   Operation 32 'switch' 'switch_ln45' <Predicate = true> <Delay = 0.70>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln73 = br i1 %icmp_ln48, void %if.then155, void %if.end165" [hart.cpp:73]   --->   Operation 33 'br' 'br_ln73' <Predicate = (opcode == 103)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (2.85ns)   --->   "%trunc_ln2 = call i32 @OP_AL_32I, i6 19, i7 0, i3 0, i32 %pc_read, i32 4" [hart.cpp:73]   --->   Operation 34 'call' 'trunc_ln2' <Predicate = (opcode == 103 & !icmp_ln48)> <Delay = 2.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln73 = zext i5 %rd" [hart.cpp:73]   --->   Operation 35 'zext' 'zext_ln73' <Predicate = (opcode == 103 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%rf_addr_10 = getelementptr i32 %rf, i64 0, i64 %zext_ln73" [hart.cpp:73]   --->   Operation 36 'getelementptr' 'rf_addr_10' <Predicate = (opcode == 103 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (1.09ns)   --->   "%store_ln73 = store i32 %trunc_ln2, i5 %rf_addr_10" [hart.cpp:73]   --->   Operation 37 'store' 'store_ln73' <Predicate = (opcode == 103 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln73 = br void %if.end165" [hart.cpp:73]   --->   Operation 38 'br' 'br_ln73' <Predicate = (opcode == 103 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.95ns)   --->   "%next_pc_6 = add i32 %sext_ln36, i32 %pc_read" [hart.cpp:90->hart.cpp:74]   --->   Operation 39 'add' 'next_pc_6' <Predicate = (opcode == 103)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.61ns)   --->   "%icmp_ln75 = icmp_eq  i3 %func3, i3 0" [hart.cpp:75]   --->   Operation 40 'icmp' 'icmp_ln75' <Predicate = (opcode == 103)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln75 = br i1 %icmp_ln75, void %cond.true, void %cond.false" [hart.cpp:75]   --->   Operation 41 'br' 'br_ln75' <Predicate = (opcode == 103)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%next_pc_8 = bitset i32 @_ssdm_op_BitSet.i32.i32.i32.i1, i32 %next_pc_6, i32 0, i1 1" [hart.cpp:75]   --->   Operation 42 'bitset' 'next_pc_8' <Predicate = (opcode == 103 & !icmp_ln75)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.66ns)   --->   "%br_ln75 = br void %sw.epilog" [hart.cpp:75]   --->   Operation 43 'br' 'br_ln75' <Predicate = (opcode == 103 & !icmp_ln75)> <Delay = 0.66>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%next_pc_7 = bitset i32 @_ssdm_op_BitSet.i32.i32.i32.i1, i32 %next_pc_6, i32 0, i1 0" [hart.cpp:75]   --->   Operation 44 'bitset' 'next_pc_7' <Predicate = (opcode == 103 & icmp_ln75)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.66ns)   --->   "%br_ln75 = br void %sw.epilog" [hart.cpp:75]   --->   Operation 45 'br' 'br_ln75' <Predicate = (opcode == 103 & icmp_ln75)> <Delay = 0.66>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln69 = br i1 %icmp_ln48, void %if.then138, void %if.end148" [hart.cpp:69]   --->   Operation 46 'br' 'br_ln69' <Predicate = (opcode == 111)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (2.85ns)   --->   "%trunc_ln1 = call i32 @OP_AL_32I, i6 19, i7 0, i3 0, i32 %pc_read, i32 4" [hart.cpp:69]   --->   Operation 47 'call' 'trunc_ln1' <Predicate = (opcode == 111 & !icmp_ln48)> <Delay = 2.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln69 = zext i5 %rd" [hart.cpp:69]   --->   Operation 48 'zext' 'zext_ln69' <Predicate = (opcode == 111 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%rf_addr_9 = getelementptr i32 %rf, i64 0, i64 %zext_ln69" [hart.cpp:69]   --->   Operation 49 'getelementptr' 'rf_addr_9' <Predicate = (opcode == 111 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (1.09ns)   --->   "%store_ln69 = store i32 %trunc_ln1, i5 %rf_addr_9" [hart.cpp:69]   --->   Operation 50 'store' 'store_ln69' <Predicate = (opcode == 111 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln69 = br void %if.end148" [hart.cpp:69]   --->   Operation 51 'br' 'br_ln69' <Predicate = (opcode == 111 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.95ns)   --->   "%next_pc_5 = add i32 %sext_ln41, i32 %pc_read" [hart.cpp:90->hart.cpp:70]   --->   Operation 52 'add' 'next_pc_5' <Predicate = (opcode == 111)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 53 [1/1] (0.66ns)   --->   "%br_ln71 = br void %sw.epilog" [hart.cpp:71]   --->   Operation 53 'br' 'br_ln71' <Predicate = (opcode == 111)> <Delay = 0.66>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln65 = br i1 %icmp_ln48, void %if.then121, void %if.end131" [hart.cpp:65]   --->   Operation 54 'br' 'br_ln65' <Predicate = (opcode == 23)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (2.85ns)   --->   "%trunc_ln = call i32 @OP_AL_32I, i6 19, i7 0, i3 0, i32 %pc_read, i32 %imm_20_U" [hart.cpp:65]   --->   Operation 55 'call' 'trunc_ln' <Predicate = (opcode == 23 & !icmp_ln48)> <Delay = 2.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%zext_ln65 = zext i5 %rd" [hart.cpp:65]   --->   Operation 56 'zext' 'zext_ln65' <Predicate = (opcode == 23 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%rf_addr_8 = getelementptr i32 %rf, i64 0, i64 %zext_ln65" [hart.cpp:65]   --->   Operation 57 'getelementptr' 'rf_addr_8' <Predicate = (opcode == 23 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (1.09ns)   --->   "%store_ln65 = store i32 %trunc_ln, i5 %rf_addr_8" [hart.cpp:65]   --->   Operation 58 'store' 'store_ln65' <Predicate = (opcode == 23 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln65 = br void %if.end131" [hart.cpp:65]   --->   Operation 59 'br' 'br_ln65' <Predicate = (opcode == 23 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.95ns)   --->   "%next_pc_4 = add i32 %pc_read, i32 4" [hart.cpp:90->hart.cpp:66]   --->   Operation 60 'add' 'next_pc_4' <Predicate = (opcode == 23)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 61 [1/1] (0.66ns)   --->   "%br_ln67 = br void %sw.epilog" [hart.cpp:67]   --->   Operation 61 'br' 'br_ln67' <Predicate = (opcode == 23)> <Delay = 0.66>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln61 = br i1 %icmp_ln48, void %if.then110, void %if.end114" [hart.cpp:61]   --->   Operation 62 'br' 'br_ln61' <Predicate = (opcode == 55)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i5 %rd" [hart.cpp:61]   --->   Operation 63 'zext' 'zext_ln61' <Predicate = (opcode == 55 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%rf_addr_7 = getelementptr i32 %rf, i64 0, i64 %zext_ln61" [hart.cpp:61]   --->   Operation 64 'getelementptr' 'rf_addr_7' <Predicate = (opcode == 55 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (1.09ns)   --->   "%store_ln61 = store i32 %imm_20_U, i5 %rf_addr_7" [hart.cpp:61]   --->   Operation 65 'store' 'store_ln61' <Predicate = (opcode == 55 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln61 = br void %if.end114" [hart.cpp:61]   --->   Operation 66 'br' 'br_ln61' <Predicate = (opcode == 55 & !icmp_ln48)> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.95ns)   --->   "%next_pc_3 = add i32 %pc_read, i32 4" [hart.cpp:90->hart.cpp:62]   --->   Operation 67 'add' 'next_pc_3' <Predicate = (opcode == 55)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (0.66ns)   --->   "%br_ln63 = br void %sw.epilog" [hart.cpp:63]   --->   Operation 68 'br' 'br_ln63' <Predicate = (opcode == 55)> <Delay = 0.66>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i5 %rs1" [hart.cpp:57]   --->   Operation 69 'zext' 'zext_ln57' <Predicate = (opcode == 99)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%rf_addr_3 = getelementptr i32 %rf, i64 0, i64 %zext_ln57" [hart.cpp:57]   --->   Operation 70 'getelementptr' 'rf_addr_3' <Predicate = (opcode == 99)> <Delay = 0.00>
+ST_1 : Operation 71 [2/2] (1.09ns)   --->   "%op1 = load i5 %rf_addr_3" [hart.cpp:57]   --->   Operation 71 'load' 'op1' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln57_1 = zext i5 %rs2" [hart.cpp:57]   --->   Operation 72 'zext' 'zext_ln57_1' <Predicate = (opcode == 99)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%rf_addr_4 = getelementptr i32 %rf, i64 0, i64 %zext_ln57_1" [hart.cpp:57]   --->   Operation 73 'getelementptr' 'rf_addr_4' <Predicate = (opcode == 99)> <Delay = 0.00>
+ST_1 : Operation 74 [2/2] (1.09ns)   --->   "%op2 = load i5 %rf_addr_4" [hart.cpp:57]   --->   Operation 74 'load' 'op2' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i5 %rs1" [hart.cpp:52]   --->   Operation 75 'zext' 'zext_ln52' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%rf_addr_2 = getelementptr i32 %rf, i64 0, i64 %zext_ln52" [hart.cpp:52]   --->   Operation 76 'getelementptr' 'rf_addr_2' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_1 : Operation 77 [2/2] (1.09ns)   --->   "%rf_load_2 = load i5 %rf_addr_2" [hart.cpp:52]   --->   Operation 77 'load' 'rf_load_2' <Predicate = (opcode == 19)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i5 %rs1" [hart.cpp:47]   --->   Operation 78 'zext' 'zext_ln47' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%rf_addr = getelementptr i32 %rf, i64 0, i64 %zext_ln47" [hart.cpp:47]   --->   Operation 79 'getelementptr' 'rf_addr' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_1 : Operation 80 [2/2] (1.09ns)   --->   "%rf_load = load i5 %rf_addr" [hart.cpp:47]   --->   Operation 80 'load' 'rf_load' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln47_1 = zext i5 %rs2" [hart.cpp:47]   --->   Operation 81 'zext' 'zext_ln47_1' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%rf_addr_1 = getelementptr i32 %rf, i64 0, i64 %zext_ln47_1" [hart.cpp:47]   --->   Operation 82 'getelementptr' 'rf_addr_1' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_1 : Operation 83 [2/2] (1.09ns)   --->   "%rf_load_1 = load i5 %rf_addr_1" [hart.cpp:47]   --->   Operation 83 'load' 'rf_load_1' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
 
-State 2 <SV = 1> <Delay = 2.05>
-ST_2 : Operation 47 [1/1] (0.95ns)   --->   "%add_ln86 = add i32 %pc_read, i32 4" [hart.cpp:86]   --->   Operation 47 'add' 'add_ln86' <Predicate = (!icmp_ln57)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln86 = zext i5 %rd" [hart.cpp:86]   --->   Operation 48 'zext' 'zext_ln86' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%rf_addr_10 = getelementptr i32 %rf, i64 0, i64 %zext_ln86" [hart.cpp:86]   --->   Operation 49 'getelementptr' 'rf_addr_10' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_2 : Operation 50 [1/1] (1.09ns)   --->   "%store_ln86 = store i32 %add_ln86, i5 %rf_addr_10" [hart.cpp:86]   --->   Operation 50 'store' 'store_ln86' <Predicate = (!icmp_ln57)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln86 = br void %if.end183" [hart.cpp:86]   --->   Operation 51 'br' 'br_ln86' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-
-State 3 <SV = 2> <Delay = 1.09>
-ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln87 = zext i5 %rs1" [hart.cpp:87]   --->   Operation 52 'zext' 'zext_ln87' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%rf_addr_11 = getelementptr i32 %rf, i64 0, i64 %zext_ln87" [hart.cpp:87]   --->   Operation 53 'getelementptr' 'rf_addr_11' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 54 [2/2] (1.09ns)   --->   "%rf_load_5 = load i5 %rf_addr_11" [hart.cpp:87]   --->   Operation 54 'load' 'rf_load_5' <Predicate = true> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_3 : Operation 55 [1/1] (0.61ns)   --->   "%icmp_ln88 = icmp_eq  i3 %func3, i3 0" [hart.cpp:88]   --->   Operation 55 'icmp' 'icmp_ln88' <Predicate = true> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-
-State 4 <SV = 3> <Delay = 2.71>
-ST_4 : Operation 56 [1/2] (1.09ns)   --->   "%rf_load_5 = load i5 %rf_addr_11" [hart.cpp:87]   --->   Operation 56 'load' 'rf_load_5' <Predicate = (opcode == 103)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_4 : Operation 57 [1/1] (0.95ns)   --->   "%next_pc_6 = add i32 %rf_load_5, i32 %sext_ln37" [hart.cpp:87]   --->   Operation 57 'add' 'next_pc_6' <Predicate = (opcode == 103)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln88 = br i1 %icmp_ln88, void %cond.true190, void %cond.false193" [hart.cpp:88]   --->   Operation 58 'br' 'br_ln88' <Predicate = (opcode == 103)> <Delay = 0.00>
-ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%next_pc_8 = bitset i32 @_ssdm_op_BitSet.i32.i32.i32.i1, i32 %next_pc_6, i32 0, i1 1" [hart.cpp:88]   --->   Operation 59 'bitset' 'next_pc_8' <Predicate = (opcode == 103 & !icmp_ln88)> <Delay = 0.00>
-ST_4 : Operation 60 [1/1] (0.66ns)   --->   "%br_ln88 = br void %sw.epilog" [hart.cpp:88]   --->   Operation 60 'br' 'br_ln88' <Predicate = (opcode == 103 & !icmp_ln88)> <Delay = 0.66>
-ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%next_pc_7 = bitset i32 @_ssdm_op_BitSet.i32.i32.i32.i1, i32 %next_pc_6, i32 0, i1 0" [hart.cpp:88]   --->   Operation 61 'bitset' 'next_pc_7' <Predicate = (opcode == 103 & icmp_ln88)> <Delay = 0.00>
-ST_4 : Operation 62 [1/1] (0.66ns)   --->   "%br_ln88 = br void %sw.epilog" [hart.cpp:88]   --->   Operation 62 'br' 'br_ln88' <Predicate = (opcode == 103 & icmp_ln88)> <Delay = 0.66>
-ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%next_pc_9 = phi i32 %next_pc_5, void %if.end173, i32 %next_pc_4, void %if.end163, i32 %next_pc_3, void %if.end153, i32 %next_pc_1, void %sw.bb135_ifconv, i32 %next_pc_2, void %if.end106, i32 %next_pc, void %if.end, i32 %next_pc_8, void %cond.true190, i32 %next_pc_7, void %cond.false193, i32 0, void %entry"   --->   Operation 63 'phi' 'next_pc_9' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%ret_ln144 = ret i32 %next_pc_9" [hart.cpp:144]   --->   Operation 64 'ret' 'ret_ln144' <Predicate = true> <Delay = 0.00>
-
-State 5 <SV = 1> <Delay = 2.05>
-ST_5 : Operation 65 [1/1] (0.95ns)   --->   "%add_ln82 = add i32 %pc_read, i32 4" [hart.cpp:82]   --->   Operation 65 'add' 'add_ln82' <Predicate = (!icmp_ln57)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln82 = zext i5 %rd" [hart.cpp:82]   --->   Operation 66 'zext' 'zext_ln82' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%rf_addr_9 = getelementptr i32 %rf, i64 0, i64 %zext_ln82" [hart.cpp:82]   --->   Operation 67 'getelementptr' 'rf_addr_9' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_5 : Operation 68 [1/1] (1.09ns)   --->   "%store_ln82 = store i32 %add_ln82, i5 %rf_addr_9" [hart.cpp:82]   --->   Operation 68 'store' 'store_ln82' <Predicate = (!icmp_ln57)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln82 = br void %if.end173" [hart.cpp:82]   --->   Operation 69 'br' 'br_ln82' <Predicate = (!icmp_ln57)> <Delay = 0.00>
-ST_5 : Operation 70 [1/1] (0.95ns)   --->   "%next_pc_5 = add i32 %sext_ln42, i32 %pc_read" [hart.cpp:83]   --->   Operation 70 'add' 'next_pc_5' <Predicate = true> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 71 [1/1] (0.66ns)   --->   "%br_ln84 = br void %sw.epilog" [hart.cpp:84]   --->   Operation 71 'br' 'br_ln84' <Predicate = true> <Delay = 0.66>
-
-State 6 <SV = 1> <Delay = 2.05>
-ST_6 : Operation 72 [1/1] (0.95ns)   --->   "%add_ln77 = add i32 %imm_20_U, i32 %pc_read" [hart.cpp:77]   --->   Operation 72 'add' 'add_ln77' <Predicate = true> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%zext_ln77 = zext i5 %rd" [hart.cpp:77]   --->   Operation 73 'zext' 'zext_ln77' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%rf_addr_8 = getelementptr i32 %rf, i64 0, i64 %zext_ln77" [hart.cpp:77]   --->   Operation 74 'getelementptr' 'rf_addr_8' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 75 [1/1] (1.09ns)   --->   "%store_ln77 = store i32 %add_ln77, i5 %rf_addr_8" [hart.cpp:77]   --->   Operation 75 'store' 'store_ln77' <Predicate = true> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln77 = br void %if.end163" [hart.cpp:77]   --->   Operation 76 'br' 'br_ln77' <Predicate = true> <Delay = 0.00>
-
-State 7 <SV = 2> <Delay = 1.62>
-ST_7 : Operation 77 [1/1] (0.95ns)   --->   "%next_pc_4 = add i32 %pc_read, i32 4" [hart.cpp:78]   --->   Operation 77 'add' 'next_pc_4' <Predicate = true> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 78 [1/1] (0.66ns)   --->   "%br_ln80 = br void %sw.epilog" [hart.cpp:80]   --->   Operation 78 'br' 'br_ln80' <Predicate = true> <Delay = 0.66>
-
-State 8 <SV = 1> <Delay = 1.09>
-ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln72 = zext i5 %rd" [hart.cpp:72]   --->   Operation 79 'zext' 'zext_ln72' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%rf_addr_7 = getelementptr i32 %rf, i64 0, i64 %zext_ln72" [hart.cpp:72]   --->   Operation 80 'getelementptr' 'rf_addr_7' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 81 [1/1] (1.09ns)   --->   "%store_ln72 = store i32 %imm_20_U, i5 %rf_addr_7" [hart.cpp:72]   --->   Operation 81 'store' 'store_ln72' <Predicate = true> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%br_ln72 = br void %if.end153" [hart.cpp:72]   --->   Operation 82 'br' 'br_ln72' <Predicate = true> <Delay = 0.00>
-
-State 9 <SV = 2> <Delay = 1.62>
-ST_9 : Operation 83 [1/1] (0.95ns)   --->   "%next_pc_3 = add i32 %pc_read, i32 4" [hart.cpp:73]   --->   Operation 83 'add' 'next_pc_3' <Predicate = true> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 84 [1/1] (0.66ns)   --->   "%br_ln75 = br void %sw.epilog" [hart.cpp:75]   --->   Operation 84 'br' 'br_ln75' <Predicate = true> <Delay = 0.66>
-
-State 10 <SV = 1> <Delay = 1.09>
-ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln68 = zext i5 %rs1" [hart.cpp:68]   --->   Operation 85 'zext' 'zext_ln68' <Predicate = (opcode == 99)> <Delay = 0.00>
-ST_10 : Operation 86 [1/1] (0.00ns)   --->   "%rf_addr_3 = getelementptr i32 %rf, i64 0, i64 %zext_ln68" [hart.cpp:68]   --->   Operation 86 'getelementptr' 'rf_addr_3' <Predicate = (opcode == 99)> <Delay = 0.00>
-ST_10 : Operation 87 [2/2] (1.09ns)   --->   "%op1 = load i5 %rf_addr_3" [hart.cpp:68]   --->   Operation 87 'load' 'op1' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_10 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln68_1 = zext i5 %rs2" [hart.cpp:68]   --->   Operation 88 'zext' 'zext_ln68_1' <Predicate = (opcode == 99)> <Delay = 0.00>
-ST_10 : Operation 89 [1/1] (0.00ns)   --->   "%rf_addr_4 = getelementptr i32 %rf, i64 0, i64 %zext_ln68_1" [hart.cpp:68]   --->   Operation 89 'getelementptr' 'rf_addr_4' <Predicate = (opcode == 99)> <Delay = 0.00>
-ST_10 : Operation 90 [2/2] (1.09ns)   --->   "%op2 = load i5 %rf_addr_4" [hart.cpp:68]   --->   Operation 90 'load' 'op2' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_10 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln62 = zext i5 %rs1" [hart.cpp:62]   --->   Operation 91 'zext' 'zext_ln62' <Predicate = (opcode == 19)> <Delay = 0.00>
-ST_10 : Operation 92 [1/1] (0.00ns)   --->   "%rf_addr_2 = getelementptr i32 %rf, i64 0, i64 %zext_ln62" [hart.cpp:62]   --->   Operation 92 'getelementptr' 'rf_addr_2' <Predicate = (opcode == 19)> <Delay = 0.00>
-ST_10 : Operation 93 [2/2] (1.09ns)   --->   "%rf_load_2 = load i5 %rf_addr_2" [hart.cpp:62]   --->   Operation 93 'load' 'rf_load_2' <Predicate = (opcode == 19)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_10 : Operation 94 [1/1] (0.00ns)   --->   "%zext_ln56 = zext i5 %rs1" [hart.cpp:56]   --->   Operation 94 'zext' 'zext_ln56' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_10 : Operation 95 [1/1] (0.00ns)   --->   "%rf_addr = getelementptr i32 %rf, i64 0, i64 %zext_ln56" [hart.cpp:56]   --->   Operation 95 'getelementptr' 'rf_addr' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_10 : Operation 96 [2/2] (1.09ns)   --->   "%rf_load = load i5 %rf_addr" [hart.cpp:56]   --->   Operation 96 'load' 'rf_load' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_10 : Operation 97 [1/1] (0.00ns)   --->   "%zext_ln56_1 = zext i5 %rs2" [hart.cpp:56]   --->   Operation 97 'zext' 'zext_ln56_1' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_10 : Operation 98 [1/1] (0.00ns)   --->   "%rf_addr_1 = getelementptr i32 %rf, i64 0, i64 %zext_ln56_1" [hart.cpp:56]   --->   Operation 98 'getelementptr' 'rf_addr_1' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_10 : Operation 99 [2/2] (1.09ns)   --->   "%rf_load_1 = load i5 %rf_addr_1" [hart.cpp:56]   --->   Operation 99 'load' 'rf_load_1' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-
-State 11 <SV = 2> <Delay = 5.58>
-ST_11 : Operation 100 [1/2] (1.09ns)   --->   "%op1 = load i5 %rf_addr_3" [hart.cpp:68]   --->   Operation 100 'load' 'op1' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 101 [1/2] (1.09ns)   --->   "%op2 = load i5 %rf_addr_4" [hart.cpp:68]   --->   Operation 101 'load' 'op2' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 102 [1/1] (0.95ns)   --->   "%icmp_ln69 = icmp_eq  i32 %op1, i32 %op2" [OP_AL_32I.cpp:69->hart.cpp:68]   --->   Operation 102 'icmp' 'icmp_ln69' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node next_pc_1)   --->   "%returnval_1 = select i1 %icmp_ln69, i13 %offset, i13 4" [OP_AL_32I.cpp:69->hart.cpp:68]   --->   Operation 103 'select' 'returnval_1' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 104 [1/1] (0.95ns)   --->   "%icmp_ln70 = icmp_ne  i32 %op1, i32 %op2" [OP_AL_32I.cpp:70->hart.cpp:68]   --->   Operation 104 'icmp' 'icmp_ln70' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node returnval_11)   --->   "%returnval_2 = select i1 %icmp_ln70, i13 %offset, i13 4" [OP_AL_32I.cpp:70->hart.cpp:68]   --->   Operation 105 'select' 'returnval_2' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 106 [1/1] (0.95ns)   --->   "%icmp_ln71 = icmp_slt  i32 %op1, i32 %op2" [OP_AL_32I.cpp:71->hart.cpp:68]   --->   Operation 106 'icmp' 'icmp_ln71' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node returnval_10)   --->   "%returnval_3 = select i1 %icmp_ln71, i13 %offset, i13 4" [OP_AL_32I.cpp:71->hart.cpp:68]   --->   Operation 107 'select' 'returnval_3' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 108 [1/1] (0.95ns)   --->   "%icmp_ln72 = icmp_slt  i32 %op1, i32 %op2" [OP_AL_32I.cpp:72->hart.cpp:68]   --->   Operation 108 'icmp' 'icmp_ln72' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 109 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%xor_ln72 = xor i1 %icmp_ln72, i1 1" [OP_AL_32I.cpp:72->hart.cpp:68]   --->   Operation 109 'xor' 'xor_ln72' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%returnval_4 = select i1 %xor_ln72, i13 %offset, i13 4" [OP_AL_32I.cpp:72->hart.cpp:68]   --->   Operation 110 'select' 'returnval_4' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 111 [1/1] (0.95ns)   --->   "%icmp_ln73 = icmp_ult  i32 %op1, i32 %op2" [OP_AL_32I.cpp:73->hart.cpp:68]   --->   Operation 111 'icmp' 'icmp_ln73' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node returnval_8)   --->   "%returnval_5 = select i1 %icmp_ln73, i13 %offset, i13 4" [OP_AL_32I.cpp:73->hart.cpp:68]   --->   Operation 112 'select' 'returnval_5' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 113 [1/1] (0.95ns)   --->   "%icmp_ln74 = icmp_ult  i32 %op1, i32 %op2" [OP_AL_32I.cpp:74->hart.cpp:68]   --->   Operation 113 'icmp' 'icmp_ln74' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 114 [1/1] (0.00ns) (grouped into LUT with out node returnval_8)   --->   "%xor_ln74 = xor i1 %icmp_ln74, i1 1" [OP_AL_32I.cpp:74->hart.cpp:68]   --->   Operation 114 'xor' 'xor_ln74' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node returnval_8)   --->   "%returnval_6 = select i1 %xor_ln74, i13 %offset, i13 4" [OP_AL_32I.cpp:74->hart.cpp:68]   --->   Operation 115 'select' 'returnval_6' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 116 [1/1] (0.61ns)   --->   "%icmp_ln68 = icmp_eq  i3 %func3, i3 7" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 116 'icmp' 'icmp_ln68' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node returnval_8)   --->   "%returnval_7 = select i1 %icmp_ln68, i13 %returnval_6, i13 1" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 117 'select' 'returnval_7' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 118 [1/1] (0.61ns)   --->   "%icmp_ln68_1 = icmp_eq  i3 %func3, i3 6" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 118 'icmp' 'icmp_ln68_1' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 119 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_8 = select i1 %icmp_ln68_1, i13 %returnval_5, i13 %returnval_7" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 119 'select' 'returnval_8' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 120 [1/1] (0.61ns)   --->   "%icmp_ln68_2 = icmp_eq  i3 %func3, i3 5" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 120 'icmp' 'icmp_ln68_2' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 121 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_9 = select i1 %icmp_ln68_2, i13 %returnval_4, i13 %returnval_8" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 121 'select' 'returnval_9' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 122 [1/1] (0.61ns)   --->   "%icmp_ln68_3 = icmp_eq  i3 %func3, i3 4" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 122 'icmp' 'icmp_ln68_3' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 123 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_10 = select i1 %icmp_ln68_3, i13 %returnval_3, i13 %returnval_9" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 123 'select' 'returnval_10' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 124 [1/1] (0.61ns)   --->   "%icmp_ln68_4 = icmp_eq  i3 %func3, i3 1" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 124 'icmp' 'icmp_ln68_4' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 125 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_11 = select i1 %icmp_ln68_4, i13 %returnval_2, i13 %returnval_10" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 125 'select' 'returnval_11' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 126 [1/1] (0.61ns)   --->   "%icmp_ln68_5 = icmp_eq  i3 %func3, i3 0" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 126 'icmp' 'icmp_ln68_5' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node next_pc_1)   --->   "%returnval_12 = select i1 %icmp_ln68_5, i13 %returnval_1, i13 %returnval_11" [OP_AL_32I.cpp:68->hart.cpp:68]   --->   Operation 127 'select' 'returnval_12' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node next_pc_1)   --->   "%sext_ln67 = sext i13 %returnval_12" [OP_AL_32I.cpp:67->hart.cpp:68]   --->   Operation 128 'sext' 'sext_ln67' <Predicate = (opcode == 99)> <Delay = 0.00>
-ST_11 : Operation 129 [1/1] (0.95ns) (out node of the LUT)   --->   "%next_pc_1 = add i32 %sext_ln67, i32 %pc_read" [hart.cpp:69]   --->   Operation 129 'add' 'next_pc_1' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 130 [1/1] (0.66ns)   --->   "%br_ln70 = br void %sw.epilog" [hart.cpp:70]   --->   Operation 130 'br' 'br_ln70' <Predicate = (opcode == 99)> <Delay = 0.66>
-ST_11 : Operation 131 [1/2] (1.09ns)   --->   "%rf_load_2 = load i5 %rf_addr_2" [hart.cpp:62]   --->   Operation 131 'load' 'rf_load_2' <Predicate = (opcode == 19)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 132 [1/1] (2.86ns)   --->   "%return_val_1 = call i32 @OP_AL_32I, i6 19, i7 %tmp5, i3 %func3, i32 %rf_load_2, i32 %sext_ln37" [hart.cpp:62]   --->   Operation 132 'call' 'return_val_1' <Predicate = (opcode == 19)> <Delay = 2.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 133 [1/1] (0.00ns)   --->   "%error_1 = trunc i32 %return_val_1" [hart.cpp:45]   --->   Operation 133 'trunc' 'error_1' <Predicate = (opcode == 19)> <Delay = 0.00>
-ST_11 : Operation 134 [1/1] (0.00ns)   --->   "%br_ln63 = br i1 %icmp_ln57, void %if.then101, void %if.end106" [hart.cpp:63]   --->   Operation 134 'br' 'br_ln63' <Predicate = (opcode == 19)> <Delay = 0.00>
-ST_11 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %return_val_1, i32 1, i32 31" [hart.cpp:63]   --->   Operation 135 'partselect' 'trunc_ln1' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 136 [1/1] (0.00ns)   --->   "%sext_ln63 = sext i31 %trunc_ln1" [hart.cpp:63]   --->   Operation 136 'sext' 'sext_ln63' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 137 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i5 %rd" [hart.cpp:63]   --->   Operation 137 'zext' 'zext_ln63' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 138 [1/1] (0.00ns)   --->   "%rf_addr_6 = getelementptr i32 %rf, i64 0, i64 %zext_ln63" [hart.cpp:63]   --->   Operation 138 'getelementptr' 'rf_addr_6' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 139 [1/1] (1.09ns)   --->   "%store_ln63 = store i32 %sext_ln63, i5 %rf_addr_6" [hart.cpp:63]   --->   Operation 139 'store' 'store_ln63' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 140 [1/1] (0.00ns)   --->   "%br_ln63 = br void %if.end106" [hart.cpp:63]   --->   Operation 140 'br' 'br_ln63' <Predicate = (opcode == 19 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 141 [1/1] (0.00ns) (grouped into LUT with out node next_pc_2)   --->   "%select_ln65 = select i1 %error_1, i32 5, i32 4" [hart.cpp:65]   --->   Operation 141 'select' 'select_ln65' <Predicate = (opcode == 19)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.18> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 142 [1/1] (0.95ns) (out node of the LUT)   --->   "%next_pc_2 = add i32 %select_ln65, i32 %pc_read" [hart.cpp:65]   --->   Operation 142 'add' 'next_pc_2' <Predicate = (opcode == 19)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 143 [1/1] (0.66ns)   --->   "%br_ln66 = br void %sw.epilog" [hart.cpp:66]   --->   Operation 143 'br' 'br_ln66' <Predicate = (opcode == 19)> <Delay = 0.66>
-ST_11 : Operation 144 [1/2] (1.09ns)   --->   "%rf_load = load i5 %rf_addr" [hart.cpp:56]   --->   Operation 144 'load' 'rf_load' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 145 [1/2] (1.09ns)   --->   "%rf_load_1 = load i5 %rf_addr_1" [hart.cpp:56]   --->   Operation 145 'load' 'rf_load_1' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 146 [1/1] (2.86ns)   --->   "%return_val = call i32 @OP_AL_32I, i6 51, i7 %tmp5, i3 %func3, i32 %rf_load, i32 %rf_load_1" [hart.cpp:56]   --->   Operation 146 'call' 'return_val' <Predicate = (opcode == 51)> <Delay = 2.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 147 [1/1] (0.00ns)   --->   "%error = trunc i32 %return_val" [hart.cpp:45]   --->   Operation 147 'trunc' 'error' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_11 : Operation 148 [1/1] (0.00ns)   --->   "%br_ln57 = br i1 %icmp_ln57, void %if.then, void %if.end" [hart.cpp:57]   --->   Operation 148 'br' 'br_ln57' <Predicate = (opcode == 51)> <Delay = 0.00>
-ST_11 : Operation 149 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %return_val, i32 1, i32 31" [hart.cpp:57]   --->   Operation 149 'partselect' 'trunc_ln' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 150 [1/1] (0.00ns)   --->   "%sext_ln57 = sext i31 %trunc_ln" [hart.cpp:57]   --->   Operation 150 'sext' 'sext_ln57' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 151 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i5 %rd" [hart.cpp:57]   --->   Operation 151 'zext' 'zext_ln57' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 152 [1/1] (0.00ns)   --->   "%rf_addr_5 = getelementptr i32 %rf, i64 0, i64 %zext_ln57" [hart.cpp:57]   --->   Operation 152 'getelementptr' 'rf_addr_5' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 153 [1/1] (1.09ns)   --->   "%store_ln57 = store i32 %sext_ln57, i5 %rf_addr_5" [hart.cpp:57]   --->   Operation 153 'store' 'store_ln57' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_11 : Operation 154 [1/1] (0.00ns)   --->   "%br_ln57 = br void %if.end" [hart.cpp:57]   --->   Operation 154 'br' 'br_ln57' <Predicate = (opcode == 51 & !icmp_ln57)> <Delay = 0.00>
-ST_11 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node next_pc)   --->   "%select_ln59 = select i1 %error, i32 5, i32 4" [hart.cpp:59]   --->   Operation 155 'select' 'select_ln59' <Predicate = (opcode == 51)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.18> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 156 [1/1] (0.95ns) (out node of the LUT)   --->   "%next_pc = add i32 %select_ln59, i32 %pc_read" [hart.cpp:59]   --->   Operation 156 'add' 'next_pc' <Predicate = (opcode == 51)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 157 [1/1] (0.66ns)   --->   "%br_ln60 = br void %sw.epilog" [hart.cpp:60]   --->   Operation 157 'br' 'br_ln60' <Predicate = (opcode == 51)> <Delay = 0.66>
+State 2 <SV = 1> <Delay = 5.20>
+ST_2 : Operation 84 [1/2] (1.09ns)   --->   "%op1 = load i5 %rf_addr_3" [hart.cpp:57]   --->   Operation 84 'load' 'op1' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 85 [1/2] (1.09ns)   --->   "%op2 = load i5 %rf_addr_4" [hart.cpp:57]   --->   Operation 85 'load' 'op2' <Predicate = (opcode == 99)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 86 [1/1] (0.95ns)   --->   "%icmp_ln68 = icmp_eq  i32 %op1, i32 %op2" [OP_AL_32I.cpp:68->hart.cpp:57]   --->   Operation 86 'icmp' 'icmp_ln68' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (0.00ns) (grouped into LUT with out node next_pc_2)   --->   "%returnval_2 = select i1 %icmp_ln68, i13 %offset_3, i13 4" [OP_AL_32I.cpp:68->hart.cpp:57]   --->   Operation 87 'select' 'returnval_2' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 88 [1/1] (0.95ns)   --->   "%icmp_ln69 = icmp_ne  i32 %op1, i32 %op2" [OP_AL_32I.cpp:69->hart.cpp:57]   --->   Operation 88 'icmp' 'icmp_ln69' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node returnval_12)   --->   "%returnval_3 = select i1 %icmp_ln69, i13 %offset_3, i13 4" [OP_AL_32I.cpp:69->hart.cpp:57]   --->   Operation 89 'select' 'returnval_3' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 90 [1/1] (0.95ns)   --->   "%icmp_ln70 = icmp_slt  i32 %op1, i32 %op2" [OP_AL_32I.cpp:70->hart.cpp:57]   --->   Operation 90 'icmp' 'icmp_ln70' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node returnval_11)   --->   "%returnval_4 = select i1 %icmp_ln70, i13 %offset_3, i13 4" [OP_AL_32I.cpp:70->hart.cpp:57]   --->   Operation 91 'select' 'returnval_4' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (0.95ns)   --->   "%icmp_ln71 = icmp_slt  i32 %op1, i32 %op2" [OP_AL_32I.cpp:71->hart.cpp:57]   --->   Operation 92 'icmp' 'icmp_ln71' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node returnval_10)   --->   "%xor_ln71 = xor i1 %icmp_ln71, i1 1" [OP_AL_32I.cpp:71->hart.cpp:57]   --->   Operation 93 'xor' 'xor_ln71' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.00ns) (grouped into LUT with out node returnval_10)   --->   "%returnval_5 = select i1 %xor_ln71, i13 %offset_3, i13 4" [OP_AL_32I.cpp:71->hart.cpp:57]   --->   Operation 94 'select' 'returnval_5' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 95 [1/1] (0.95ns)   --->   "%icmp_ln72 = icmp_ult  i32 %op1, i32 %op2" [OP_AL_32I.cpp:72->hart.cpp:57]   --->   Operation 95 'icmp' 'icmp_ln72' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%returnval_6 = select i1 %icmp_ln72, i13 %offset_3, i13 4" [OP_AL_32I.cpp:72->hart.cpp:57]   --->   Operation 96 'select' 'returnval_6' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 97 [1/1] (0.95ns)   --->   "%icmp_ln73 = icmp_ult  i32 %op1, i32 %op2" [OP_AL_32I.cpp:73->hart.cpp:57]   --->   Operation 97 'icmp' 'icmp_ln73' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%xor_ln73 = xor i1 %icmp_ln73, i1 1" [OP_AL_32I.cpp:73->hart.cpp:57]   --->   Operation 98 'xor' 'xor_ln73' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%returnval_7 = select i1 %xor_ln73, i13 %offset_3, i13 4" [OP_AL_32I.cpp:73->hart.cpp:57]   --->   Operation 99 'select' 'returnval_7' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 100 [1/1] (0.61ns)   --->   "%icmp_ln67 = icmp_eq  i3 %func3, i3 7" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 100 'icmp' 'icmp_ln67' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node returnval_9)   --->   "%returnval_8 = select i1 %icmp_ln67, i13 %returnval_7, i13 1" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 101 'select' 'returnval_8' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 102 [1/1] (0.61ns)   --->   "%icmp_ln67_1 = icmp_eq  i3 %func3, i3 6" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 102 'icmp' 'icmp_ln67_1' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 103 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_9 = select i1 %icmp_ln67_1, i13 %returnval_6, i13 %returnval_8" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 103 'select' 'returnval_9' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (0.61ns)   --->   "%icmp_ln67_2 = icmp_eq  i3 %func3, i3 5" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 104 'icmp' 'icmp_ln67_2' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 105 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_10 = select i1 %icmp_ln67_2, i13 %returnval_5, i13 %returnval_9" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 105 'select' 'returnval_10' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 106 [1/1] (0.61ns)   --->   "%icmp_ln67_3 = icmp_eq  i3 %func3, i3 4" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 106 'icmp' 'icmp_ln67_3' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_11 = select i1 %icmp_ln67_3, i13 %returnval_4, i13 %returnval_10" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 107 'select' 'returnval_11' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (0.61ns)   --->   "%icmp_ln67_4 = icmp_eq  i3 %func3, i3 1" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 108 'icmp' 'icmp_ln67_4' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 109 [1/1] (0.38ns) (out node of the LUT)   --->   "%returnval_12 = select i1 %icmp_ln67_4, i13 %returnval_3, i13 %returnval_11" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 109 'select' 'returnval_12' <Predicate = (opcode == 99)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 110 [1/1] (0.61ns)   --->   "%icmp_ln67_5 = icmp_eq  i3 %func3, i3 0" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 110 'icmp' 'icmp_ln67_5' <Predicate = (opcode == 99)> <Delay = 0.61> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node next_pc_2)   --->   "%returnval = select i1 %icmp_ln67_5, i13 %returnval_2, i13 %returnval_12" [OP_AL_32I.cpp:67->hart.cpp:57]   --->   Operation 111 'select' 'returnval' <Predicate = (opcode == 99)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node next_pc_2)   --->   "%sext_ln66 = sext i13 %returnval" [OP_AL_32I.cpp:66->hart.cpp:57]   --->   Operation 112 'sext' 'sext_ln66' <Predicate = (opcode == 99)> <Delay = 0.00>
+ST_2 : Operation 113 [1/1] (0.95ns) (out node of the LUT)   --->   "%next_pc_2 = add i32 %sext_ln66, i32 %pc_read" [hart.cpp:90->hart.cpp:58]   --->   Operation 113 'add' 'next_pc_2' <Predicate = (opcode == 99)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 114 [1/1] (0.66ns)   --->   "%br_ln59 = br void %sw.epilog" [hart.cpp:59]   --->   Operation 114 'br' 'br_ln59' <Predicate = (opcode == 99)> <Delay = 0.66>
+ST_2 : Operation 115 [1/2] (1.09ns)   --->   "%rf_load_2 = load i5 %rf_addr_2" [hart.cpp:52]   --->   Operation 115 'load' 'rf_load_2' <Predicate = (opcode == 19)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 116 [1/1] (2.85ns)   --->   "%return_val_1 = call i32 @OP_AL_32I, i6 19, i7 %tmp5, i3 %func3, i32 %rf_load_2, i32 %sext_ln36" [hart.cpp:52]   --->   Operation 116 'call' 'return_val_1' <Predicate = (opcode == 19)> <Delay = 2.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 117 [1/1] (0.00ns)   --->   "%br_ln53 = br i1 %icmp_ln48, void %if.then83, void %if.end88" [hart.cpp:53]   --->   Operation 117 'br' 'br_ln53' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_2 : Operation 118 [1/1] (0.00ns)   --->   "%trunc_ln4 = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %return_val_1, i32 1, i32 31" [hart.cpp:53]   --->   Operation 118 'partselect' 'trunc_ln4' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 119 [1/1] (0.00ns)   --->   "%sext_ln53 = sext i31 %trunc_ln4" [hart.cpp:53]   --->   Operation 119 'sext' 'sext_ln53' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 120 [1/1] (0.00ns)   --->   "%zext_ln53 = zext i5 %rd" [hart.cpp:53]   --->   Operation 120 'zext' 'zext_ln53' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 121 [1/1] (0.00ns)   --->   "%rf_addr_6 = getelementptr i32 %rf, i64 0, i64 %zext_ln53" [hart.cpp:53]   --->   Operation 121 'getelementptr' 'rf_addr_6' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 122 [1/1] (1.09ns)   --->   "%store_ln53 = store i32 %sext_ln53, i5 %rf_addr_6" [hart.cpp:53]   --->   Operation 122 'store' 'store_ln53' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 123 [1/1] (0.00ns)   --->   "%br_ln53 = br void %if.end88" [hart.cpp:53]   --->   Operation 123 'br' 'br_ln53' <Predicate = (opcode == 19 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 124 [1/1] (0.00ns)   --->   "%trunc_ln54 = trunc i32 %return_val_1" [hart.cpp:54]   --->   Operation 124 'trunc' 'trunc_ln54' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_2 : Operation 125 [1/1] (0.95ns)   --->   "%add_ln90_1 = add i32 %pc_read, i32 4" [hart.cpp:90->hart.cpp:54]   --->   Operation 125 'add' 'add_ln90_1' <Predicate = (opcode == 19)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 126 [1/1] (0.00ns)   --->   "%trunc_ln90_1 = trunc i32 %add_ln90_1" [hart.cpp:90->hart.cpp:54]   --->   Operation 126 'trunc' 'trunc_ln90_1' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_2 : Operation 127 [1/1] (0.25ns)   --->   "%or_ln90_1 = or i1 %trunc_ln90_1, i1 %trunc_ln54" [hart.cpp:90->hart.cpp:54]   --->   Operation 127 'or' 'or_ln90_1' <Predicate = (opcode == 19)> <Delay = 0.25> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %add_ln90_1, i32 1, i32 31" [hart.cpp:90->hart.cpp:54]   --->   Operation 128 'partselect' 'tmp_7' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_2 : Operation 129 [1/1] (0.00ns)   --->   "%next_pc_1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i31.i1, i31 %tmp_7, i1 %or_ln90_1" [hart.cpp:90->hart.cpp:54]   --->   Operation 129 'bitconcatenate' 'next_pc_1' <Predicate = (opcode == 19)> <Delay = 0.00>
+ST_2 : Operation 130 [1/1] (0.66ns)   --->   "%br_ln55 = br void %sw.epilog" [hart.cpp:55]   --->   Operation 130 'br' 'br_ln55' <Predicate = (opcode == 19)> <Delay = 0.66>
+ST_2 : Operation 131 [1/2] (1.09ns)   --->   "%rf_load = load i5 %rf_addr" [hart.cpp:47]   --->   Operation 131 'load' 'rf_load' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 132 [1/2] (1.09ns)   --->   "%rf_load_1 = load i5 %rf_addr_1" [hart.cpp:47]   --->   Operation 132 'load' 'rf_load_1' <Predicate = (opcode == 51)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 133 [1/1] (2.85ns)   --->   "%return_val = call i32 @OP_AL_32I, i6 51, i7 %tmp5, i3 %func3, i32 %rf_load, i32 %rf_load_1" [hart.cpp:47]   --->   Operation 133 'call' 'return_val' <Predicate = (opcode == 51)> <Delay = 2.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 134 [1/1] (0.00ns)   --->   "%br_ln48 = br i1 %icmp_ln48, void %if.then, void %if.end" [hart.cpp:48]   --->   Operation 134 'br' 'br_ln48' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_2 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %return_val, i32 1, i32 31" [hart.cpp:48]   --->   Operation 135 'partselect' 'trunc_ln3' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 136 [1/1] (0.00ns)   --->   "%sext_ln48 = sext i31 %trunc_ln3" [hart.cpp:48]   --->   Operation 136 'sext' 'sext_ln48' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 137 [1/1] (0.00ns)   --->   "%zext_ln48 = zext i5 %rd" [hart.cpp:48]   --->   Operation 137 'zext' 'zext_ln48' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 138 [1/1] (0.00ns)   --->   "%rf_addr_5 = getelementptr i32 %rf, i64 0, i64 %zext_ln48" [hart.cpp:48]   --->   Operation 138 'getelementptr' 'rf_addr_5' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 139 [1/1] (1.09ns)   --->   "%store_ln48 = store i32 %sext_ln48, i5 %rf_addr_5" [hart.cpp:48]   --->   Operation 139 'store' 'store_ln48' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 1.09> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.09> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 140 [1/1] (0.00ns)   --->   "%br_ln48 = br void %if.end" [hart.cpp:48]   --->   Operation 140 'br' 'br_ln48' <Predicate = (opcode == 51 & !icmp_ln48)> <Delay = 0.00>
+ST_2 : Operation 141 [1/1] (0.00ns)   --->   "%trunc_ln49 = trunc i32 %return_val" [hart.cpp:49]   --->   Operation 141 'trunc' 'trunc_ln49' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_2 : Operation 142 [1/1] (0.95ns)   --->   "%add_ln90 = add i32 %pc_read, i32 4" [hart.cpp:90->hart.cpp:49]   --->   Operation 142 'add' 'add_ln90' <Predicate = (opcode == 51)> <Delay = 0.95> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln90 = trunc i32 %add_ln90" [hart.cpp:90->hart.cpp:49]   --->   Operation 143 'trunc' 'trunc_ln90' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_2 : Operation 144 [1/1] (0.25ns)   --->   "%or_ln90 = or i1 %trunc_ln90, i1 %trunc_ln49" [hart.cpp:90->hart.cpp:49]   --->   Operation 144 'or' 'or_ln90' <Predicate = (opcode == 51)> <Delay = 0.25> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.25> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_s = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %add_ln90, i32 1, i32 31" [hart.cpp:90->hart.cpp:49]   --->   Operation 145 'partselect' 'tmp_s' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_2 : Operation 146 [1/1] (0.00ns)   --->   "%next_pc = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i31.i1, i31 %tmp_s, i1 %or_ln90" [hart.cpp:90->hart.cpp:49]   --->   Operation 146 'bitconcatenate' 'next_pc' <Predicate = (opcode == 51)> <Delay = 0.00>
+ST_2 : Operation 147 [1/1] (0.66ns)   --->   "%br_ln50 = br void %sw.epilog" [hart.cpp:50]   --->   Operation 147 'br' 'br_ln50' <Predicate = (opcode == 51)> <Delay = 0.66>
+ST_2 : Operation 148 [1/1] (0.00ns)   --->   "%next_pc_9 = phi i32 %next_pc_5, void %if.end148, i32 %next_pc_4, void %if.end131, i32 %next_pc_3, void %if.end114, i32 %next_pc_2, void %sw.bb94_ifconv, i32 %next_pc_1, void %if.end88, i32 %next_pc, void %if.end, i32 %next_pc_8, void %cond.true, i32 %next_pc_7, void %cond.false, i32 0, void %entry"   --->   Operation 148 'phi' 'next_pc_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 149 [1/1] (0.00ns)   --->   "%ret_ln87 = ret i32 %next_pc_9" [hart.cpp:87]   --->   Operation 149 'ret' 'ret_ln87' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -258,63 +232,28 @@ ST_11 : Operation 157 [1/1] (0.66ns)   --->   "%br_ln60 = br void %sw.epilog" [h
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 1.099ns
+ <State 1>: 4.675ns
 The critical path consists of the following:
-	'store' operation 0 bit ('store_ln30', hart.cpp:30) of constant 0 on array 'rf' [12]  (1.099 ns)
+	wire read operation ('inst_read', hart.cpp:10) on port 'inst' (hart.cpp:10) [11]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln48', hart.cpp:48) [32]  (0.718 ns)
+	'call' operation 32 bit ('trunc_ln2', hart.cpp:73) to 'OP_AL_32I' [37]  (2.858 ns)
+	'store' operation 0 bit ('store_ln73', hart.cpp:73) of variable 'trunc_ln2', hart.cpp:73 on array 'rf' [40]  (1.099 ns)
 
- <State 2>: 2.052ns
+ <State 2>: 5.203ns
 The critical path consists of the following:
-	'add' operation 32 bit ('add_ln86', hart.cpp:86) [38]  (0.953 ns)
-	'store' operation 0 bit ('store_ln86', hart.cpp:86) of variable 'add_ln86', hart.cpp:86 on array 'rf' [41]  (1.099 ns)
-
- <State 3>: 1.099ns
-The critical path consists of the following:
-	'getelementptr' operation 5 bit ('rf_addr_11', hart.cpp:87) [45]  (0.000 ns)
-	'load' operation 32 bit ('rf_load_5', hart.cpp:87) on array 'rf' [46]  (1.099 ns)
-
- <State 4>: 2.720ns
-The critical path consists of the following:
-	'load' operation 32 bit ('rf_load_5', hart.cpp:87) on array 'rf' [46]  (1.099 ns)
-	'add' operation 32 bit ('next_pc', hart.cpp:87) [47]  (0.953 ns)
-	multiplexor before 'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:88) ('next_pc', hart.cpp:83) ('next_pc', hart.cpp:78) ('next_pc', hart.cpp:73) ('next_pc', hart.cpp:69) ('next_pc', hart.cpp:65) ('next_pc', hart.cpp:59) [164]  (0.668 ns)
-	'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:88) ('next_pc', hart.cpp:83) ('next_pc', hart.cpp:78) ('next_pc', hart.cpp:73) ('next_pc', hart.cpp:69) ('next_pc', hart.cpp:65) ('next_pc', hart.cpp:59) [164]  (0.000 ns)
-
- <State 5>: 2.052ns
-The critical path consists of the following:
-	'add' operation 32 bit ('add_ln82', hart.cpp:82) [59]  (0.953 ns)
-	'store' operation 0 bit ('store_ln82', hart.cpp:82) of variable 'add_ln82', hart.cpp:82 on array 'rf' [62]  (1.099 ns)
-
- <State 6>: 2.052ns
-The critical path consists of the following:
-	'add' operation 32 bit ('add_ln77', hart.cpp:77) [70]  (0.953 ns)
-	'store' operation 0 bit ('store_ln77', hart.cpp:77) of variable 'add_ln77', hart.cpp:77 on array 'rf' [73]  (1.099 ns)
-
- <State 7>: 1.621ns
-The critical path consists of the following:
-	'add' operation 32 bit ('next_pc', hart.cpp:78) [76]  (0.953 ns)
-	multiplexor before 'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:88) ('next_pc', hart.cpp:83) ('next_pc', hart.cpp:78) ('next_pc', hart.cpp:73) ('next_pc', hart.cpp:69) ('next_pc', hart.cpp:65) ('next_pc', hart.cpp:59) [164]  (0.668 ns)
-
- <State 8>: 1.099ns
-The critical path consists of the following:
-	'getelementptr' operation 5 bit ('rf_addr_7', hart.cpp:72) [82]  (0.000 ns)
-	'store' operation 0 bit ('store_ln72', hart.cpp:72) of variable 'imm_20_U', hart.cpp:41 on array 'rf' [83]  (1.099 ns)
-
- <State 9>: 1.621ns
-The critical path consists of the following:
-	'add' operation 32 bit ('next_pc', hart.cpp:73) [86]  (0.953 ns)
-	multiplexor before 'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:88) ('next_pc', hart.cpp:83) ('next_pc', hart.cpp:78) ('next_pc', hart.cpp:73) ('next_pc', hart.cpp:69) ('next_pc', hart.cpp:65) ('next_pc', hart.cpp:59) [164]  (0.668 ns)
-
- <State 10>: 1.099ns
-The critical path consists of the following:
-	'getelementptr' operation 5 bit ('rf_addr_3', hart.cpp:68) [90]  (0.000 ns)
-	'load' operation 32 bit ('op1', hart.cpp:68) on array 'rf' [91]  (1.099 ns)
-
- <State 11>: 5.582ns
-The critical path consists of the following:
-	'load' operation 32 bit ('rf_load_2', hart.cpp:62) on array 'rf' [127]  (1.099 ns)
-	'call' operation 32 bit ('return_val', hart.cpp:62) to 'OP_AL_32I' [128]  (2.862 ns)
-	'store' operation 0 bit ('store_ln63', hart.cpp:63) of variable 'sext_ln63', hart.cpp:63 on array 'rf' [136]  (1.099 ns)
-	blocking operation 0.521714 ns on control path)
+	'load' operation 32 bit ('op1', hart.cpp:57) on array 'rf' [87]  (1.099 ns)
+	'icmp' operation 1 bit ('icmp_ln73', OP_AL_32I.cpp:73->hart.cpp:57) [102]  (0.953 ns)
+	'xor' operation 1 bit ('xor_ln73', OP_AL_32I.cpp:73->hart.cpp:57) [103]  (0.000 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:73->hart.cpp:57) [104]  (0.000 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [106]  (0.000 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [108]  (0.383 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [110]  (0.383 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [112]  (0.383 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [114]  (0.383 ns)
+	'select' operation 13 bit ('returnval', OP_AL_32I.cpp:67->hart.cpp:57) [116]  (0.000 ns)
+	'add' operation 32 bit ('next_pc', hart.cpp:90->hart.cpp:58) [118]  (0.953 ns)
+	multiplexor before 'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:75) ('next_pc', hart.cpp:90->hart.cpp:70) ('next_pc', hart.cpp:90->hart.cpp:66) ('next_pc', hart.cpp:90->hart.cpp:62) ('next_pc', hart.cpp:90->hart.cpp:58) ('next_pc', hart.cpp:90->hart.cpp:54) ('next_pc', hart.cpp:90->hart.cpp:49) [166]  (0.668 ns)
+	'phi' operation 32 bit ('next_pc') with incoming values : ('next_pc', hart.cpp:75) ('next_pc', hart.cpp:90->hart.cpp:70) ('next_pc', hart.cpp:90->hart.cpp:66) ('next_pc', hart.cpp:90->hart.cpp:62) ('next_pc', hart.cpp:90->hart.cpp:58) ('next_pc', hart.cpp:90->hart.cpp:54) ('next_pc', hart.cpp:90->hart.cpp:49) [166]  (0.000 ns)
 
 
 ============================================================
@@ -327,15 +266,6 @@ N/A
   - Chain level:
 	State 1
 	State 2
-	State 3
-	State 4
-	State 5
-	State 6
-	State 7
-	State 8
-	State 9
-	State 10
-	State 11
 
 
 ============================================================

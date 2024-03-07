@@ -2481,3 +2481,1572 @@ INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 113.65 seconds. CPU system time: 5.67 seconds. Elapsed time: 91.66 seconds; current allocated memory: 11.152 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: source ./denem7/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.430 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.36 seconds. CPU system time: 1.98 seconds. Elapsed time: 16.13 seconds; current allocated memory: 233.988 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 11,479 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 830 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 566 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 588 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 494 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 414 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 414 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 414 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 414 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 417 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 410 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.14 seconds. CPU system time: 0.47 seconds. Elapsed time: 8.09 seconds; current allocated memory: 236.289 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.289 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.41 seconds; current allocated memory: 237.523 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 239.215 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:66:37) to (hart.cpp:68:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:7:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 262.355 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 264.391 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 265.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 265.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 268.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 268.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 268.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 270.277 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 276.422 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 285.074 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.15 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.71 seconds. CPU system time: 2.6 seconds. Elapsed time: 26.39 seconds; current allocated memory: 52.832 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 232.426 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.5 seconds. CPU system time: 1.43 seconds. Elapsed time: 14.94 seconds; current allocated memory: 234.004 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,641 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 110 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3 seconds. CPU system time: 0.44 seconds. Elapsed time: 8.02 seconds; current allocated memory: 236.258 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.258 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 236.391 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 236.477 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 258.066 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 258.066 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'OP_AL_32I' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 258.066 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 258.066 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32I/opcode' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32I/func7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32I/func3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32I/op1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32I/op2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'OP_AL_32I' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 258.066 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 258.066 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 264.246 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for OP_AL_32I.
+INFO: [VLOG 209-307] Generating Verilog RTL for OP_AL_32I.
+INFO: [HLS 200-789] **** Estimated Fmax: 349.85 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 17.29 seconds. CPU system time: 1.95 seconds. Elapsed time: 23.84 seconds; current allocated memory: 31.961 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.426 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.16 seconds. CPU system time: 1.8 seconds. Elapsed time: 14.98 seconds; current allocated memory: 234.004 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 477 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.92 seconds. CPU system time: 0.47 seconds. Elapsed time: 8.09 seconds; current allocated memory: 236.246 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.246 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 236.375 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 236.461 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:78:1) in function 'OP_AL_32B'... converting 8 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 257.281 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 257.281 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'OP_AL_32B' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 257.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 257.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/func3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/op1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/op2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'OP_AL_32B' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32B'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 257.281 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 257.281 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 261.750 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for OP_AL_32B.
+INFO: [VLOG 209-307] Generating Verilog RTL for OP_AL_32B.
+INFO: [HLS 200-789] **** Estimated Fmax: 331.90 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.76 seconds. CPU system time: 2.36 seconds. Elapsed time: 23.81 seconds; current allocated memory: 29.531 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.09 seconds. CPU system time: 1.79 seconds. Elapsed time: 13.9 seconds; current allocated memory: 234.000 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 477 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.11 seconds. CPU system time: 0.51 seconds. Elapsed time: 8.17 seconds; current allocated memory: 236.188 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.188 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 236.371 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 236.449 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:78:1) in function 'OP_AL_32B'... converting 8 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 257.543 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 257.543 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'OP_AL_32B' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.06 seconds; current allocated memory: 257.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 257.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/func3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/op1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'OP_AL_32B/op2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'OP_AL_32B' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32B'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 257.543 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 257.543 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.22 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.26 seconds; current allocated memory: 261.770 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for OP_AL_32B.
+INFO: [VLOG 209-307] Generating Verilog RTL for OP_AL_32B.
+INFO: [HLS 200-789] **** Estimated Fmax: 331.90 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 15.82 seconds. CPU system time: 2.41 seconds. Elapsed time: 22.79 seconds; current allocated memory: 29.535 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 232.426 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.62 seconds. CPU system time: 1.88 seconds. Elapsed time: 14.5 seconds; current allocated memory: 234.020 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 11,388 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 561 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 583 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 412 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 405 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.09 seconds. CPU system time: 0.52 seconds. Elapsed time: 7.98 seconds; current allocated memory: 236.301 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.301 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.469 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.078 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:63:37) to (hart.cpp:65:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:7:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 262.266 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.012 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 269.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 269.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 269.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.957 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 275.477 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 284.449 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.27 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.88 seconds. CPU system time: 2.52 seconds. Elapsed time: 23.84 seconds; current allocated memory: 52.207 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.78 seconds. CPU system time: 1.86 seconds. Elapsed time: 14.65 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 11,256 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 815 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 561 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 583 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 489 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 409 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 412 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 405 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.12 seconds. CPU system time: 0.48 seconds. Elapsed time: 7.99 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.098 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:63:37) to (hart.cpp:65:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:7:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 262.293 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.168 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.1 seconds; current allocated memory: 269.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 269.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 269.918 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.22 seconds; current allocated memory: 275.957 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.28 seconds; current allocated memory: 284.473 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 179.27 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 17.08 seconds. CPU system time: 2.49 seconds. Elapsed time: 24.03 seconds; current allocated memory: 52.195 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.48 seconds. CPU system time: 1.89 seconds. Elapsed time: 13.39 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 6,052 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 298 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 199 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.99 seconds. CPU system time: 0.48 seconds. Elapsed time: 8.03 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.055 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 238.461 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (OP_AL_32I.cpp:12:10) to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 20 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 261.184 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 262.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.08 seconds; current allocated memory: 262.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 262.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 264.254 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 264.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 264.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 265.629 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 269.582 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.27 seconds; current allocated memory: 278.203 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 250.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 15.35 seconds. CPU system time: 2.49 seconds. Elapsed time: 22.49 seconds; current allocated memory: 45.914 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.72 seconds. CPU system time: 1.87 seconds. Elapsed time: 13.61 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 6,008 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 308 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 206 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 209 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 103 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 102 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 102 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 102 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 101 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.24 seconds. CPU system time: 0.5 seconds. Elapsed time: 8.08 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 236.273 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 237.113 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 238.555 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (OP_AL_32I.cpp:12:10) to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 20 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 261.281 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 262.281 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 263.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 263.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 264.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 264.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 264.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 265.707 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 269.992 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.26 seconds; current allocated memory: 278.168 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 250.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 15.82 seconds. CPU system time: 2.51 seconds. Elapsed time: 22.7 seconds; current allocated memory: 45.898 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.65 seconds. CPU system time: 1.77 seconds. Elapsed time: 13.44 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 9,128 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 601 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 420 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 436 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 352 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 272 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 272 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 272 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 272 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 275 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 266 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.18 seconds. CPU system time: 0.45 seconds. Elapsed time: 8.07 seconds; current allocated memory: 236.270 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.270 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 237.262 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 238.641 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.11 seconds; current allocated memory: 261.555 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 262.957 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 263.988 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 263.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 265.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 265.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 265.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 267.320 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 271.496 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.29 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.32 seconds; current allocated memory: 280.270 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 243.82 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 15.89 seconds. CPU system time: 2.34 seconds. Elapsed time: 22.7 seconds; current allocated memory: 47.988 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.74 seconds. CPU system time: 1.7 seconds. Elapsed time: 13.46 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 9,813 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 754 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 551 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 581 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 407 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 327 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 327 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 327 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 327 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 330 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 319 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.1 seconds. CPU system time: 0.49 seconds. Elapsed time: 8.01 seconds; current allocated memory: 236.285 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.285 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.355 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 238.816 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 261.852 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 269.852 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 269.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 269.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.852 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 273.988 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.3 seconds; current allocated memory: 282.383 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 222.76 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 15.87 seconds. CPU system time: 2.33 seconds. Elapsed time: 22.65 seconds; current allocated memory: 50.121 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.97 seconds. CPU system time: 1.82 seconds. Elapsed time: 13.8 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 10,139 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 789 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 583 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 613 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 343 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 343 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 343 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 343 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 346 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 333 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.3)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.07 seconds. CPU system time: 0.45 seconds. Elapsed time: 7.96 seconds; current allocated memory: 236.281 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.281 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.406 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 238.844 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 261.703 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.703 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.15 seconds; current allocated memory: 269.703 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 269.703 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 269.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 269.703 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 274.797 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.3 seconds; current allocated memory: 283.469 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 197.77 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.18 seconds. CPU system time: 2.43 seconds. Elapsed time: 23.06 seconds; current allocated memory: 51.191 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.94 seconds. CPU system time: 1.74 seconds. Elapsed time: 13.7 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 13,235 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,050 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 766 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 794 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 572 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 465 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 447 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.3.6)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.06 seconds. CPU system time: 0.48 seconds. Elapsed time: 7.95 seconds; current allocated memory: 236.574 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.574 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.418 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 238.859 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:14)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 262.160 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 269.785 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 269.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 269.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 269.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.785 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.21 seconds; current allocated memory: 274.344 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.26 seconds; current allocated memory: 283.160 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 197.24 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.05 seconds. CPU system time: 2.35 seconds. Elapsed time: 22.81 seconds; current allocated memory: 50.898 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.01 seconds. CPU system time: 1.93 seconds. Elapsed time: 14.95 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 16,289 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,335 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 971 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 999 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 742 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 594 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 594 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 594 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 594 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 602 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 579 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.21.24)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.11 seconds. CPU system time: 0.49 seconds. Elapsed time: 7.99 seconds; current allocated memory: 236.355 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 236.355 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 237.457 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.070 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:14)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 262.137 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 268.883 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 268.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 268.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 268.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 268.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 268.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.449 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 275.137 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.27 seconds; current allocated memory: 283.793 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 195.54 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 17.19 seconds. CPU system time: 2.55 seconds. Elapsed time: 24.14 seconds; current allocated memory: 51.527 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.93 seconds. CPU system time: 1.75 seconds. Elapsed time: 13.81 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 19,434 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,601 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,158 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,186 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 715 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 699 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.25.28)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.18 seconds. CPU system time: 0.49 seconds. Elapsed time: 7.98 seconds; current allocated memory: 236.566 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.566 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 237.477 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.164 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 262.203 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.078 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.11 seconds; current allocated memory: 269.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 269.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 269.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 269.738 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 275.855 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.26 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.31 seconds; current allocated memory: 284.289 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 192.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 16.38 seconds. CPU system time: 2.37 seconds. Elapsed time: 23.19 seconds; current allocated memory: 52.027 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 232.461 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 15.2 seconds. CPU system time: 1.96 seconds. Elapsed time: 17.18 seconds; current allocated memory: 234.016 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 19,434 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,601 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,158 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,186 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 712 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 715 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 699 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.25.28)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.33 seconds. CPU system time: 0.6 seconds. Elapsed time: 10.38 seconds; current allocated memory: 236.363 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.363 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 237.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 239.105 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:58:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 262.199 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 268.945 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 268.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 268.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 268.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 268.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 268.945 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 269.738 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.3 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 275.852 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.34 seconds; current allocated memory: 284.305 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 192.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 21.09 seconds. CPU system time: 2.7 seconds. Elapsed time: 29.56 seconds; current allocated memory: 52.039 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '255'.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 133.21 seconds. CPU system time: 8.67 seconds. Elapsed time: 881.68 seconds; current allocated memory: 11.152 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 232.434 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 14.21 seconds. CPU system time: 1.85 seconds. Elapsed time: 16.21 seconds; current allocated memory: 233.988 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 19,524 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,636 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,168 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,196 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 725 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 709 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.25.28)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.18 seconds. CPU system time: 0.51 seconds. Elapsed time: 8.08 seconds; current allocated memory: 236.297 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.297 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.527 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.219 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:57:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 262.254 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 269.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 270.012 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.23 seconds; current allocated memory: 275.867 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.39 seconds; current allocated memory: 284.758 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for hart.
+INFO: [VLOG 209-307] Generating Verilog RTL for hart.
+INFO: [HLS 200-789] **** Estimated Fmax: 192.21 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18.56 seconds. CPU system time: 2.52 seconds. Elapsed time: 25.73 seconds; current allocated memory: 52.523 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+Tool Version Limit: 2024.02
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 149.87 seconds. CPU system time: 8.28 seconds. Elapsed time: 143.85 seconds; current allocated memory: 11.152 MB.

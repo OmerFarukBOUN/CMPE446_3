@@ -4,9 +4,8 @@
 
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2)
 {
-
-	r_type rd_val=0;
-	bit_type error = 0;
+	r_type rd_val;
+	bit_type error=0;
 	switch(opcode) {
 	case OP_AL_R:
 		switch(func7){ //func7
@@ -63,7 +62,7 @@ r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type 
 // For branching
 
 
-r_e_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
+imm_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
 	imm_type returnval;
 	switch(func3) {
 	case BEQ: (op1==op2) ? returnval = offset : returnval = 4; break;
@@ -77,8 +76,11 @@ r_e_type OP_AL_32B(imm_type offset, func3_type func3, r_type op1, r_type op2) {
 	return returnval;
 }
 
-//r_type OP_AL_32Load(r_type imm, func3_type func3, r_type op1) {
-//
-//}
+imm_type ALU_SUM(imm_type op1, imm_type op2) {
+	return op1 + op2;
+}
 
+imm_type ALU_DIF(imm_type op1, imm_type op2) {
+	return op1 + op2;
+}
 

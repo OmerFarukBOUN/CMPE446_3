@@ -27,7 +27,7 @@ input logic finish
     nodf_module_monitor module_monitor_1;
     nodf_module_intf module_intf_2(clock,reset);
     assign module_intf_2.ap_start = 1'b0;
-    assign module_intf_2.ap_ready = AESL_inst_hart.grp_OP_AL_32I_fu_280.ap_ready;
+    assign module_intf_2.ap_ready = AESL_inst_hart.grp_OP_AL_32I_fu_270.ap_ready;
     assign module_intf_2.ap_done = 1'b0;
     assign module_intf_2.ap_continue = 1'b0;
     assign module_intf_2.finish = finish;

@@ -61897,7 +61897,7 @@ typedef ap_uint<1> hart_id;
 # 80 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
 pc_type hart(inst_type inst, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
-r_e_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
+imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);
 # 2 "/home/omerfaruk/Projects/okul/denem7/mem.cpp" 2
 

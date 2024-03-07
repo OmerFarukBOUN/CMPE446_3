@@ -69,15 +69,12 @@
 0x00000070
 [[/transaction]]
 [[transaction]]           23
-0x0000006c
-[[/transaction]]
-[[transaction]]           24
 0x00000074
 [[/transaction]]
-[[transaction]]           25
+[[transaction]]           24
 0x00000078
 [[/transaction]]
-[[transaction]]           26
+[[transaction]]           25
 0x0000007c
 [[/transaction]]
 [[[/runtime]]]

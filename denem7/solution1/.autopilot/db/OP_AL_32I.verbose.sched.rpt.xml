@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'OP_AL_32I'" level="0">
-<item name = "Date">Wed Mar  6 18:26:26 2024
+<item name = "Date">Thu Mar  7 10:40:30 2024
 </item>
 <item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">denem7</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.862 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 2.858 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

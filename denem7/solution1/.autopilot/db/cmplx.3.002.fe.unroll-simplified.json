@@ -1,37 +1,22 @@
 {
   "0": {
     "basicblocks": 23,
-    "calls": "2 2 1",
+    "calls": "1 3 1 3 2 3 3 1 3 1 3 1 3",
     "file": "hart.cpp",
-    "fileloc": 7,
-    "instructions": 225,
+    "fileloc": 10,
+    "instructions": 279,
     "loads": {
-      "G": 6,
-      "L": 3
+      "G": 5,
+      "L": 13
     },
     "name": "hart",
     "stores": {
-      "G": 7,
-      "L": 14
+      "G": 6,
+      "L": 32
     },
-    "total_instructions": 567
+    "total_instructions": 1168
   },
   "1": {
-    "basicblocks": 8,
-    "calls": "",
-    "file": "OP_AL_32I.cpp",
-    "fileloc": 66,
-    "instructions": 44,
-    "loads": {
-      "L": 19
-    },
-    "name": "OP_AL_32B",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 44
-  },
-  "2": {
     "basicblocks": 32,
     "calls": "",
     "file": "OP_AL_32I.cpp",
@@ -45,5 +30,35 @@
       "L": 1
     },
     "total_instructions": 149
+  },
+  "2": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "OP_AL_32I.cpp",
+    "fileloc": 65,
+    "instructions": 67,
+    "loads": {
+      "L": 19
+    },
+    "name": "OP_AL_32B",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 67
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hart.cpp",
+    "fileloc": 89,
+    "instructions": 11,
+    "loads": {
+      "L": 3
+    },
+    "name": "next_pc_calc",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 11
   }
 }
