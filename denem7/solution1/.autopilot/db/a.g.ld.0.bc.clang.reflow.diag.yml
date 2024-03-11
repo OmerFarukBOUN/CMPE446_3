@@ -1,11 +1,151 @@
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 79, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SLL(ap_int<32>, ap_uint<5>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 87, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SLT(ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 91, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SLTU(ap_uint<32>, ap_uint<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 95, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_XOR(ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 100, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SRL(ap_uint<32>, ap_uint<5>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 104, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_OR(ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 112, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_AND(ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_NEG(ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SRA(ap_int<32>, ap_uint<5>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 108, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
 DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
 Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.25.28)'
+  - Callee:          'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.133.136)'
     DebugLoc:        { File: hart.cpp, Line: 89, Column: 0 }
   - String:          ''' into '''
   - Caller:          'hart(ap_int<32>, ap_uint<32>)'
@@ -21,6 +161,20 @@ Args:
   - String:          'Inlining function '''
   - Callee:          'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)'
     DebugLoc:        { File: OP_AL_32I.cpp, Line: 65, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hart(ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
+Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)'
+    DebugLoc:        { File: OP_AL_32I.cpp, Line: 79, Column: 0 }
   - String:          ''' into '''
   - Caller:          'hart(ap_int<32>, ap_uint<32>)'
     DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }

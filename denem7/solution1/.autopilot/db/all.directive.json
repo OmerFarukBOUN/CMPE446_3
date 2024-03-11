@@ -16,6 +16,27 @@
       ]
     },
     "slx": false,
+    "sourceFile": "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "hart",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "hart"
+        }
+      ]
+    },
+    "slx": false,
     "sourceFile": "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl",
     "sourceLine": 19,
     "success": true

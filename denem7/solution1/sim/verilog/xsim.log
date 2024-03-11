@@ -3,13 +3,13 @@
 # SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Thu Mar  7 10:41:05 2024
-# Process ID: 64122
+# Start of session at: Mon Mar 11 08:40:28 2024
+# Process ID: 93445
 # Current directory: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog
 # Command line: xsim -source {xsim.dir/hart/xsim_script.tcl}
 # Log file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.log
 # Journal file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.jou
-# Running On: DarkChocolate, OS: Linux, CPU Frequency: 3228.190 MHz, CPU Physical cores: 4, Host memory: 16509 MB
+# Running On: DarkChocolate, OS: Linux, CPU Frequency: 799.991 MHz, CPU Physical cores: 4, Host memory: 16509 MB
 #-----------------------------------------------------------
 start_gui
 source xsim.dir/hart/xsim_script.tcl
@@ -76,7 +76,7 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 avail
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/omerfaruk/tools/Xilinx/Vivado/2023.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 10853.145 ; gain = 414.062 ; free physical = 600 ; free virtual = 12822
+current_fileset: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 10969.309 ; gain = 552.086 ; free physical = 227 ; free virtual = 3179
 # xsim {hart} -view {{hart_dataflow_ana.wcfg}} -tclbatch {hart.tcl} -protoinst {hart.protoinst}
 INFO: [Wavedata 42-565] Reading protoinst file hart.protoinst
 INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hart_top/AESL_inst_hart//AESL_inst_hart_activity
@@ -141,4 +141,4 @@ $finish called at time : 715 ns : File "/home/omerfaruk/Projects/okul/denem7/den
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting xsim at Thu Mar  7 10:43:01 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Mar 11 08:43:41 2024...

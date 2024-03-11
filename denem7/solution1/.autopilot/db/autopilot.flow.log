@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/omerfaruk/Projects/okul/denem7/denem7/solution1 opened at Thu Mar 07 10:40:05 +03 2024
+INFO-FLOW: Workspace /home/omerfaruk/Projects/okul/denem7/denem7/solution1 opened at Mon Mar 11 08:37:21 +03 2024
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     set_part xczu7ev-ffvf1517-3-e 
@@ -7,7 +7,7 @@ DBG:HLSDevice: Trying to load device library: /home/omerfaruk/tools/Xilinx/Vitis
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/omerfaruk/tools/Xilinx/Vivado/2023.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
-Command       create_platform done; 0.6 sec.
+Command       create_platform done; 4.03 sec.
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
@@ -19,11 +19,12 @@ Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/tech
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.22 sec.
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.12 sec.
+Command       ap_source done; 0.57 sec.
 Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.74 sec.
+Command     set_part done; 4.6 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
@@ -35,7 +36,7 @@ Execute     config_cosim -trace_level=port
 Execute     send_msg_by_id INFO @200-1464@%s config_cosim -wave_debug=1 
 INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
 Execute     config_cosim -wave_debug=1 
-Command   open_solution done; 0.84 sec.
+Command   open_solution done; 4.87 sec.
 Execute   set_part xczu7ev-ffvf1517-3-e 
 INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
 Execute     create_platform xczu7ev-ffvf1517-3-e -board  
@@ -52,22 +53,29 @@ Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/techno
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.11 sec.
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.22 sec.
+Command   set_part done; 0.27 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_cosim -tool xsim -trace_level port -wave_debug 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+Execute   source ./denem7/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./denem7/solution1/directives.tcl
+Execute     set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 232.434 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 232.430 MB.
 Execute       set_directive_top hart -name=hart 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Command       ap_source done; 0.12 sec.
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Command       ap_source done; 0.11 sec.
 INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
 INFO-FLOW: Compiling one TU...
 INFO-FLOW: Handling OP_AL_32I.cpp as C++
@@ -75,23 +83,24 @@ Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang OP_AL_32I.cpp -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.cpp.clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Done: GCC PP 39 time: 5.2 seconds per iteration
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.48 sec.
+Command       clang_tidy done; 2.38 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.58 sec.
+Command       clang_tidy done; 0.57 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.6 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 1.18 sec.
+Command         ap_source done; 0.12 sec.
+Command       clang_tidy done; 1.47 sec.
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: compiling source code to llvm bc
@@ -103,22 +112,22 @@ Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang hart.cpp -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.cpp.clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Done: GCC PP 39 time: 4.3 seconds per iteration
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.81 sec.
+Command       clang_tidy done; 1.01 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.45 sec.
+Command       clang_tidy done; 1.5 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.5 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.clang-tidy.loop-label.err.log
-Command       clang_tidy done; 1.66 sec.
+Command       clang_tidy done; 1.83 sec.
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: compiling source code to llvm bc
@@ -135,43 +144,45 @@ INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/.systemc_flag -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.81 sec.
+Command       clang_tidy done; 0.5 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/all.directive.json -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.66 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.7 seconds per iteration
+Command       clang_tidy done; 0.53 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.5 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang-tidy.loop-label.err.log
-Command       clang_tidy done; 1.07 sec.
+Command       clang_tidy done; 0.96 sec.
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.bc -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 14.21 seconds. CPU system time: 1.85 seconds. Elapsed time: 16.21 seconds; current allocated memory: 233.988 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 14.62 seconds. CPU system time: 2.12 seconds. Elapsed time: 31.36 seconds; current allocated memory: 234.000 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.g.bc" "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.g.bc" "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.g.bc"  
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.g.bc /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.g.bc /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/mem.g.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
 INFO-FLOW: 
+Command       run_link_or_opt done; 0.4 sec.
 Execute       run_link_or_opt -opt -out /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
 INFO-FLOW: 
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 1.73 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.96 sec.
+Command       run_link_or_opt done; 3.08 sec.
 Execute       run_link_or_opt -opt -out /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=hart -reflow-float-conversion 
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=hart -reflow-float-conversion -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: 
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 0.8 sec.
+Command       run_link_or_opt done; 0.83 sec.
 Execute       run_link_or_opt -out /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 INFO-FLOW: 
@@ -185,55 +196,67 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 INFO-FLOW: run_clang (background poll_ms 5000) exec: /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=hart -mllvm -hls-db-dir -mllvm /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_fast -device-resource-info=BRAM_624.000000_DSP_1728.000000_FF_460800.000000_LUT_230400.000000_SLICE_28800.000000_URAM_96.000000 -device-name-info=xczu7ev-ffvf1517-3-e 2> /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 19,524 Compile/Link /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 19,524 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,636 Unroll/Inline (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 1,636 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,168 Unroll/Inline (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 1,168 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,196 Unroll/Inline (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 1,196 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Unroll/Inline (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Array/Struct (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Array/Struct (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Array/Struct (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Array/Struct (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 904 Array/Struct (step 5) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 904 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 722 Performance (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 722 Performance (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 722 Performance (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 722 Performance (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 722 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 725 HW Transforms (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 725 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 709 HW Transforms (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 709 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.25.28)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 11,143 Compile/Link /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 11,143 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,525 Unroll/Inline (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 1,525 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,246 Unroll/Inline (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 1,246 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,715 Unroll/Inline (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 1,715 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Unroll/Inline (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Array/Struct (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Array/Struct (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Array/Struct (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Array/Struct (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 458 Array/Struct (step 5) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 458 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 378 Performance (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 378 Performance (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 378 Performance (step 3) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 378 Performance (step 4) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 378 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 381 HW Transforms (step 1) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 381 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 374 HW Transforms (step 2) /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 374 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLL(ap_int<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLT(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLTU(ap_uint<32>, ap_uint<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_XOR(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SRL(ap_uint<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_OR(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_AND(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_NEG(ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SRA(ap_int<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.133.136)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
 INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)' into 'hart(ap_int<32>, ap_uint<32>)' (hart.cpp:11:0)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.18 seconds. CPU system time: 0.51 seconds. Elapsed time: 8.08 seconds; current allocated memory: 236.297 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.297 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.81 seconds. CPU system time: 0.73 seconds. Elapsed time: 11.44 seconds; current allocated memory: 236.707 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 236.707 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top hart -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.0.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 237.527 MB.
+Command         transform done; 0.92 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.92 seconds; current allocated memory: 237.777 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.1.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 239.219 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 239.418 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.g.1.bc to /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -241,17 +264,20 @@ Execute         transform -hls -tmp /home/omerfaruk/Projects/okul/denem7/denem7/
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hart.cpp:57:40) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:57:1) in function 'OP_AL_32I'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:57:1) in function 'OP_AL_32I'... converting 26 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:10:3)...6 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 262.254 MB.
+Command         transform done; 0.12 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 262.457 MB.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.o.2.bc -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           auto_get_db
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 269.000 MB.
+Command         transform done; 0.23 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 264.371 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.29 sec.
-Command     elaborate done; 24.59 sec.
+Command       opt_and_import_c done; 1.44 sec.
+Command     elaborate done; 44.28 sec.
 Execute     ap_eval exec zip -j /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.12 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -285,7 +311,8 @@ Execute       set_default_model OP_AL_32I
 Execute       schedule -model OP_AL_32I 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 269.000 MB.
+Command       schedule done; 0.29 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.49 seconds; current allocated memory: 265.336 MB.
 Execute       syn_report -verbosereport -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.verbose.sched.rpt 
 Execute         list_part -family xczu7ev-ffvf1517-3-e 
 Execute           ap_family_info -name xczu7ev-ffvf1517-3-e -data names 
@@ -299,7 +326,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 265.336 MB.
 Execute       syn_report -verbosereport -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.verbose.bind.rpt 
 Execute         list_part -family xczu7ev-ffvf1517-3-e 
 Execute           ap_family_info -name xczu7ev-ffvf1517-3-e -data names 
@@ -313,7 +340,7 @@ Execute       set_default_model hart
 Execute       schedule -model hart 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 267.797 MB.
 Execute       syn_report -verbosereport -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.verbose.sched.rpt 
 Execute         list_part -family xczu7ev-ffvf1517-3-e 
 Execute           ap_family_info -name xczu7ev-ffvf1517-3-e -data names 
@@ -327,7 +354,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 267.797 MB.
 Execute       syn_report -verbosereport -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.verbose.bind.rpt 
 Execute         list_part -family xczu7ev-ffvf1517-3-e 
 Execute           ap_family_info -name xczu7ev-ffvf1517-3-e -data names 
@@ -344,7 +371,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model OP_AL_32I -top_prefix hart_ -sub_prefix hart_ -mg_file /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 269.000 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 267.797 MB.
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.rtl_wrap.cfg.tcl 
 Execute       gen_rtl OP_AL_32I -style xilinx -f -lang vhdl -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/vhdl/hart_OP_AL_32I 
 Execute       gen_rtl OP_AL_32I -style xilinx -f -lang vlog -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/verilog/hart_OP_AL_32I 
@@ -372,7 +399,8 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
 INFO: [RTMG 210-278] Implementing memory 'hart_rf_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 270.012 MB.
+Command       create_rtl_model done; 0.16 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 269.707 MB.
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.rtl_wrap.cfg.tcl 
 Execute       gen_rtl hart -istop -style xilinx -f -lang vhdl -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/vhdl/hart 
 Execute       gen_rtl hart -istop -style xilinx -f -lang vlog -o /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/verilog/hart 
@@ -442,7 +470,9 @@ Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/tech
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.15 sec.
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.43 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/vhdl' dstVlogDir='/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/vlog' tclDir='/home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db' modelList='hart_rf_RAM_AUTO_1R1W
 OP_AL_32I
@@ -455,7 +485,7 @@ Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.auto
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/OP_AL_32I.compgen.tcl 
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.compgen.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.23 seconds; current allocated memory: 275.867 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.35 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.84 seconds; current allocated memory: 275.352 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='hart_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -484,23 +514,23 @@ Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info -quiet
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.constraint.tcl 
 Execute       sc_get_clocks hart 
 Execute       source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST hart MODULE2INSTS {hart hart OP_AL_32I grp_OP_AL_32I_fu_270} INST2MODULE {hart hart grp_OP_AL_32I_fu_270 OP_AL_32I} INSTDATA {hart {DEPTH 1 CHILDREN grp_OP_AL_32I_fu_270} grp_OP_AL_32I_fu_270 {DEPTH 2 CHILDREN {}}} MODULEDATA {OP_AL_32I {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_252_p2 SOURCE OP_AL_32I.cpp:37 VARIABLE rd_val_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_272_p2 SOURCE OP_AL_32I.cpp:28 VARIABLE sub_ln28 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME rd_val_14_fu_383_p2 SOURCE OP_AL_32I.cpp:27 VARIABLE rd_val_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_272_p2 SOURCE OP_AL_32I.cpp:19 VARIABLE sub_ln19 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_272_p2 SOURCE OP_AL_32I.cpp:15 VARIABLE sub_ln15 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_252_p2 SOURCE OP_AL_32I.cpp:14 VARIABLE rd_val_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} hart {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_6_fu_521_p2 SOURCE hart.cpp:90 VARIABLE next_pc_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_5_fu_558_p2 SOURCE hart.cpp:90 VARIABLE next_pc_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_289_p2 SOURCE hart.cpp:90 VARIABLE next_pc_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_289_p2 SOURCE hart.cpp:90 VARIABLE next_pc_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_2_fu_771_p2 SOURCE hart.cpp:90 VARIABLE next_pc_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_305_p2 SOURCE hart.cpp:90 VARIABLE add_ln90_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_305_p2 SOURCE hart.cpp:90 VARIABLE add_ln90 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME rf_U SOURCE {} VARIABLE rf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE ram_t2p DISPNAME {bind_storage ram_t2p}}} AREA {DSP 0 BRAM 2 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST hart MODULE2INSTS {hart hart OP_AL_32I grp_OP_AL_32I_fu_268} INST2MODULE {hart hart grp_OP_AL_32I_fu_268 OP_AL_32I} INSTDATA {hart {DEPTH 1 CHILDREN grp_OP_AL_32I_fu_268} grp_OP_AL_32I_fu_268 {DEPTH 2 CHILDREN {}}} MODULEDATA {OP_AL_32I {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_231_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE rd_val_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME rd_val_16_fu_345_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE rd_val_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_231_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE rd_val_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} hart {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_282_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE add_ln80_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_6_fu_514_p2 SOURCE hart.cpp:90 VARIABLE next_pc_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_282_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE add_ln80_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_5_fu_551_p2 SOURCE hart.cpp:90 VARIABLE next_pc_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln80_fu_557_p2 SOURCE OP_AL_32I.cpp:80 VARIABLE add_ln80 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_282_p2 SOURCE hart.cpp:90 VARIABLE next_pc_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_282_p2 SOURCE hart.cpp:90 VARIABLE next_pc_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME next_pc_2_fu_771_p2 SOURCE hart.cpp:90 VARIABLE next_pc_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_299_p2 SOURCE hart.cpp:90 VARIABLE add_ln90_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_299_p2 SOURCE hart.cpp:90 VARIABLE add_ln90 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME rf_U SOURCE {} VARIABLE rf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE ram_t2p DISPNAME {bind_storage ram_t2p}}} AREA {DSP 0 BRAM 2 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.39 seconds; current allocated memory: 284.758 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.26 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.4 seconds; current allocated memory: 284.430 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for hart.
 INFO: [VLOG 209-307] Generating Verilog RTL for hart.
 Execute       syn_report -model hart -printsummary 
 INFO: [HLS 200-789] **** Estimated Fmax: 192.21 MHz
-Command     autosyn done; 1.02 sec.
-Command   csynth_design done; 25.73 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18.56 seconds. CPU system time: 2.52 seconds. Elapsed time: 25.73 seconds; current allocated memory: 52.523 MB.
-Command ap_source done; 26.82 sec.
+Command     autosyn done; 2.3 sec.
+Command   csynth_design done; 46.94 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 19.93 seconds. CPU system time: 3.11 seconds. Elapsed time: 46.94 seconds; current allocated memory: 52.215 MB.
+Command ap_source done; 52.28 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/omerfaruk/Projects/okul/denem7/denem7/solution1 opened at Thu Mar 07 10:40:40 +03 2024
+INFO-FLOW: Workspace /home/omerfaruk/Projects/okul/denem7/denem7/solution1 opened at Mon Mar 11 08:38:58 +03 2024
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     set_part xczu7ev-ffvf1517-3-e 
@@ -509,22 +539,27 @@ DBG:HLSDevice: Trying to load device library: /home/omerfaruk/tools/Xilinx/Vitis
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/omerfaruk/tools/Xilinx/Vivado/2023.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
-Command       create_platform done; 0.56 sec.
+Command       create_platform done; 10.28 sec.
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Command         ap_source done; 0.12 sec.
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute           source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Command           ap_source done; 0.12 sec.
+Command         ap_source done; 0.16 sec.
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.14 sec.
 Execute         source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.69 sec.
 Execute       ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.67 sec.
+Command     set_part done; 11.27 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
@@ -536,10 +571,11 @@ Execute     config_cosim -trace_level=port
 Execute     send_msg_by_id INFO @200-1464@%s config_cosim -wave_debug=1 
 INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
 Execute     config_cosim -wave_debug=1 
-Command   open_solution done; 0.77 sec.
+Command   open_solution done; 11.67 sec.
 Execute   set_part xczu7ev-ffvf1517-3-e 
 INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
 Execute     create_platform xczu7ev-ffvf1517-3-e -board  
+Command     create_platform done; 0.12 sec.
 Execute     source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
@@ -552,13 +588,18 @@ Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/techno
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.2 sec.
+Command   set_part done; 0.25 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_cosim -tool xsim -trace_level port -wave_debug 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+Execute   source ./denem7/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./denem7/solution1/directives.tcl
+Execute     set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
 Execute   cosim_design -wave_debug -trace_level port 
 INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
 Execute     source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/global.setting.tcl 
@@ -582,7 +623,9 @@ Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/techno
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.16 sec.
 Execute       source /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.21 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data names -quiet 
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info -quiet 
@@ -598,22 +641,22 @@ Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info
 INFO-FLOW: TB processing: /home/omerfaruk/Projects/okul/denem7/test_hart.cpp /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/test_hart.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/test_hart.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/test_hart.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 1.68 sec.
+Command     clang_tidy done; 2.9 sec.
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: TB processing: /home/omerfaruk/Projects/okul/denem7/OP_AL_32I.cpp /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/OP_AL_32I.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/OP_AL_32I.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/OP_AL_32I.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 1.18 sec.
+Command     clang_tidy done; 1.34 sec.
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: TB processing: /home/omerfaruk/Projects/okul/denem7/hart.cpp /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/hart.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/hart.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/hart.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 2.02 sec.
+Command     clang_tidy done; 1.95 sec.
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 INFO-FLOW: TB processing: /home/omerfaruk/Projects/okul/denem7/mem.cpp /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/mem.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/mem.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec /home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/mem.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 1.15 sec.
+Command     clang_tidy done; 1.68 sec.
 Execute     source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/./sim/autowrap/testbench/tb.status.tcl 
 Execute     source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopilot/db/hart.rtl_wrap.cfg.tcl 
@@ -624,6 +667,7 @@ Execute     source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/.autopi
 Execute     ap_part_info -name xczu7ev-ffvf1517-3-e -data info 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.31 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
 Execute     source ../tv/cdatafile/ref.tcl 
@@ -654,9 +698,10 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-Command     ap_source done; 125.45 sec.
+Command     ap_source done; 233.2 sec.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-Command   cosim_design done; 143.85 sec.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 149.87 seconds. CPU system time: 8.28 seconds. Elapsed time: 143.85 seconds; current allocated memory: 11.152 MB.
-Command ap_source done; 144.84 sec.
+Command   cosim_design done; 280.16 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 137.8 seconds. CPU system time: 10.63 seconds. Elapsed time: 280.24 seconds; current allocated memory: 11.215 MB.
+Command ap_source done; 292.29 sec.
 Execute cleanup_all 
+Command cleanup_all done; 0.21 sec.

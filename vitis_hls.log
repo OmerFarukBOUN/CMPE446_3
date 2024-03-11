@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'omerfaruk' on host 'DarkChocolate' (Linux_x86_64 version 6.5.0-21-generic) on Thu Mar 07 10:40:39 +03 2024
+INFO: [HLS 200-10] For user 'omerfaruk' on host 'DarkChocolate' (Linux_x86_64 version 6.5.0-21-generic) on Mon Mar 11 08:38:58 +03 2024
 INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/omerfaruk/Projects/okul/denem7'
 INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
@@ -30,6 +30,8 @@ INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
 INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: source ./denem7/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
 INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
 INFO: [COSIM 212-14] Instrumenting C test bench ...
@@ -85,13 +87,13 @@ c 0x108093
 60 0x500093
 0x5
 64 0x0c000ef
-0x0d0
+0x68
 70 0x408167
-0x0d0
+0x68
 74 0x10b7
 0x1000
 78 0x2097
-0x40f0
+0x2078
 7c 0x500093
 0x5
 INFO: [COSIM 212-333] Generating C post check test bench ...
@@ -142,7 +144,7 @@ Built simulation snapshot hart
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 start_gui
-INFO: [Common 17-206] Exiting xsim at Thu Mar  7 10:43:01 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Mar 11 08:43:41 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
 0 0x500093
 4 0x700113
@@ -171,5 +173,5 @@ c 0x108093
 78 0x2097
 7c 0x500093
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 149.87 seconds. CPU system time: 8.28 seconds. Elapsed time: 143.85 seconds; current allocated memory: 11.152 MB.
-INFO: [HLS 200-112] Total CPU user time: 151.53 seconds. Total CPU system time: 8.52 seconds. Total elapsed time: 145.51 seconds; peak allocated memory: 243.613 MB.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 137.8 seconds. CPU system time: 10.63 seconds. Elapsed time: 280.24 seconds; current allocated memory: 11.215 MB.
+INFO: [HLS 200-112] Total CPU user time: 140.6 seconds. Total CPU system time: 11.16 seconds. Total elapsed time: 299.58 seconds; peak allocated memory: 243.672 MB.

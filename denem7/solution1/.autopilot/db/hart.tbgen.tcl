@@ -68,7 +68,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "pc", "Type" : "None", "Direction" : "I"},
 			{"Name" : "rf", "Type" : "Memory", "Direction" : "IO"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rf_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_OP_AL_32I_fu_270", "Parent" : "0",
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_OP_AL_32I_fu_268", "Parent" : "0",
 		"CDFG" : "OP_AL_32I",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",

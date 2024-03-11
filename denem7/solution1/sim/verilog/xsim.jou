@@ -3,13 +3,13 @@
 # SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Thu Mar  7 10:41:05 2024
-# Process ID: 64122
+# Start of session at: Mon Mar 11 08:40:28 2024
+# Process ID: 93445
 # Current directory: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog
 # Command line: xsim -source {xsim.dir/hart/xsim_script.tcl}
 # Log file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.log
 # Journal file: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/xsim.jou
-# Running On: DarkChocolate, OS: Linux, CPU Frequency: 3228.190 MHz, CPU Physical cores: 4, Host memory: 16509 MB
+# Running On: DarkChocolate, OS: Linux, CPU Frequency: 799.991 MHz, CPU Physical cores: 4, Host memory: 16509 MB
 #-----------------------------------------------------------
 start_gui
 source xsim.dir/hart/xsim_script.tcl

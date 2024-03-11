@@ -11,21 +11,21 @@ r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type 
 		switch(func7){ //func7
 		case FUNC7_0:
 			switch(func3){
-			case ADD: rd_val =  op1 + op2; break;
-			case SLL: rd_val = op1 << op2;break;
-			case SLT: op1<op2 ? rd_val = 1 : rd_val =0; break;
-			case SLTU:(uns)op1<(uns)op2 ? rd_val = 1 : rd_val =0; break;
-			case XOR: rd_val = op1 ^ op2;break;
-			case SRL: rd_val = (uns) op1 >> op2;break;
-			case OR:  rd_val = op1 | op2;break;
-			case AND: rd_val = op1 & op2;break;
+			case ADD: rd_val = ALU_SUM(op1,op2); break;
+			case SLL: rd_val = ALU_SLL(op1, op2.range(4,0));break;
+			case SLT: rd_val = ALU_SLT(op1,op2); break;
+			case SLTU:rd_val = ALU_SLTU((uns)op1, (uns)op2); break;
+			case XOR: rd_val = ALU_XOR(op1,op2);break;
+			case SRL: rd_val = ALU_SRL((uns) op1,op2.range(4,0));break;
+			case OR:  rd_val = ALU_OR(op1,op2);break;
+			case AND: rd_val = ALU_AND(op1,op2);break;
 			default: error = 1;break;//... //illegal opcode
 			}
 			break;
 		case FUNC7_32:
 			switch(func3){ //func3
-			case SUB: rd_val = op1 - op2; break;
-			case SRA: rd_val = op1 >> op2;break;
+			case SUB: rd_val = ALU_SUM(op1, ALU_NEG(op2)); break;
+			case SRA: rd_val = ALU_SRA(op1, op2.range(4,0));break;
 			default: error = 1;break;//... //illegal opcode
 			}
 			break;
@@ -34,20 +34,20 @@ r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type 
 		break;
 	case OP_AL_I:
 		switch(func3){
-		case ADD: rd_val =  op1 + op2; break;
-		case SLL: rd_val = op1 << (uns)op2.range(4, 0);break;
-		case SLT: op1<op2 ? rd_val = 1 : rd_val =0; break;
-		case SLTU:(uns)op1<(uns)op2 ? rd_val = 1 : rd_val =0; break;
-		case XOR: rd_val = op1 ^ op2;break;
+		case ADD: rd_val = ALU_SUM(op1,op2); break;
+		case SLL: rd_val = ALU_SLL(op1, op2.range(4,0));break;
+		case SLT: rd_val = ALU_SLT(op1,op2); break;
+		case SLTU:rd_val = ALU_SLTU((uns)op1, (uns)op2); break;
+		case XOR: rd_val = ALU_XOR(op1,op2);break;
 		case SRL:
 			switch (func7) {
-			case FUNC7_0: rd_val = (r_type) (((uns) op1) >> (rf_pntr_type) op2.range(4, 0));break;
-			case FUNC7_32: rd_val = (r_type) (op1 >> (rf_pntr_type)op2.range(4,0));break;
+			case FUNC7_0: rd_val = ALU_SRL((uns) op1,op2.range(4,0));break;
+			case FUNC7_32: rd_val = ALU_SRA(op1, op2.range(4,0));break;
 			default: error = 1; break;
 			}
 			break;
-		case OR:  rd_val = op1 | op2; break;
-		case AND: rd_val = op1 & op2; break;
+		case OR:  rd_val = ALU_OR(op1,op2);break;
+		case AND: rd_val = ALU_AND(op1,op2);break;
 		default: error = 1;break; //... //illegal opcode
 		}
 		break;
@@ -80,7 +80,39 @@ imm_type ALU_SUM(imm_type op1, imm_type op2) {
 	return op1 + op2;
 }
 
-imm_type ALU_DIF(imm_type op1, imm_type op2) {
-	return op1 + op2;
+imm_type ALU_NEG(imm_type op1) {
+	return -op1;
 }
 
+imm_type ALU_SLL(imm_type op1, rf_pntr_type op2) {
+	return op1 << op2;
+}
+
+imm_type ALU_SLT(imm_type op1, imm_type op2) {
+	return (op1<op2);
+}
+
+imm_type ALU_SLTU(uns op1, uns op2) {
+	return (op1<op2);
+}
+
+
+imm_type ALU_XOR(imm_type op1, imm_type op2) {
+	return op1 ^ op2;
+}
+
+imm_type ALU_SRL(uns op1, rf_pntr_type op2) {
+	return op1 >> op2;
+}
+
+imm_type ALU_SRA(imm_type op1, rf_pntr_type op2) {
+	return op1 >> op2;
+}
+
+imm_type ALU_OR(imm_type op1, imm_type op2) {
+	return op1 | op2;
+}
+
+imm_type ALU_AND(imm_type op1, imm_type op2) {
+	return op1 & op2;
+}

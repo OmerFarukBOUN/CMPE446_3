@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hart'" level="0">
-<item name = "Date">Thu Mar  7 10:40:31 2024
+<item name = "Date">Mon Mar 11 08:38:11 2024
 </item>
 <item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">denem7</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_OP_AL_32I_fu_270">OP_AL_32I, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_OP_AL_32I_fu_268">OP_AL_32I, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

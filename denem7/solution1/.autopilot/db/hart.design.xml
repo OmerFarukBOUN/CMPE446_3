@@ -5,10 +5,10 @@
 <ModuleName>hart</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_OP_AL_32I_fu_270</InstName>
+<InstName>grp_OP_AL_32I_fu_268</InstName>
 <ModuleName>OP_AL_32I</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>270</ID>
+<ID>268</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -21,7 +21,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>2.858</EstimatedClockPeriod>
+<EstimatedClockPeriod>1.900</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -44,7 +44,7 @@
 <FF>0</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>1193</LUT>
+<LUT>926</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -170,7 +170,7 @@
 <FF>101</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>2126</LUT>
+<LUT>1858</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>

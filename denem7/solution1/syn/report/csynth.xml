@@ -38,7 +38,7 @@
         <Resources>
             <BRAM_18K>2</BRAM_18K>
             <FF>101</FF>
-            <LUT>2126</LUT>
+            <LUT>1858</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -158,14 +158,14 @@
             <ModuleName>hart</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_OP_AL_32I_fu_270</InstName>
+                    <InstName>grp_OP_AL_32I_fu_268</InstName>
                     <ModuleName>OP_AL_32I</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>270</ID>
-                    <BindInstances>grp_fu_252_p2 grp_fu_272_p2 rd_val_14_fu_383_p2 grp_fu_272_p2 grp_fu_272_p2 grp_fu_252_p2</BindInstances>
+                    <ID>268</ID>
+                    <BindInstances>grp_fu_231_p2 rd_val_16_fu_345_p2 grp_fu_231_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>next_pc_6_fu_521_p2 next_pc_5_fu_558_p2 grp_fu_289_p2 grp_fu_289_p2 next_pc_2_fu_771_p2 grp_fu_305_p2 grp_fu_305_p2 rf_U</BindInstances>
+            <BindInstances>grp_fu_282_p2 next_pc_6_fu_514_p2 grp_fu_282_p2 next_pc_5_fu_551_p2 add_ln80_fu_557_p2 grp_fu_282_p2 grp_fu_282_p2 next_pc_2_fu_771_p2 grp_fu_299_p2 grp_fu_299_p2 rf_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -175,7 +175,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.858</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.900</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>0</Best-caseLatency>
@@ -198,7 +198,7 @@
                     <FF>0</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>0</UTIL_FF>
-                    <LUT>1193</LUT>
+                    <LUT>926</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -213,12 +213,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_252_p2" SOURCE="OP_AL_32I.cpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="grp_fu_272_p2" SOURCE="OP_AL_32I.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln28"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="rd_val_14_fu_383_p2" SOURCE="OP_AL_32I.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_14"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="grp_fu_272_p2" SOURCE="OP_AL_32I.cpp:19" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="grp_fu_272_p2" SOURCE="OP_AL_32I.cpp:15" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln15"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_252_p2" SOURCE="OP_AL_32I.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_231_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="rd_val_16_fu_345_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_231_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="rd_val_9"/>
             </BindNodes>
         </Module>
         <Module>
@@ -253,7 +250,7 @@
                     <FF>101</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>2126</LUT>
+                    <LUT>1858</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -265,13 +262,16 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_pc_6_fu_521_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_pc_5_fu_558_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_289_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_289_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_282_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_pc_6_fu_514_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_282_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_pc_5_fu_551_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_fu_557_p2" SOURCE="OP_AL_32I.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_282_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_282_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_3"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="next_pc_2_fu_771_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="next_pc_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_305_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_305_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_299_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_299_p2" SOURCE="hart.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90"/>
                 <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="rf_U" SOURCE="" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p" URAM="0" VARIABLE="rf"/>
             </BindNodes>
         </Module>

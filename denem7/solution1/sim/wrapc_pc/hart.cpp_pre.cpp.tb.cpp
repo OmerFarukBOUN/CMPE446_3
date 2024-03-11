@@ -61906,6 +61906,16 @@ pc_type hart(inst_type inst, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
 imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);
+imm_type ALU_SUM(imm_type op1, imm_type op2);
+imm_type ALU_NEG(imm_type op1);
+imm_type ALU_SLL(imm_type op1, rf_pntr_type op2);
+imm_type ALU_SLT(imm_type op1, imm_type op2);
+imm_type ALU_SLTU(uns op1, uns op2);
+imm_type ALU_XOR(imm_type op1, imm_type op2);
+imm_type ALU_SRL(uns op1, rf_pntr_type op2);
+imm_type ALU_SRA(imm_type op1, rf_pntr_type op2);
+imm_type ALU_OR(imm_type op1, imm_type op2);
+imm_type ALU_AND(imm_type op1, imm_type op2);
 # 2 "/home/omerfaruk/Projects/okul/denem7/hart.cpp" 2
 
 
@@ -61970,15 +61980,15 @@ pc_type hart(inst_type inst, pc_type pc)
   next_pc = next_pc_calc(pc, 4, 0);
   break;
  case 0b0010111:
-  if (rd!=0) rf[rd] = OP_AL_32I(0b0010011, 0, 0, pc, imm_20_U);
+  if (rd!=0) rf[rd] = ALU_SUM(pc, imm_20_U);
   next_pc = next_pc_calc(pc, 4, 0);
   break;
  case 0b1101111:
-  if (rd!=0) rf[rd] = OP_AL_32I(0b0010011, 0, 0, pc, 4);
+  if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
   next_pc = next_pc_calc(pc, imm_JAL, 0);
   break;
  case 0b1100111:
-  if (rd!=0) rf[rd] = OP_AL_32I(0b0010011, 0, 0, pc, 4);
+  if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
   next_pc = next_pc_calc(pc, imm_11_0, 0);
   func3 ? next_pc[0] = 1: next_pc[0] = 0;
   break;

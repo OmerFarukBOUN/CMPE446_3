@@ -25,8 +25,9 @@ pc_type hart(inst_type inst, pc_type pc)
 	pc_type imm_20_U;
 	imm_type imm_JAL;
 	imm_type offset;
-
 	bit_type error;
+	r_e_type return_val;
+
     opcode= inst.range(6,0) ;
 	rd = inst.range(11,7);
 	rs1= inst.range(19,15);
@@ -40,7 +41,6 @@ pc_type hart(inst_type inst, pc_type pc)
 	imm_20_U = (pc_type) inst.range(31,12) << 12;
 	imm_JAL = (imm_type) ((ap_int<21>) (inst[31]<<20 | inst.range(30,21) << 1 | inst[20]<<11 | inst.range(19,12)<<12));
 
-	r_e_type return_val;
 
 	switch(opcode){
 	case OP_AL_R:
@@ -62,15 +62,15 @@ pc_type hart(inst_type inst, pc_type pc)
 		next_pc = next_pc_calc(pc, 4, 0);
 		break;
 	case OP_AUIPC:
-		if (rd!=0) rf[rd] = OP_AL_32I(OP_AL_I, FUNC7_0, ADD, pc, imm_20_U);
+		if (rd!=0) rf[rd] = ALU_SUM(pc, imm_20_U);
 		next_pc = next_pc_calc(pc, 4, 0);
 		break;
 	case OP_JAL:
-		if (rd!=0) rf[rd] = OP_AL_32I(OP_AL_I, FUNC7_0, ADD, pc, 4);
+		if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
 		next_pc = next_pc_calc(pc, imm_JAL, 0);
 		break;
 	case OP_JALR:
-		if (rd!=0) rf[rd] = OP_AL_32I(OP_AL_I, FUNC7_0, ADD, pc, 4);
+		if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
 		next_pc = next_pc_calc(pc, imm_11_0, 0);
 		func3 ? next_pc[0] = 1: next_pc[0] = 0;
 		break;
