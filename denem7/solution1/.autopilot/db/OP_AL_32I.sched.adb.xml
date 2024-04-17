@@ -109,10 +109,10 @@ entry:5 %empty = trunc i32 %op1_val_read
 
 <Node id="12" bw="31" op_0_bw="32">
 <![CDATA[
-entry:6 %empty_61 = trunc i32 %op2_val_read
+entry:6 %empty_131 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_61"/></StgValue>
+<StgValue><ssdm name="empty_131"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -157,7 +157,7 @@ sw.bb55:0 %switch_ln36 = switch i3 %func3_val_read, void %sw.bb97, i3 0, void %s
 
 <Node id="17" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb93:0 %rd_val_7 = or i31 %empty_61, i31 %empty
+sw.bb93:0 %rd_val_7 = or i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_7"/></StgValue>
@@ -209,10 +209,10 @@ sw.bb78:0 %switch_ln43 = switch i7 %func7_val_read, void %sw.epilog106, i7 0, vo
 
 <Node id="22" bw="5" op_0_bw="32">
 <![CDATA[
-sw.bb85:0 %op2_6 = trunc i32 %op2_val_read
+sw.bb85:0 %op2_5 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="op2_6"/></StgValue>
+<StgValue><ssdm name="op2_5"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -227,7 +227,7 @@ sw.bb85:0 %op2_6 = trunc i32 %op2_val_read
 
 <Node id="23" bw="32" op_0_bw="5">
 <![CDATA[
-sw.bb85:1 %zext_ln109_1 = zext i5 %op2_6
+sw.bb85:1 %zext_ln109_1 = zext i5 %op2_5
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln109_1"/></StgValue>
@@ -299,10 +299,10 @@ sw.bb85:4 %br_ln45 = br void %sw.epilog106
 
 <Node id="28" bw="5" op_0_bw="32">
 <![CDATA[
-sw.bb80:0 %op2_5 = trunc i32 %op2_val_read
+sw.bb80:0 %op2_4 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="op2_5"/></StgValue>
+<StgValue><ssdm name="op2_4"/></StgValue>
 </operation>
 
 <operation id="20" st_id="1" stage="1" lat="1">
@@ -317,7 +317,7 @@ sw.bb80:0 %op2_5 = trunc i32 %op2_val_read
 
 <Node id="29" bw="32" op_0_bw="5">
 <![CDATA[
-sw.bb80:1 %zext_ln105_1 = zext i5 %op2_5
+sw.bb80:1 %zext_ln105_1 = zext i5 %op2_4
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln105_1"/></StgValue>
@@ -388,7 +388,7 @@ sw.bb80:4 %br_ln44 = br void %sw.epilog106
 
 <Node id="34" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb74:0 %rd_val_6 = xor i31 %empty_61, i31 %empty
+sw.bb74:0 %rd_val_6 = xor i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_6"/></StgValue>
@@ -609,7 +609,7 @@ sw.bb61:4 %br_ln38 = br void %sw.epilog106
 
 <Node id="51" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb57:0 %rd_val_1 = add i31 %empty_61, i31 %empty
+sw.bb57:0 %rd_val_1 = add i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_1"/></StgValue>
@@ -643,7 +643,7 @@ sw.bb57:1 %br_ln37 = br void %sw.epilog106
 
 <Node id="54" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb97:0 %rd_val = and i31 %empty_61, i31 %empty
+sw.bb97:0 %rd_val = and i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val"/></StgValue>
@@ -711,10 +711,10 @@ sw.bb37:0 %switch_ln26 = switch i3 %func3_val_read, void %sw.epilog106, i3 0, vo
 
 <Node id="61" bw="5" op_0_bw="32">
 <![CDATA[
-sw.bb44:0 %op2_4 = trunc i32 %op2_val_read
+sw.bb44:0 %op2_3 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="op2_4"/></StgValue>
+<StgValue><ssdm name="op2_3"/></StgValue>
 </operation>
 
 <operation id="44" st_id="1" stage="1" lat="1">
@@ -729,7 +729,7 @@ sw.bb44:0 %op2_4 = trunc i32 %op2_val_read
 
 <Node id="62" bw="32" op_0_bw="5">
 <![CDATA[
-sw.bb44:1 %zext_ln109 = zext i5 %op2_4
+sw.bb44:1 %zext_ln109 = zext i5 %op2_3
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln109"/></StgValue>
@@ -801,7 +801,7 @@ sw.bb44:4 %br_ln28 = br void %sw.epilog106
 
 <Node id="67" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb39:0 %rd_val_16 = sub i31 %empty, i31 %empty_61
+sw.bb39:0 %rd_val_16 = sub i31 %empty, i31 %empty_131
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_16"/></StgValue>
@@ -854,7 +854,7 @@ sw.bb2:0 %switch_ln13 = switch i3 %func3_val_read, void %sw.bb32, i3 0, void %sw
 
 <Node id="72" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb28:0 %rd_val_15 = or i31 %empty_61, i31 %empty
+sw.bb28:0 %rd_val_15 = or i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_15"/></StgValue>
@@ -890,10 +890,10 @@ sw.bb28:1 %br_ln20 = br void %sw.epilog106
 
 <Node id="75" bw="5" op_0_bw="32">
 <![CDATA[
-sw.bb23:0 %op2_3 = trunc i32 %op2_val_read
+sw.bb23:0 %op2_2 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="op2_3"/></StgValue>
+<StgValue><ssdm name="op2_2"/></StgValue>
 </operation>
 
 <operation id="54" st_id="1" stage="1" lat="1">
@@ -908,7 +908,7 @@ sw.bb23:0 %op2_3 = trunc i32 %op2_val_read
 
 <Node id="76" bw="32" op_0_bw="5">
 <![CDATA[
-sw.bb23:1 %zext_ln105 = zext i5 %op2_3
+sw.bb23:1 %zext_ln105 = zext i5 %op2_2
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln105"/></StgValue>
@@ -980,7 +980,7 @@ sw.bb23:4 %br_ln19 = br void %sw.epilog106
 
 <Node id="81" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb19:0 %rd_val_13 = xor i31 %empty_61, i31 %empty
+sw.bb19:0 %rd_val_13 = xor i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_13"/></StgValue>
@@ -1124,10 +1124,10 @@ sw.bb11:2 %br_ln16 = br void %sw.epilog106
 
 <Node id="92" bw="5" op_0_bw="32">
 <![CDATA[
-sw.bb6:0 %op2_2 = trunc i32 %op2_val_read
+sw.bb6:0 %op2_1 = trunc i32 %op2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="op2_2"/></StgValue>
+<StgValue><ssdm name="op2_1"/></StgValue>
 </operation>
 
 <operation id="67" st_id="1" stage="1" lat="1">
@@ -1142,7 +1142,7 @@ sw.bb6:0 %op2_2 = trunc i32 %op2_val_read
 
 <Node id="93" bw="32" op_0_bw="5">
 <![CDATA[
-sw.bb6:1 %zext_ln88_1 = zext i5 %op2_2
+sw.bb6:1 %zext_ln88_1 = zext i5 %op2_1
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln88_1"/></StgValue>
@@ -1214,7 +1214,7 @@ sw.bb6:4 %br_ln15 = br void %sw.epilog106
 
 <Node id="98" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb4:0 %rd_val_9 = add i31 %empty_61, i31 %empty
+sw.bb4:0 %rd_val_9 = add i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_9"/></StgValue>
@@ -1250,7 +1250,7 @@ sw.bb4:1 %br_ln14 = br void %sw.epilog106
 
 <Node id="101" bw="31" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-sw.bb32:0 %rd_val_8 = and i31 %empty_61, i31 %empty
+sw.bb32:0 %rd_val_8 = and i31 %empty_131, i31 %empty
 
 ]]></Node>
 <StgValue><ssdm name="rd_val_8"/></StgValue>

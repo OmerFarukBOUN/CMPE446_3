@@ -1,5 +1,5 @@
 
-set TopModule "hart"
+set TopModule "top_module"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix hart_
+set RtlSubPrefix top_module_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -42,8 +42,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu7ev:-ffvf1517:-3-e
-set SourceFiles {sc {} c {../../OP_AL_32I.cpp ../../hart.cpp ../../mem.cpp}}
-set SourceFlags {sc {} c {{} {} {}}}
+set SourceFiles {sc {} c {../../OP_AL_32I.cpp ../../hart.cpp ../../mem.cpp ../../top_module.cpp}}
+set SourceFlags {sc {} c {{} {} {} {}}}
 set DirectiveFile {}
 set TBFiles {verilog ../../test_hart.cpp bc ../../test_hart.cpp vhdl ../../test_hart.cpp sc ../../test_hart.cpp cas ../../test_hart.cpp c {}}
 set SpecLanguage C

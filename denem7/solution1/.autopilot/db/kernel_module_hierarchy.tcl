@@ -1,5 +1,7 @@
 set ModuleHierarchy {[{
-"Name" : "hart","ID" : "0","Type" : "sequential",
+"Name" : "top_module","ID" : "0","Type" : "sequential",
 "SubInsts" : [
-	{"Name" : "grp_OP_AL_32I_fu_268","ID" : "1","Type" : "sequential"},]
+	{"Name" : "grp_hart_fu_19905","ID" : "1","Type" : "sequential",
+		"SubInsts" : [
+		{"Name" : "grp_OP_AL_32I_fu_187","ID" : "2","Type" : "sequential"},]},]
 }]}

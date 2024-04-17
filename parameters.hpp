@@ -6,6 +6,7 @@ using namespace std;
 //#define EXTRA
 #define LEGAL
 #define DEBUG
+#define FIRSTDESIGN
 
 #define XLEN 32
 #define BYTE 8
@@ -47,6 +48,7 @@ typedef ap_uint<XLEN> uns ;
 typedef ap_int<XLEN> data_type ;
 typedef ap_uint<BIT> bit_type;
 typedef ap_uint<LOG_NO_OF_HART> hart_id;
+typedef ap_uint<2> hazard_type;
 //typedef ap_uint<
 
 #define ADD 0
@@ -77,7 +79,14 @@ typedef ap_uint<LOG_NO_OF_HART> hart_id;
 #define SH 1
 #define SW 2
 
-pc_type hart(inst_type inst, pc_type pc);
+typedef struct {
+	r_type register_ret;
+	pc_type next_pc;
+}hart_return;
+
+pc_type top_module(inst_type inst1, inst_type inst2, pc_type current_pc);
+hazard_type data_hazard_detection(inst_type inst1, inst_type inst2);
+hart_return hart(inst_type inst, r_type r1, r_type r2, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
 imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);

@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../test_hart.cpp ../../../../OP_AL_32I.cpp ../../../../hart.cpp ../../../../mem.cpp
+HLS_SOURCES = ../../../../test_hart.cpp ../../../../OP_AL_32I.cpp ../../../../hart.cpp ../../../../mem.cpp ../../../../top_module.cpp
 
 override TARGET := csim.exe
 
@@ -60,7 +60,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E2__
-AP_ENABLE_OPTIMIZED := 1
+IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
 CCFLAG += -Wno-abi
@@ -76,24 +76,30 @@ all: $(TARGET)
 
 $(ObjDir)/test_hart.o: ../../../../test_hart.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../test_hart.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/test_hart.d
 
 $(ObjDir)/OP_AL_32I.o: ../../../../OP_AL_32I.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../OP_AL_32I.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/OP_AL_32I.d
 
 $(ObjDir)/hart.o: ../../../../hart.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../hart.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/hart.d
 
 $(ObjDir)/mem.o: ../../../../mem.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../mem.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/mem.d
+
+$(ObjDir)/top_module.o: ../../../../top_module.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../top_module.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/top_module.d

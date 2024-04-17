@@ -1,12 +1,18 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl:19:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="hart" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=hart" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_module" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/omerfaruk/Projects/okul/denem7/denem7/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="hart" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=hart" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_module" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="OP_AL_32I.cpp:6:0" msg_body="Inlining function 'ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.124.127)' into 'OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
-        <args Callee="ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.124.127)" Callee-DebugLoc="File OP_AL_32I.cpp Line 79 Column 0" Caller="OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File OP_AL_32I.cpp Line 6 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="OFF" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=rf type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="OP_AL_32I.cpp:6:0" msg_body="Inlining function 'ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.128.131)' into 'OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
+        <args Callee="ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.128.131)" Callee-DebugLoc="File OP_AL_32I.cpp Line 79 Column 0" Caller="OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File OP_AL_32I.cpp Line 6 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="OP_AL_32I.cpp:6:0" msg_body="Inlining function 'ALU_SLL(ap_int&lt;32&gt;, ap_uint&lt;5&gt;)' into 'OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
         <args Callee="ALU_SLL(ap_int&lt;32&gt;, ap_uint&lt;5&gt;)" Callee-DebugLoc="File OP_AL_32I.cpp Line 87 Column 0" Caller="OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File OP_AL_32I.cpp Line 6 Column 0"/>
@@ -35,14 +41,20 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="OP_AL_32I.cpp:6:0" msg_body="Inlining function 'ALU_SRA(ap_int&lt;32&gt;, ap_uint&lt;5&gt;)' into 'OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
         <args Callee="ALU_SRA(ap_int&lt;32&gt;, ap_uint&lt;5&gt;)" Callee-DebugLoc="File OP_AL_32I.cpp Line 108 Column 0" Caller="OP_AL_32I(ap_int&lt;32&gt;, ap_int&lt;7&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File OP_AL_32I.cpp Line 6 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:11:0" msg_body="Inlining function 'next_pc_calc(ap_uint&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;) (.133.136)' into 'hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
-        <args Callee="next_pc_calc(ap_uint&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;) (.133.136)" Callee-DebugLoc="File hart.cpp Line 89 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 11 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:13:0" msg_body="Inlining function 'next_pc_calc(ap_uint&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;) (.137.140)' into 'hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
+        <args Callee="next_pc_calc(ap_uint&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;) (.137.140)" Callee-DebugLoc="File hart.cpp Line 85 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 13 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:11:0" msg_body="Inlining function 'OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
-        <args Callee="OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Callee-DebugLoc="File OP_AL_32I.cpp Line 65 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 11 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:13:0" msg_body="Inlining function 'OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
+        <args Callee="OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Callee-DebugLoc="File OP_AL_32I.cpp Line 65 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 13 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:11:0" msg_body="Inlining function 'ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.124.127)' into 'hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
-        <args Callee="ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.124.127)" Callee-DebugLoc="File OP_AL_32I.cpp Line 79 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 11 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:13:0" msg_body="Inlining function 'ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.128.131)' into 'hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
+        <args Callee="ALU_SUM(ap_int&lt;32&gt;, ap_int&lt;32&gt;) (.128.131)" Callee-DebugLoc="File OP_AL_32I.cpp Line 79 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 13 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top_module.cpp:8:0" msg_body="Inlining function 'data_hazard_detection(ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)'">
+        <args Callee="data_hazard_detection(ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Callee-DebugLoc="File top_module.cpp Line 92 Column 0" Caller="top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;32&gt;)" Caller-DebugLoc="File top_module.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top_module.cpp:15:0" msg_body="Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

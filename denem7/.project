@@ -62,6 +62,11 @@
 			<location>/home/omerfaruk/Projects/okul/denem7/parameters.hpp</location>
 		</link>
 		<link>
+			<name>source/top_module.cpp</name>
+			<type>1</type>
+			<location>/home/omerfaruk/Projects/okul/denem7/top_module.cpp</location>
+		</link>
+		<link>
 			<name>testbench/test_hart.cpp</name>
 			<type>1</type>
 			<location>/home/omerfaruk/Projects/okul/denem7/test_hart.cpp</location>

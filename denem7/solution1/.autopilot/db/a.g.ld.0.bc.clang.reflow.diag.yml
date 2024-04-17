@@ -5,7 +5,7 @@ DebugLoc:        { File: OP_AL_32I.cpp, Line: 6, Column: 0 }
 Function:        _Z9OP_AL_32I6ap_intILi32EES_ILi7EE7ap_uintILi3EES0_S0_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)'
+  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.128.131)'
     DebugLoc:        { File: OP_AL_32I.cpp, Line: 79, Column: 0 }
   - String:          ''' into '''
   - Caller:          'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)'
@@ -141,42 +141,74 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
-Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
+Function:        _Z4hart6ap_intILi32EES0_S0_7ap_uintILi32EE
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.133.136)'
-    DebugLoc:        { File: hart.cpp, Line: 89, Column: 0 }
+  - Callee:          'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.137.140)'
+    DebugLoc:        { File: hart.cpp, Line: 85, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'hart(ap_int<32>, ap_uint<32>)'
-    DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
+  - Caller:          'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
-Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
+Function:        _Z4hart6ap_intILi32EES0_S0_7ap_uintILi32EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)'
     DebugLoc:        { File: OP_AL_32I.cpp, Line: 65, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'hart(ap_int<32>, ap_uint<32>)'
-    DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
+  - Caller:          'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
-Function:        _Z4hart6ap_intILi32EE7ap_uintILi32EE
+DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
+Function:        _Z4hart6ap_intILi32EES0_S0_7ap_uintILi32EE
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.124.127)'
+  - Callee:          'ALU_SUM(ap_int<32>, ap_int<32>) (.128.131)'
     DebugLoc:        { File: OP_AL_32I.cpp, Line: 79, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'hart(ap_int<32>, ap_uint<32>)'
-    DebugLoc:        { File: hart.cpp, Line: 11, Column: 0 }
+  - Caller:          'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 13, Column: 0 }
   - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: top_module.cpp, Line: 8, Column: 0 }
+Function:        _Z10top_module6ap_intILi32EES0_7ap_uintILi32EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'data_hazard_detection(ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: top_module.cpp, Line: 92, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_module(ap_int<32>, ap_int<32>, ap_uint<32>)'
+    DebugLoc:        { File: top_module.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top_module.cpp, Line: 15, Column: 0 }
+Function:        _Z10top_module6ap_intILi32EES0_7ap_uintILi32EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
 ...

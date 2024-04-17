@@ -1,3 +1,4 @@
-hart_rf_RAM_AUTO_1R1W
+top_module_sparsemux_65_5_32_1_1
 OP_AL_32I
 hart
+top_module

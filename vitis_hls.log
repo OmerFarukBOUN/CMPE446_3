@@ -1,13 +1,13 @@
 INFO: [HLS 200-10] Running '/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'omerfaruk' on host 'DarkChocolate' (Linux_x86_64 version 6.5.0-21-generic) on Mon Mar 11 08:38:58 +03 2024
+INFO: [HLS 200-10] For user 'omerfaruk' on host 'DarkChocolate' (Linux_x86_64 version 6.5.0-27-generic) on Wed Apr 17 11:08:26 +03 2024
 INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/omerfaruk/Projects/okul/denem7'
 INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
-Sourcing Tcl script '/home/omerfaruk/Projects/okul/denem7/denem7/solution1/cosim.tcl'
-INFO: [HLS 200-1510] Running: source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/cosim.tcl
+Sourcing Tcl script '/home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl
 INFO: [HLS 200-1510] Running: open_project denem7 
 INFO: [HLS 200-10] Opening project '/home/omerfaruk/Projects/okul/denem7/denem7'.
-INFO: [HLS 200-1510] Running: set_top hart 
+INFO: [HLS 200-1510] Running: set_top top_module 
 INFO: [HLS 200-1510] Running: add_files OP_AL_32I.cpp 
 INFO: [HLS 200-10] Adding design file 'OP_AL_32I.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files hart.cpp 
@@ -16,6 +16,8 @@ INFO: [HLS 200-1510] Running: add_files mem.cpp
 INFO: [HLS 200-10] Adding design file 'mem.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files parameters.hpp 
 INFO: [HLS 200-10] Adding design file 'parameters.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files top_module.cpp 
+INFO: [HLS 200-10] Adding design file 'top_module.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files -tb test_hart.cpp -cflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'test_hart.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
@@ -31,147 +33,152 @@ INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
 INFO: [HLS 200-1510] Running: source ./denem7/solution1/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
-INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
-   Compiling apatb_hart.cpp
-   Compiling hart.cpp_pre.cpp.tb.cpp
-   Compiling mem.cpp_pre.cpp.tb.cpp
-   Compiling OP_AL_32I.cpp_pre.cpp.tb.cpp
-   Compiling test_hart.cpp_pre.cpp.tb.cpp
-   Compiling apatb_hart_ir.ll
-   Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
-0 0x500093
-0x5
-4 0x700113
-0x5
-8 0x208463
-0x5
-c 0x108093
-0x6
-10 0x500193
-0x6
-14 0x500213
-0x6
-18 0x419463
-0x6
-1c 0x108093
-0x7
-20 0x500293
-0x7
-24 0x700313
-0x7
-28 0x62c463
-0x7
-30 0x700393
-0x7
-34 0x500413
-0x7
-38 0x083d463
-0x7
-40 0x493
-0x7
-44 -0xffaed
-0x7
-48 0x0a4e463
-0x7
-50 -0xffa6d
-0x7
-54 0x613
-0x7
-58 0x0c5f463
-0x7
-60 0x500093
-0x5
-64 0x0c000ef
-0x68
-70 0x408167
-0x68
-74 0x10b7
-0x1000
-78 0x2097
-0x2078
-7c 0x500093
-0x5
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
-Vivado Simulator v2023.2.2
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /home/omerfaruk/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hart_top glbl -Oenable_linking_all_libraries -prj hart.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_17 -L floating_point_v7_0_22 --lib ieee_proposed=./ieee_proposed -s hart -debug all 
-Multi-threading is on. Using 6 slave threads.
-WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
-    LIBRARY_PATH
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/glbl.v" into library work
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart_rf_RAM_AUTO_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hart_rf_RAM_AUTO_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hart
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart_OP_AL_32I.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hart_OP_AL_32I
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/hart.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_hart_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module dataflow_monitor
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.hart_rf_RAM_AUTO_1R1W
-Compiling module xil_defaultlib.hart_OP_AL_32I
-Compiling module xil_defaultlib.hart
-Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.dataflow_monitor_1
-Compiling module xil_defaultlib.apatb_hart_top
-Compiling module work.glbl
-Built simulation snapshot hart
-
-****** xsim v2023.2.2 (64-bit)
-  **** SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
-  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
-  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
-start_gui
-INFO: [Common 17-206] Exiting xsim at Mon Mar 11 08:43:41 2024...
-INFO: [COSIM 212-316] Starting C post checking ...
-0 0x500093
-4 0x700113
-8 0x208463
-c 0x108093
-10 0x500193
-14 0x500213
-18 0x419463
-1c 0x108093
-20 0x500293
-24 0x700313
-28 0x62c463
-30 0x700393
-34 0x500413
-38 0x083d463
-40 0x493
-44 -0xffaed
-48 0x0a4e463
-50 -0xffa6d
-54 0x613
-58 0x0c5f463
-60 0x500093
-64 0x0c000ef
-70 0x408167
-74 0x10b7
-78 0x2097
-7c 0x500093
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 137.8 seconds. CPU system time: 10.63 seconds. Elapsed time: 280.24 seconds; current allocated memory: 11.215 MB.
-INFO: [HLS 200-112] Total CPU user time: 140.6 seconds. Total CPU system time: 11.16 seconds. Total elapsed time: 299.58 seconds; peak allocated memory: 243.672 MB.
+INFO: [HLS 200-1510] Running: set_directive_top -name top_module top_module 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.14 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.16 seconds; current allocated memory: 232.453 MB.
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'mem.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 19.8 seconds. CPU system time: 3.05 seconds. Elapsed time: 38.46 seconds; current allocated memory: 234.070 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 23,522 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,235 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,612 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,562 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,012 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,393 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,285 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,285 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,281 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,281 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,086 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,052 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/omerfaruk/Projects/okul/denem7/denem7/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'ALU_SUM(ap_int<32>, ap_int<32>) (.128.131)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLL(ap_int<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLT(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SLTU(ap_uint<32>, ap_uint<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_XOR(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SRL(ap_uint<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_OR(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_AND(ap_int<32>, ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_NEG(ap_int<32>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SRA(ap_int<32>, ap_uint<5>)' into 'OP_AL_32I(ap_int<32>, ap_int<7>, ap_uint<3>, ap_int<32>, ap_int<32>)' (OP_AL_32I.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'next_pc_calc(ap_uint<32>, ap_int<32>, ap_uint<1>) (.137.140)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)' (hart.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)' (hart.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'ALU_SUM(ap_int<32>, ap_int<32>) (.128.131)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<32>)' (hart.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'data_hazard_detection(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_uint<32>)' (top_module.cpp:8:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf': Complete partitioning on dimension 1. (top_module.cpp:15:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.23 seconds. CPU system time: 0.72 seconds. Elapsed time: 11.06 seconds; current allocated memory: 236.562 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 236.562 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.06 seconds; current allocated memory: 238.531 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 240.254 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:43:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (OP_AL_32I.cpp:65:74) to (hart.cpp:59:3) in function 'hart'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:57:1) in function 'OP_AL_32I'... converting 26 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hart' (hart.cpp:33:3)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.42 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.63 seconds; current allocated memory: 265.145 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.42 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.57 seconds; current allocated memory: 290.160 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.76 seconds; current allocated memory: 290.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 290.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 291.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 291.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 8.53 seconds. CPU system time: 0.02 seconds. Elapsed time: 8.75 seconds; current allocated memory: 324.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2.65 seconds. CPU system time: 0 seconds. Elapsed time: 2.7 seconds; current allocated memory: 324.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.67 seconds; current allocated memory: 324.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hart'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 324.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_module/inst1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_module/inst2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_module/current_pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_module' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_uint_32_rf_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_31' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_module'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.43 seconds. CPU system time: 0.12 seconds. Elapsed time: 4.61 seconds; current allocated memory: 373.656 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.08 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.41 seconds; current allocated memory: 406.133 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.38 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.53 seconds; current allocated memory: 410.324 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_module.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_module.
+INFO: [HLS 200-789] **** Estimated Fmax: 161.24 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 41.22 seconds. CPU system time: 4.21 seconds. Elapsed time: 72.58 seconds; current allocated memory: 178.223 MB.
+INFO: [HLS 200-112] Total CPU user time: 44.11 seconds. Total CPU system time: 4.87 seconds. Total elapsed time: 94.33 seconds; peak allocated memory: 410.676 MB.

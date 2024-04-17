@@ -1,7 +1,7 @@
 [
   {
     "functionLabel": "",
-    "functionName": "hart",
+    "functionName": "top_module",
     "id": 0,
     "ifcond": "",
     "insert_position": "",
@@ -11,7 +11,7 @@
       "option": [
         {
           "name": "name",
-          "value": "hart"
+          "value": "top_module"
         }
       ]
     },
@@ -22,7 +22,7 @@
   },
   {
     "functionLabel": "",
-    "functionName": "hart",
+    "functionName": "top_module",
     "id": 1,
     "ifcond": "",
     "insert_position": "",
@@ -32,13 +32,13 @@
       "option": [
         {
           "name": "name",
-          "value": "hart"
+          "value": "top_module"
         }
       ]
     },
     "slx": false,
     "sourceFile": "/home/omerfaruk/Projects/okul/denem7/denem7/solution1/csynth.tcl",
-    "sourceLine": 19,
+    "sourceLine": 20,
     "success": true
   }
 ]
