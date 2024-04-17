@@ -1,35 +1,23 @@
 {
   "0": {
-    "basicblocks": 155,
-    "calls": "2 2",
+    "basicblocks": 186,
+    "calls": "1 1",
     "file": "top_module.cpp",
     "fileloc": 8,
-    "instructions": 419,
+    "instructions": 477,
     "loads": {
       "G": 32,
       "L": 4
     },
     "name": "top_module",
     "stores": {
-      "G": 128
+      "G": 160
     },
-    "total_instructions": 1079
+    "total_instructions": 1137
   },
   "1": {
-    "basicblocks": 26,
-    "calls": "",
-    "file": "OP_AL_32I.cpp",
-    "fileloc": 5,
-    "instructions": 86,
-    "name": "OP_AL_32I",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 86
-  },
-  "2": {
     "basicblocks": 19,
-    "calls": "1 1",
+    "calls": "2 2",
     "file": "hart.cpp",
     "fileloc": 12,
     "instructions": 158,
@@ -41,5 +29,17 @@
       "L": 15
     },
     "total_instructions": 330
+  },
+  "2": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "OP_AL_32I.cpp",
+    "fileloc": 5,
+    "instructions": 86,
+    "name": "OP_AL_32I",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 86
   }
 }

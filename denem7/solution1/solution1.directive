@@ -5,11 +5,6 @@
                 <option name="name" value="top_module"/>
             </pragma>
         </directive>
-        <directive functionName="top_module" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="top_module"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_module'
 ================================================================
 + General Information: 
-    * Date:           Wed Apr 17 11:09:48 2024
+    * Date:           Wed Apr 17 15:10:00 2024
     * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
     * Project:        denem7
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,9 @@
     |    Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |            |            |     |
     |    & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF     |     LUT    | URAM|
     +---------------+------+------+---------+--------+----------+---------+------+----------+------+----+------------+------------+-----+
-    |+ top_module   |     -|  1.10|        1|  10.000|         -|        2|     -|        no|     -|   -|  1174 (~0%)|   4165 (1%)|    -|
+    |+ top_module   |     -|  0.57|        0|   0.000|         -|        1|     -|        no|     -|   -|  1025 (~0%)|   5645 (2%)|    -|
+    | + hart        |     -|  3.20|        0|   0.000|         -|        0|     -|        no|     -|   -|           -|  1605 (~0%)|    -|
+    |  + OP_AL_32I  |     -|  5.40|        0|   0.000|         -|        0|     -|        no|     -|   -|           -|   926 (~0%)|    -|
     | + hart        |     -|  3.20|        0|   0.000|         -|        0|     -|        no|     -|   -|           -|  1605 (~0%)|    -|
     |  + OP_AL_32I  |     -|  5.40|        0|   0.000|         -|        0|     -|        no|     -|   -|           -|   926 (~0%)|    -|
     +---------------+------+------+---------+--------+----------+---------+------+----------+------+----+------------+------------+-----+
@@ -75,27 +77,42 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+-------------------------+-----+--------+------------+-----+--------+---------+
-| Name                    | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+-------------------------+-----+--------+------------+-----+--------+---------+
-| + top_module            | 0   |        |            |     |        |         |
-|   second_pc_fu_21968_p2 |     |        | second_pc  | add | fabric | 0       |
-|  + hart                 | 0   |        |            |     |        |         |
-|    grp_fu_200_p2        |     |        | add_ln80_2 | add | fabric | 0       |
-|    add_ln86_5_fu_405_p2 |     |        | add_ln86_5 | add | fabric | 0       |
-|    grp_fu_200_p2        |     |        | add_ln80_1 | add | fabric | 0       |
-|    add_ln86_4_fu_433_p2 |     |        | add_ln86_4 | add | fabric | 0       |
-|    add_ln80_fu_440_p2   |     |        | add_ln80   | add | fabric | 0       |
-|    grp_fu_200_p2        |     |        | add_ln86_3 | add | fabric | 0       |
-|    grp_fu_200_p2        |     |        | add_ln86_2 | add | fabric | 0       |
-|    add_ln86_6_fu_601_p2 |     |        | add_ln86_6 | add | fabric | 0       |
-|    grp_fu_200_p2        |     |        | add_ln86_1 | add | fabric | 0       |
-|    grp_fu_200_p2        |     |        | add_ln86   | add | fabric | 0       |
-|   + OP_AL_32I           | 0   |        |            |     |        |         |
-|     grp_fu_231_p2       |     |        | rd_val_1   | add | fabric | 0       |
-|     rd_val_16_fu_345_p2 |     |        | rd_val_16  | sub | fabric | 0       |
-|     grp_fu_231_p2       |     |        | rd_val_9   | add | fabric | 0       |
-+-------------------------+-----+--------+------------+-----+--------+---------+
++--------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                                 | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++--------------------------------------+-----+--------+------------+-----+--------+---------+
+| + top_module                         | 0   |        |            |     |        |         |
+|   second_pc_fu_20156_p2              |     |        | second_pc  | add | fabric | 0       |
+|  + hart (hart_ret4_hart_fu_20063)    | 0   |        |            |     |        |         |
+|    grp_fu_200_p2                     |     |        | add_ln80_2 | add | fabric | 0       |
+|    add_ln86_5_fu_405_p2              |     |        | add_ln86_5 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln80_1 | add | fabric | 0       |
+|    add_ln86_4_fu_433_p2              |     |        | add_ln86_4 | add | fabric | 0       |
+|    add_ln80_fu_440_p2                |     |        | add_ln80   | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_3 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_2 | add | fabric | 0       |
+|    add_ln86_6_fu_601_p2              |     |        | add_ln86_6 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_1 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86   | add | fabric | 0       |
+|   + OP_AL_32I (grp_OP_AL_32I_fu_187) | 0   |        |            |     |        |         |
+|     grp_fu_231_p2                    |     |        | rd_val_1   | add | fabric | 0       |
+|     rd_val_16_fu_345_p2              |     |        | rd_val_16  | sub | fabric | 0       |
+|     grp_fu_231_p2                    |     |        | rd_val_9   | add | fabric | 0       |
+|  + hart (hart_ret_hart_fu_20073)     | 0   |        |            |     |        |         |
+|    grp_fu_200_p2                     |     |        | add_ln80_2 | add | fabric | 0       |
+|    add_ln86_5_fu_405_p2              |     |        | add_ln86_5 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln80_1 | add | fabric | 0       |
+|    add_ln86_4_fu_433_p2              |     |        | add_ln86_4 | add | fabric | 0       |
+|    add_ln80_fu_440_p2                |     |        | add_ln80   | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_3 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_2 | add | fabric | 0       |
+|    add_ln86_6_fu_601_p2              |     |        | add_ln86_6 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86_1 | add | fabric | 0       |
+|    grp_fu_200_p2                     |     |        | add_ln86   | add | fabric | 0       |
+|   + OP_AL_32I (grp_OP_AL_32I_fu_187) | 0   |        |            |     |        |         |
+|     grp_fu_231_p2                    |     |        | rd_val_1   | add | fabric | 0       |
+|     rd_val_16_fu_345_p2              |     |        | rd_val_16  | sub | fabric | 0       |
+|     grp_fu_231_p2                    |     |        | rd_val_9   | add | fabric | 0       |
++--------------------------------------+-----+--------+------------+-----+--------+---------+
 
 
 ================================================================

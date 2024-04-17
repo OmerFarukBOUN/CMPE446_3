@@ -15,18 +15,18 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>6.202</EstimatedClockPeriod>
+            <EstimatedClockPeriod>6.730</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>1</Best-caseLatency>
-            <Average-caseLatency>1</Average-caseLatency>
-            <Worst-caseLatency>1</Worst-caseLatency>
-            <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-            <Interval-min>2</Interval-min>
-            <Interval-max>2</Interval-max>
+            <Best-caseLatency>0</Best-caseLatency>
+            <Average-caseLatency>0</Average-caseLatency>
+            <Worst-caseLatency>0</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
@@ -36,8 +36,8 @@
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <FF>1174</FF>
-            <LUT>4165</LUT>
+            <FF>1025</FF>
+            <LUT>5645</LUT>
             <BRAM_18K>0</BRAM_18K>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -170,10 +170,26 @@
             <ModuleName>top_module</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_hart_fu_19905</InstName>
+                    <InstName>hart_ret4_hart_fu_20063</InstName>
                     <ModuleName>hart</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>19905</ID>
+                    <ID>20063</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_OP_AL_32I_fu_187</InstName>
+                            <ModuleName>OP_AL_32I</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>187</ID>
+                            <BindInstances>grp_fu_231_p2 rd_val_16_fu_345_p2 grp_fu_231_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>grp_fu_200_p2 add_ln86_5_fu_405_p2 grp_fu_200_p2 add_ln86_4_fu_433_p2 add_ln80_fu_440_p2 grp_fu_200_p2 grp_fu_200_p2 add_ln86_6_fu_601_p2 grp_fu_200_p2 grp_fu_200_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>hart_ret_hart_fu_20073</InstName>
+                    <ModuleName>hart</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>20073</ID>
                     <InstancesList>
                         <Instance>
                             <InstName>grp_OP_AL_32I_fu_187</InstName>
@@ -186,7 +202,7 @@
                     <BindInstances>grp_fu_200_p2 add_ln86_5_fu_405_p2 grp_fu_200_p2 add_ln86_4_fu_433_p2 add_ln80_fu_440_p2 grp_fu_200_p2 grp_fu_200_p2 add_ln86_6_fu_601_p2 grp_fu_200_p2 grp_fu_200_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>second_pc_fu_21968_p2</BindInstances>
+            <BindInstances>second_pc_fu_20156_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -301,16 +317,16 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>6.202</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>6.730</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>1</Best-caseLatency>
-                    <Average-caseLatency>1</Average-caseLatency>
-                    <Worst-caseLatency>1</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>2</PipelineInitiationInterval>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
@@ -321,12 +337,12 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>1174</FF>
+                    <FF>1025</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>4165</LUT>
+                    <LUT>5645</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
-                    <UTIL_LUT>1</UTIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>624</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -339,7 +355,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="second_pc_fu_21968_p2" SOURCE="top_module.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="second_pc"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="second_pc_fu_20156_p2" SOURCE="top_module.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="second_pc"/>
             </BindNodes>
         </Module>
     </ModuleInformation>

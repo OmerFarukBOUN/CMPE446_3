@@ -1,4 +1,19 @@
 {
+    "0": {
+        "name": "top_module",
+        "file": "top_module.cpp",
+        "fileloc": "8",
+        "instructions": "429",
+        "total_instructions": "921",
+        "calls": "1 1",
+        "basicblocks": "200",
+        "loads": {
+            "G": "32"
+        },
+        "stores": {
+            "G": "32"
+        }
+    },
     "1": {
         "name": "hart",
         "file": "hart.cpp",
@@ -16,20 +31,5 @@
         "total_instructions": "77",
         "calls": "",
         "basicblocks": "26"
-    },
-    "0": {
-        "name": "top_module",
-        "file": "top_module.cpp",
-        "fileloc": "8",
-        "instructions": "431",
-        "total_instructions": "923",
-        "calls": "1 1",
-        "basicblocks": "199",
-        "loads": {
-            "G": "32"
-        },
-        "stores": {
-            "G": "32"
-        }
     }
 }

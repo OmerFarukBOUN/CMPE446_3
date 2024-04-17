@@ -44,8 +44,8 @@ reg   [31:0] ap_phi_mux_phi_ln83_1_phi_fu_166_p18;
 wire   [31:0] add_ln86_6_fu_601_p2;
 wire   [31:0] or_ln86_1_fu_627_p3;
 wire   [31:0] or_ln1_fu_655_p3;
-wire   [31:0] tmp_10_fu_422_p4;
-wire   [31:0] tmp_11_fu_411_p4;
+wire   [31:0] tmp_9_fu_422_p4;
+wire   [31:0] tmp_10_fu_411_p4;
 wire   [2:0] func3_fu_252_p4;
 wire  signed [31:0] sext_ln37_fu_285_p1;
 wire   [0:0] icmp_ln67_3_fu_561_p2;
@@ -54,13 +54,13 @@ wire   [0:0] icmp_ln67_2_fu_547_p2;
 wire   [0:0] icmp_ln67_1_fu_533_p2;
 wire   [0:0] icmp_ln67_fu_519_p2;
 wire   [11:0] offset_2_fu_275_p4;
-wire   [0:0] tmp_8_fu_298_p3;
+wire   [0:0] tmp_1_fu_298_p3;
 wire   [0:0] tmp_fu_290_p3;
 wire   [5:0] tmp_3_fu_316_p4;
 wire   [3:0] tmp_5_fu_306_p4;
 wire   [19:0] tmp_6_fu_340_p4;
 wire   [7:0] tmp_s_fu_377_p4;
-wire   [0:0] tmp_9_fu_369_p3;
+wire   [0:0] tmp_2_fu_369_p3;
 wire   [9:0] tmp_7_fu_359_p4;
 wire   [20:0] offset_1_fu_387_p6;
 wire   [31:0] add_ln86_5_fu_405_p2;
@@ -107,9 +107,9 @@ top_module_OP_AL_32I grp_OP_AL_32I_fu_187(
 
 always @ (*) begin
     if (((grp_fu_211_p2 == 1'd0) & (opcode_fu_248_p1 == 7'd103))) begin
-        ap_phi_mux_phi_ln83_1_phi_fu_166_p18 = tmp_11_fu_411_p4;
+        ap_phi_mux_phi_ln83_1_phi_fu_166_p18 = tmp_10_fu_411_p4;
     end else if (((grp_fu_211_p2 == 1'd1) & (opcode_fu_248_p1 == 7'd103))) begin
-        ap_phi_mux_phi_ln83_1_phi_fu_166_p18 = tmp_10_fu_422_p4;
+        ap_phi_mux_phi_ln83_1_phi_fu_166_p18 = tmp_9_fu_422_p4;
     end else if ((opcode_fu_248_p1 == 7'd51)) begin
         ap_phi_mux_phi_ln83_1_phi_fu_166_p18 = or_ln1_fu_655_p3;
     end else if ((opcode_fu_248_p1 == 7'd19)) begin
@@ -205,11 +205,11 @@ assign icmp_ln69_fu_461_p2 = ((r1_val != r2_val) ? 1'b1 : 1'b0);
 
 assign imm_20_U_fu_350_p3 = {{tmp_6_fu_340_p4}, {12'd0}};
 
-assign offset_1_fu_387_p6 = {{{{{tmp_8_fu_298_p3}, {tmp_s_fu_377_p4}}, {tmp_9_fu_369_p3}}, {tmp_7_fu_359_p4}}, {1'd0}};
+assign offset_1_fu_387_p6 = {{{{{tmp_1_fu_298_p3}, {tmp_s_fu_377_p4}}, {tmp_2_fu_369_p3}}, {tmp_7_fu_359_p4}}, {1'd0}};
 
 assign offset_2_fu_275_p4 = {{inst_val[31:20]}};
 
-assign offset_3_fu_326_p6 = {{{{{tmp_8_fu_298_p3}, {tmp_fu_290_p3}}, {tmp_3_fu_316_p4}}, {tmp_5_fu_306_p4}}, {1'd0}};
+assign offset_3_fu_326_p6 = {{{{{tmp_1_fu_298_p3}, {tmp_fu_290_p3}}, {tmp_3_fu_316_p4}}, {tmp_5_fu_306_p4}}, {1'd0}};
 
 assign opcode_fu_248_p1 = inst_val[6:0];
 
@@ -255,9 +255,11 @@ assign sext_ln53_fu_608_p1 = $signed(grp_fu_228_p4);
 
 assign sext_ln66_fu_597_p1 = $signed(returnval_fu_589_p3);
 
-assign tmp_10_fu_422_p4 = {add_ln86_5_fu_405_p2[32-1:1], |(1'd0)};
+assign tmp_10_fu_411_p4 = {add_ln86_5_fu_405_p2[32-1:1], |(1'd1)};
 
-assign tmp_11_fu_411_p4 = {add_ln86_5_fu_405_p2[32-1:1], |(1'd1)};
+assign tmp_1_fu_298_p3 = inst_val[32'd31];
+
+assign tmp_2_fu_369_p3 = inst_val[32'd20];
 
 assign tmp_3_fu_316_p4 = {{inst_val[30:25]}};
 
@@ -267,9 +269,7 @@ assign tmp_6_fu_340_p4 = {{inst_val[31:12]}};
 
 assign tmp_7_fu_359_p4 = {{inst_val[30:21]}};
 
-assign tmp_8_fu_298_p3 = inst_val[32'd31];
-
-assign tmp_9_fu_369_p3 = inst_val[32'd20];
+assign tmp_9_fu_422_p4 = {add_ln86_5_fu_405_p2[32-1:1], |(1'd0)};
 
 assign tmp_fu_290_p3 = inst_val[32'd7];
 

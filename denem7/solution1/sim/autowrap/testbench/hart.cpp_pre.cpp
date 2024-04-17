@@ -61880,7 +61880,7 @@ inline bool operator!=(
 # 366 "/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 3 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp" 2
 using namespace std;
-# 37 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+# 38 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
 typedef ap_int<32> inst_type ;
 typedef ap_uint<5> rf_pntr_type ;
 typedef ap_uint<7> opcode_type ;
@@ -61894,8 +61894,16 @@ typedef ap_uint<32> uns ;
 typedef ap_int<32> data_type ;
 typedef ap_uint<1> bit_type;
 typedef ap_uint<1> hart_id;
-# 80 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
-pc_type hart(inst_type inst, pc_type pc);
+typedef ap_uint<2> hazard_type;
+# 82 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+typedef struct {
+ r_type register_ret;
+ pc_type next_pc;
+}hart_return;
+
+pc_type top_module(inst_type inst1, inst_type inst2, pc_type current_pc);
+hazard_type data_hazard_detection(inst_type inst1, inst_type inst2);
+hart_return hart(inst_type inst, r_type r1, r_type r2, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
 imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);
@@ -61918,30 +61926,31 @@ imm_type ALU_AND(imm_type op1, imm_type op2);
 
 pc_type next_pc_calc(pc_type current_pc, imm_type offset, bit_type error);
 
-pc_type hart(inst_type inst, pc_type pc)
+
+
+hart_return hart(inst_type inst, r_type r1, r_type r2, pc_type pc)
 {
 
 
 
 
+
+ hart_return hart_out;
  opcode_type opcode;
- rf_pntr_type rd,rs1, rs2 ;
  func3_type func3;
  func7_type func7;
- static r_type rf[32];
- pc_type next_pc;
  imm_type imm_11_0;
  imm_type imm_12;
  imm_type imm_11_S;
  pc_type imm_20_U;
  imm_type imm_JAL;
  imm_type offset;
-
  bit_type error;
+ r_e_type return_val;
+ rf_pntr_type rd;
+
     opcode= inst.range(6,0) ;
  rd = inst.range(11,7);
- rs1= inst.range(19,15);
- rs2= inst.range(24,20);
  func3= inst.range(14,12);
  func7= inst.range(31,25);
  imm_11_0=(imm_type)((ap_int<12>) (inst.range(31, 20)));
@@ -61951,50 +61960,45 @@ pc_type hart(inst_type inst, pc_type pc)
  imm_20_U = (pc_type) inst.range(31,12) << 12;
  imm_JAL = (imm_type) ((ap_int<21>) (inst[31]<<20 | inst.range(30,21) << 1 | inst[20]<<11 | inst.range(19,12)<<12));
 
- r_e_type return_val;
 
  switch(opcode){
  case 0b0110011:
-  return_val = OP_AL_32I(opcode,func7,func3,rf[rs1],rf[rs2]);
-  if (rd!=0) rf[rd]=return_val>>1;
-  next_pc =next_pc_calc(pc, 4, return_val[0]);
+  return_val = OP_AL_32I(opcode,func7,func3,r1,r2);
+  hart_out.register_ret=return_val>>1;
+  hart_out.next_pc =next_pc_calc(pc, 4, return_val[0]);
   break;
  case 0b0010011:
-  return_val = OP_AL_32I(opcode,func7,func3,rf[rs1],(r_type) imm_11_0);
-  if (rd!=0) rf[rd]=return_val>>1;
-  next_pc =next_pc_calc(pc, 4, return_val[0]);
+  return_val = OP_AL_32I(opcode,func7,func3,r1,(r_type) imm_11_0);
+  hart_out.register_ret=return_val>>1;
+  hart_out.next_pc =next_pc_calc(pc, 4, return_val[0]);
   break;
  case 0b1100011:
-  offset = OP_AL_32B(imm_12, func3, rf[rs1], rf[rs2]);
-  next_pc = next_pc_calc(pc, offset, 0);
+  offset = OP_AL_32B(imm_12, func3, r1, r2);
+  hart_out.next_pc = next_pc_calc(pc, offset, 0);
   break;
  case 0b0110111:
-  if (rd!=0) rf[rd] = imm_20_U;
-  next_pc = next_pc_calc(pc, 4, 0);
+  hart_out.register_ret = imm_20_U;
+  hart_out.next_pc = next_pc_calc(pc, 4, 0);
   break;
  case 0b0010111:
-  if (rd!=0) rf[rd] = ALU_SUM(pc, imm_20_U);
-  next_pc = next_pc_calc(pc, 4, 0);
+  hart_out.register_ret = ALU_SUM(pc, imm_20_U);
+  hart_out.next_pc = next_pc_calc(pc, 4, 0);
   break;
  case 0b1101111:
-  if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
-  next_pc = next_pc_calc(pc, imm_JAL, 0);
+  hart_out.register_ret = ALU_SUM(pc, 4);
+  hart_out.next_pc = next_pc_calc(pc, imm_JAL, 0);
   break;
  case 0b1100111:
-  if (rd!=0) rf[rd] = ALU_SUM(pc, 4);
-  next_pc = next_pc_calc(pc, imm_11_0, 0);
-  func3 ? next_pc[0] = 1: next_pc[0] = 0;
+  hart_out.register_ret = ALU_SUM(pc, 4);
+  hart_out.next_pc = next_pc_calc(pc, imm_11_0, 0);
+  func3 ? hart_out.next_pc[0] = 1: hart_out.next_pc[0] = 0;
   break;
 
     default: error = 1; break;
  }
 
 
- std::cout << hex << rf[1] << std::endl;
-
-
-
- return(next_pc);
+ return hart_out;
 }
 
 pc_type next_pc_calc(pc_type current_pc, imm_type offset, bit_type error) {

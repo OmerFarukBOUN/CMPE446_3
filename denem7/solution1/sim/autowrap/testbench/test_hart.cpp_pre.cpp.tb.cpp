@@ -61874,7 +61874,7 @@ inline bool operator!=(
 # 366 "/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 3 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp" 2
 using namespace std;
-# 37 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+# 38 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
 typedef ap_int<32> inst_type ;
 typedef ap_uint<5> rf_pntr_type ;
 typedef ap_uint<7> opcode_type ;
@@ -61888,16 +61888,24 @@ typedef ap_uint<32> uns ;
 typedef ap_int<32> data_type ;
 typedef ap_uint<1> bit_type;
 typedef ap_uint<1> hart_id;
-# 80 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+typedef ap_uint<2> hazard_type;
+# 82 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+typedef struct {
+ r_type register_ret;
+ pc_type next_pc;
+}hart_return;
+
 
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-ap_uint<32> apatb_hart_sw(ap_int<32>, ap_uint<32>);
+ap_uint<32> apatb_top_module_sw(ap_int<32>, ap_int<32>, ap_uint<32>);
 #endif
-# 80 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
-pc_type hart(inst_type inst, pc_type pc);
+# 87 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+pc_type top_module(inst_type inst1, inst_type inst2, pc_type current_pc);
+hazard_type data_hazard_detection(inst_type inst1, inst_type inst2);
+hart_return hart(inst_type inst, r_type r1, r_type r2, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
 imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);
@@ -61927,39 +61935,37 @@ int main(void)
  inst_type code[] = {
 
 
-   0x00500093,
-   0x00700113,
-   0x00208463,
-   0x00108093,
-   0x00500193,
-   0x00500213,
-   0x00419463,
-   0x00108093,
-   0x00500293,
-   0x00700313,
-   0x0062c463,
-   0x00108093,
-   0x00700393,
-   0x00500413,
-   0x0083d463,
-   0x00108093,
-   0x00000493,
-   0xfff00513,
-   0x00a4e463,
-   0x00108093,
-   0xfff00593,
-   0x00000613,
-   0x00c5f463,
-   0x00108093,
-   0x00500093,
-   0x00c000ef,
-   0x00000013,
-   0x008000ef,
-   0x00408167,
-   0x000010b7,
-   0x00002097,
-   0x00500093
-# 94 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
+
+
+   0x00800613,
+   0xf68737b7,
+   0x00060313,
+   0x0a178793,
+   0x00000513,
+   0x00400893,
+   0x00200813,
+   0x00100593,
+   0x00f5f6b3,
+   0x00d036b3,
+   0x00f87733,
+   0x00d50533,
+   0x00e03733,
+   0x00f8f6b3,
+   0x00e50533,
+   0x00d036b3,
+   0x00f37733,
+   0x00d50533,
+   0x00e03733,
+   0xfff60613,
+   0x00359593,
+   0x00381813,
+   0x00389893,
+   0x00e50533,
+   0x00331313,
+   0xfa061ee3
+
+
+
  };
  int N = sizeof(code) >> 2;
  unsigned int pc = 0;
@@ -61969,24 +61975,24 @@ int main(void)
 
   pc = 
 #ifndef HLS_FASTSIM
-#define hart apatb_hart_sw
+#define top_module apatb_top_module_sw
 #endif
-# 101 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
-hart(code[pc >> 2], pc);
-#undef hart
-# 101 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
+# 53 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
+top_module(code[pc >> 2],code[(pc >> 2)+1], pc);
+#undef top_module
+# 53 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
 
   if (pc & 1 != 0) {
    hart_error = 0;
 
-   return -1;
+   return 0;
   }
  }
  return (0);
 
 }
 #endif
-# 110 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
+# 62 "/home/omerfaruk/Projects/okul/denem7/test_hart.cpp"
 
 
 

@@ -1,1 +1,1 @@
- {CheckOptions: [ {key: xilinx-tb-process.TopFunctionName, value: 'hart'}, {key: xilinx-tb-process.KeepTopName, value: 1}, {key: xilinx-tb-process.BCSim, value: '0'} ] } 
+ {CheckOptions: [ {key: xilinx-tb-process.TopFunctionName, value: 'top_module'}, {key: xilinx-tb-process.KeepTopName, value: 1}, {key: xilinx-tb-process.BCSim, value: '0'} ] } 

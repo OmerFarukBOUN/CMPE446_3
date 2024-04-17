@@ -61888,7 +61888,7 @@ inline bool operator!=(
 # 366 "/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h" 2
 # 3 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp" 2
 using namespace std;
-# 37 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+# 38 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
 typedef ap_int<32> inst_type ;
 typedef ap_uint<5> rf_pntr_type ;
 typedef ap_uint<7> opcode_type ;
@@ -61902,8 +61902,16 @@ typedef ap_uint<32> uns ;
 typedef ap_int<32> data_type ;
 typedef ap_uint<1> bit_type;
 typedef ap_uint<1> hart_id;
-# 80 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
-pc_type hart(inst_type inst, pc_type pc);
+typedef ap_uint<2> hazard_type;
+# 82 "/home/omerfaruk/Projects/okul/denem7/parameters.hpp"
+typedef struct {
+ r_type register_ret;
+ pc_type next_pc;
+}hart_return;
+
+pc_type top_module(inst_type inst1, inst_type inst2, pc_type current_pc);
+hazard_type data_hazard_detection(inst_type inst1, inst_type inst2);
+hart_return hart(inst_type inst, r_type r1, r_type r2, pc_type pc);
 r_e_type OP_AL_32I(inst_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
 imm_type OP_AL_32B(r_type offset, func3_type func3, r_type op1, r_type op2);
 r_type mem(r_type addr, func3_type func3, r_type waddr, bit_type we);

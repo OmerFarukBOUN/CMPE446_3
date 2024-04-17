@@ -42,7 +42,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xczu7ev:-ffvf1517:-3-e
-set SourceFiles {sc {} c {../../OP_AL_32I.cpp ../../hart.cpp ../../mem.cpp ../../top_module.cpp}}
+set SourceFiles {sc {} c {../../top_module.cpp ../../OP_AL_32I.cpp ../../hart.cpp ../../mem.cpp}}
 set SourceFlags {sc {} c {{} {} {} {}}}
 set DirectiveFile {}
 set TBFiles {verilog ../../test_hart.cpp bc ../../test_hart.cpp vhdl ../../test_hart.cpp sc ../../test_hart.cpp cas ../../test_hart.cpp c {}}

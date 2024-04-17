@@ -45,7 +45,7 @@ wire   [30:0] zext_ln7_3_fu_371_p1;
 wire   [30:0] zext_ln7_2_fu_376_p1;
 wire   [30:0] trunc_ln7_1_fu_395_p1;
 reg   [0:0] ap_phi_mux_error_phi_fu_136_p46;
-wire   [30:0] empty_131_fu_251_p1;
+wire   [30:0] empty_128_fu_251_p1;
 wire   [30:0] empty_fu_243_p1;
 wire   [4:0] op2_5_fu_259_p1;
 wire   [31:0] zext_ln109_1_fu_263_p1;
@@ -119,21 +119,21 @@ end
 
 assign ap_ready = 1'b1;
 
-assign empty_131_fu_251_p1 = op2_val[30:0];
+assign empty_128_fu_251_p1 = op2_val[30:0];
 
 assign empty_fu_243_p1 = op1_val[30:0];
 
-assign grp_fu_207_p2 = (empty_fu_243_p1 | empty_131_fu_251_p1);
+assign grp_fu_207_p2 = (empty_fu_243_p1 | empty_128_fu_251_p1);
 
-assign grp_fu_213_p2 = (empty_fu_243_p1 ^ empty_131_fu_251_p1);
+assign grp_fu_213_p2 = (empty_fu_243_p1 ^ empty_128_fu_251_p1);
 
 assign grp_fu_219_p2 = ((op1_val < op2_val) ? 1'b1 : 1'b0);
 
 assign grp_fu_225_p2 = (($signed(op1_val) < $signed(op2_val)) ? 1'b1 : 1'b0);
 
-assign grp_fu_231_p2 = (empty_131_fu_251_p1 + empty_fu_243_p1);
+assign grp_fu_231_p2 = (empty_128_fu_251_p1 + empty_fu_243_p1);
 
-assign grp_fu_237_p2 = (empty_fu_243_p1 & empty_131_fu_251_p1);
+assign grp_fu_237_p2 = (empty_fu_243_p1 & empty_128_fu_251_p1);
 
 assign op2_1_fu_381_p1 = op2_val[4:0];
 
@@ -151,7 +151,7 @@ assign rd_val_10_fu_389_p2 = op1_val << zext_ln88_1_fu_385_p1;
 
 assign rd_val_14_fu_360_p2 = op1_val >> zext_ln105_fu_356_p1;
 
-assign rd_val_16_fu_345_p2 = (empty_fu_243_p1 - empty_131_fu_251_p1);
+assign rd_val_16_fu_345_p2 = (empty_fu_243_p1 - empty_128_fu_251_p1);
 
 assign rd_val_17_fu_334_p2 = $signed(op1_val) >>> zext_ln109_fu_330_p1;
 

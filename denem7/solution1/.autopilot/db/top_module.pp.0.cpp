@@ -38342,32 +38342,34 @@ __attribute__((sdx_kernel("top_module", 0))) pc_type top_module(inst_type inst1,
 
  hazards = data_hazard_detection(inst1, inst2);
  data_1 = hart(inst1, rf[rs1_1], rf[rs2_1], current_pc);
-
-
- hazards[0] ? reg1_2 = data_1.register_ret : reg1_2 = rf[rs1_2];
- hazards[1] ? reg2_2 = data_1.register_ret : reg2_2 = rf[rs2_2];
-
- data_2 = hart(inst2, reg1_2, reg2_2, second_pc);
-
- if (second_pc != data_1.next_pc) {
-  next_pc = data_1.next_pc;
+# 62 "top_module.cpp"
+ if (hazards[0]|hazards[1]) {
   if (opcode1 != 0b1100011 && !data_1.next_pc[0] && rd_1 != 0)
-   rf[rd_1] = data_1.register_ret;
- } else {
-  next_pc = data_2.next_pc;
-
-  if (rd_1 != rd_2) {
+      rf[rd_1] = data_1.register_ret;
+  next_pc = data_1.next_pc;
+ }else{
+  data_2 = hart(inst2, rf[rs1_2], rf[rs2_2], second_pc);
+  if (second_pc != data_1.next_pc) {
+   next_pc = data_1.next_pc;
    if (opcode1 != 0b1100011 && !data_1.next_pc[0] && rd_1 != 0)
     rf[rd_1] = data_1.register_ret;
-   if (opcode2 != 0b1100011 && !data_2.next_pc[0] && rd_2 != 0)
-    rf[rd_2] = data_2.register_ret;
   } else {
-   if (opcode2 != 0b1100011 && !data_2.next_pc[0] && rd_2 != 0)
-    rf[rd_2] = data_2.register_ret;
-  }
+   next_pc = data_2.next_pc;
 
+   if (rd_1 != rd_2) {
+    if (opcode1 != 0b1100011 && !data_1.next_pc[0] && rd_1 != 0)
+     rf[rd_1] = data_1.register_ret;
+    if (opcode2 != 0b1100011 && !data_2.next_pc[0] && rd_2 != 0)
+     rf[rd_2] = data_2.register_ret;
+   } else {
+    if (opcode2 != 0b1100011 && !data_2.next_pc[0] && rd_2 != 0)
+     rf[rd_2] = data_2.register_ret;
+   }
+
+  }
  }
-# 89 "top_module.cpp"
+
+
  return next_pc;
 }
 

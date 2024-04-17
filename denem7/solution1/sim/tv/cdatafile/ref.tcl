@@ -1,6 +1,7 @@
 set depth_list {
   {ap_return 1}
-  {inst 1}
-  {pc 1}
+  {current_pc 1}
+  {inst1 1}
+  {inst2 1}
 }
-set trans_num 26
+set trans_num 76

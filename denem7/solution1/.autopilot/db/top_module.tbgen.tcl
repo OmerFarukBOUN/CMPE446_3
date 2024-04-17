@@ -5,7 +5,7 @@ set isDatapathOnly 0
 set isPipelined 0
 set pipeline_type none
 set FunctionProtocol ap_ctrl_hs
-set isOneStateSeq 0
+set isOneStateSeq 1
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
@@ -53,13 +53,13 @@ set NewPortList {[
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "3", "4", "5", "6"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "3", "5", "6", "7", "8"],
 		"CDFG" : "top_module",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "0", "EstimateLatencyMin" : "0", "EstimateLatencyMax" : "0",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -103,7 +103,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_29", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_30", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "p_ZZ10top_module6ap_intILi32EES0_7ap_uintILi32EEE2rf_31", "Type" : "OVld", "Direction" : "IO"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hart_fu_19905", "Parent" : "0", "Child" : ["2"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hart_ret4_hart_fu_20063", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "hart",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -122,7 +122,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "r1_val", "Type" : "None", "Direction" : "I"},
 			{"Name" : "r2_val", "Type" : "None", "Direction" : "I"},
 			{"Name" : "pc_val", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_hart_fu_19905.grp_OP_AL_32I_fu_187", "Parent" : "1",
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.hart_ret4_hart_fu_20063.grp_OP_AL_32I_fu_187", "Parent" : "1",
 		"CDFG" : "OP_AL_32I",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
@@ -142,10 +142,49 @@ set RtlHierarchyInfo {[
 			{"Name" : "func3_val", "Type" : "None", "Direction" : "I"},
 			{"Name" : "op1_val", "Type" : "None", "Direction" : "I"},
 			{"Name" : "op2_val", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U10", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U11", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U12", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U13", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hart_ret_hart_fu_20073", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "hart",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "0", "EstimateLatencyMin" : "0", "EstimateLatencyMax" : "0",
+		"Combinational" : "1",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "inst_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "r1_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "r2_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "pc_val", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.hart_ret_hart_fu_20073.grp_OP_AL_32I_fu_187", "Parent" : "3",
+		"CDFG" : "OP_AL_32I",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "0", "EstimateLatencyMin" : "0", "EstimateLatencyMax" : "0",
+		"Combinational" : "1",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "opcode_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "func7_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "func3_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "op1_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "op2_val", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U10", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U11", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U12", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sparsemux_65_5_32_1_1_U13", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -195,13 +234,24 @@ set ArgLastReadFirstWriteLatency {
 		func7_val {Type I LastRead 0 FirstWrite -1}
 		func3_val {Type I LastRead 0 FirstWrite -1}
 		op1_val {Type I LastRead 0 FirstWrite -1}
+		op2_val {Type I LastRead 0 FirstWrite -1}}
+	hart {
+		inst_val {Type I LastRead 0 FirstWrite -1}
+		r1_val {Type I LastRead 0 FirstWrite -1}
+		r2_val {Type I LastRead 0 FirstWrite -1}
+		pc_val {Type I LastRead 0 FirstWrite -1}}
+	OP_AL_32I {
+		opcode_val {Type I LastRead 0 FirstWrite -1}
+		func7_val {Type I LastRead 0 FirstWrite -1}
+		func3_val {Type I LastRead 0 FirstWrite -1}
+		op1_val {Type I LastRead 0 FirstWrite -1}
 		op2_val {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "1"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "2"}
+	{"Name" : "Latency", "Min" : "0", "Max" : "0"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
 ]}
 
 set PipelineEnableSignalInfo {[

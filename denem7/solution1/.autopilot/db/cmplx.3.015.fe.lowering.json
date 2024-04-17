@@ -1,19 +1,19 @@
 {
   "0": {
-    "basicblocks": 155,
+    "basicblocks": 186,
     "calls": "2 2",
     "file": "top_module.cpp",
     "fileloc": 8,
-    "instructions": 426,
+    "instructions": 483,
     "loads": {
       "G": 32,
       "L": 4
     },
     "name": "top_module",
     "stores": {
-      "G": 128
+      "G": 160
     },
-    "total_instructions": 1086
+    "total_instructions": 1143
   },
   "1": {
     "basicblocks": 26,
