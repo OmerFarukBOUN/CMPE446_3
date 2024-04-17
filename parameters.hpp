@@ -6,7 +6,7 @@ using namespace std;
 //#define EXTRA
 #define LEGAL
 #define DEBUG
-#define FIRSTDESIGN
+//#define FIRSTDESIGN
 
 #define XLEN 32
 #define BYTE 8
